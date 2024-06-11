@@ -70,9 +70,9 @@ extra:
       - manage
     title: Cookie consent
     description: >- 
-      本サイトでは，Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています．
+      本サイトでは，サイトの改善のためにGoogleによるアクセス解析ツール「Googleアナリティクス」を使用しています．
       このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。
-      サイト運営の改善にご協力いただけますと幸いです．  
+      広告等の収益目的には使用しておりません．
 
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
@@ -85,7 +85,7 @@ extra:
 
   analytics:
     provider: google
-    property: G-XXXXXXXXXX
+    property: G-SR97P4JMJ9
 
 copyright: >
   Copyright &copy; 2024 Kei Shiraiwa –
