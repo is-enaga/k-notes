@@ -5,6 +5,30 @@ nav:
   - PyGMT: 
     - pygmt/index.md
     - pygmt/sec001.md
+    - pygmt/sec002.md
+    - pygmt/sec003.md
+    - pygmt/sec004.md
+    - pygmt/sec005.md
+    - pygmt/sec006.md
+    - pygmt/sec007.md
+    - pygmt/sec008.md
+    - pygmt/sec009.md
+    - pygmt/sec010.md
+    - pygmt/sec011.md
+    - pygmt/sec012.md
+    - pygmt/sec013.md
+    - pygmt/sec014.md
+    - pygmt/sec015.md
+
+  - Matplotlib:
+    # - matplotlib/index.md
+    - plt/sec001.md
+  - Ubuntu:
+    # - ubuntu/index.md
+    - ubuntu/sec001.md
+  - WINシステム:
+    # - win/index.md
+    - win/sec001.md
   - about.md
 
 site_url: https://is-enaga.github.io/k-notes
@@ -56,7 +80,7 @@ theme:
 
 
 extra:
-  homepage: https://is-enaga.github.io/k-notes
+  # homepage: https://is-enaga.github.io/k-notes
 
   social:
     - icon: fontawesome/brands/github
@@ -70,9 +94,9 @@ extra:
       - manage
     title: Cookie consent
     description: >- 
-      本サイトでは，サイトの改善のためにGoogleによるアクセス解析ツール「Googleアナリティクス」を使用しています．
-      このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。
-      広告等の収益目的には使用しておりません．
+      本サイトでは，サイトの構成の改善のためにGoogleによるアクセス解析ツール「Googleアナリティクス」を使用しています．
+      このGoogleアナリティクスはCookieを使用します。このデータは匿名で収集されており、個人を特定することはできません。
+      また広告等の収益目的にも使用しておりません．
 
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
@@ -86,7 +110,19 @@ extra:
   analytics:
     provider: google
     property: G-SR97P4JMJ9
-
+    feedback:
+      title:  　
+      ratings:
+        - icon: material/heart
+          name: いいね!
+          data: 1
+          note: >-
+            ご協力ありがとうございます! ご希望，ご指摘等があれば，GitHubのissuesでお気軽にお伝えください． <a href="https://github.com/is-enaga/k-notes/issues" target="_blank" rel="noopener">issues</a>
+        - icon: material/heart-broken
+          name: がんばって!
+          data: 0
+          note: >- 
+            ご協力ありがとうございます! ご希望，ご指摘等があれば，GitHubのissuesでお気軽にお伝えください． <a href="https://github.com/is-enaga/k-notes/issues" target="_blank" rel="noopener">issues</a>
 copyright: >
   Copyright &copy; 2024 Kei Shiraiwa –
   <a href="#__consent">Cookieの設定</a>
