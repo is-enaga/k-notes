@@ -81,6 +81,9 @@ theme:
 
 extra:
   # homepage: https://is-enaga.github.io/k-notes
+  
+  search:
+      language: 'jp'
 
   social:
     - icon: fontawesome/brands/github
@@ -135,6 +138,11 @@ extra_javascript:
   - js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+  - javascripts/config.js
+
+extra_css:
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -142,7 +150,8 @@ markdown_extensions:
   - admonition
   - pymdownx.highlight:
       use_pygments: true
-      # noclasses: true
-      # pygments_style: monokai
+      noclasses: true
+      pygments_style: monokai
       linenums: true
+  - pymdownx.details
   - pymdownx.superfences
