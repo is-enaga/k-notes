@@ -1,0 +1,112 @@
+site_name: K-Notes
+nav:
+  - トップ: index.md
+  # - index.md
+  - PyGMT: 
+    - pygmt/index.md
+    - pygmt/sec001.md
+  - about.md
+
+site_url: https://is-enaga.github.io/k-notes
+repo_url: https://github.com/is-enaga/k-notes
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: "red"
+      accent: "indigo"
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: "pink"
+      accent: "light blue"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  
+  font:
+    text: Noto Sans JP
+    code: cascadia code
+  language: ja
+  
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
+
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    # - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    # - toc.integrate
+    - navigation.top
+
+    - search.suggest
+    - search.highlight
+    - search.share
+
+    - header.autohide
+
+    - navigation.footer
+
+
+extra:
+  homepage: https://is-enaga.github.io/k-notes
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/is-enaga
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/winter2enaga
+
+  consent:
+    actions:
+      - accept
+      - manage
+    title: Cookie consent
+    description: >- 
+      本サイトでは，Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています．
+      このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。
+      サイト運営の改善にご協力いただけますと幸いです．  
+
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: true
+
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+copyright: >
+  Copyright &copy; 2024 Kei Shiraiwa –
+  <a href="#__consent">Cookieの設定</a>
+
+plugins:
+  - privacy
+  - search
+
+extra_javascript: 
+  - js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.highlight:
+      use_pygments: true
+      # noclasses: true
+      # pygments_style: monokai
+      linenums: true
+  - pymdownx.superfences
