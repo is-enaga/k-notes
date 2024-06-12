@@ -21,7 +21,7 @@ nav:
     - pygmt/sec015.md
 
   - Matplotlib:
-    - matplotlib/index.md
+    - plt/index.md
     - plt/sec001.md
     - plt/sec002.md
     - plt/sec003.md
