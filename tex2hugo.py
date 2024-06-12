@@ -72,7 +72,7 @@ def tex2hugo(tex_file, fig_dir, output_dir, outfigdir=None):
         
         chapter = re.sub(
             r'{(.*?)}', 
-            rf'---\ntitle: 第{i}章　\1 \nweight: {i*10} \n---\n\n',
+            rf'# 第{i}章　\1',
             # rf'---\ntitle: 第{i}章　\1 \ndate: {datetime.datetime.now().strftime("%Y-%m-%d")}\nweight: {i*10} \n---\n\n',
             chapter, count=1)
         # chapter = re.sub(
@@ -117,7 +117,7 @@ def tex2hugo(tex_file, fig_dir, output_dir, outfigdir=None):
         # Convert code blocks
         # ----------------------
         chapter = re.sub(r'\\begin{verbatim}(.*?)\\end{verbatim}', r'```plaintext\n\1 ```\n\n', chapter)
-        chapter = chapter = re.sub(r'\\begin{lstlisting}\[.*?\](.*?)\\end{lstlisting}', r'```python\1 ```\n\n', chapter, flags=re.DOTALL)
+        chapter = chapter = re.sub(r'\\begin{lstlisting}\[.*?\](.*?)\\end{lstlisting}', r'```python\n\1```\n', chapter, flags=re.DOTALL)
         
         # inline code
         chapter = re.sub(r'\\code{(.*?)}', r'`\1`', chapter)
