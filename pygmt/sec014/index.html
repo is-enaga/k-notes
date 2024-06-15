@@ -1018,7 +1018,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 画像生成とフォント設定
+    第1章 導入
   </span>
   
 
@@ -1039,7 +1039,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 点，線のプロット
+    第2章 必須手順
   </span>
   
 
@@ -1060,7 +1060,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 2次元メッシュのプロット
+    第3章 一般
   </span>
   
 
@@ -1081,7 +1081,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 付加要素
+    第4章 点・図形のプロット
   </span>
   
 
@@ -1102,7 +1102,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 軸・ラベル・枠
+    第5章 線のプロット
   </span>
   
 
@@ -1123,7 +1123,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 作品例
+    第6章 震源メカニズム解
   </span>
   
 
@@ -1223,7 +1223,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 Ubuntu一般
+    第1章 導入
   </span>
   
 
@@ -1244,7 +1244,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 ファイル管理
+    第2章 必須手順
   </span>
   
 
@@ -1265,7 +1265,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 SSH接続
+    第3章 一般
   </span>
   
 
@@ -1286,7 +1286,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 Git
+    第4章 点・図形のプロット
   </span>
   
 
@@ -1307,7 +1307,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 パッケージ
+    第5章 線のプロット
   </span>
   
 
@@ -1328,7 +1328,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 プログラミング
+    第6章 震源メカニズム解
   </span>
   
 
@@ -1349,7 +1349,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 メール送信
+    第7章 二次元プロット
   </span>
   
 
@@ -1370,7 +1370,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 WSL2
+    第8章 グラフ内のテキスト
   </span>
   
 
@@ -1458,7 +1458,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 WINシステムのインストール
+    第1章 導入
   </span>
   
 
@@ -1479,7 +1479,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 WINおよびhypomh関連ファイルのフォーマット
+    第2章 必須手順
   </span>
   
 
@@ -1633,8 +1633,8 @@
 これを扱いやすくするために緯度，経度，標高のxyz形式にするため，
 同じく地理院からダウンロードできる基盤地図情報ビューアをインストールする．
 これを起動して開く画面に，標高メッシュのzipファイルをドラッグすると地形が描画される．</p>
-<p>「エクスポート&gt;標高メッシュをシェープファイルへ出力」を選んで開く画面で，(1)直角座標系に出力するチェックを外し，(2)出力ファイル名の拡張子を「.xyz」に変える．拡張子がデフォルトのままだと，後で開いても文字化けして読み取れなかった．ただし(1)はナントカ座標系とやらのxyz座標で出力したいのならチェックが必要(図<em>※相互参照無効</em>)．
-{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/pygmt/fig/chiriin2xyz.png" caption="基盤地図情報ビューアによるxyz形式への変換時の画面．(標高データ: 国土地理院基盤地図情報数値標高モデル)"  &gt;}}</p>
+<p>「エクスポート&gt;標高メッシュをシェープファイルへ出力」を選んで開く画面で，(1)直角座標系に出力するチェックを外し，(2)出力ファイル名の拡張子を「.xyz」に変える．拡張子がデフォルトのままだと，後で開いても文字化けして読み取れなかった．ただし(1)はナントカ座標系とやらのxyz座標で出力したいのならチェックが必要(図<em>※相互参照無効</em>)．</p>
+<figure>  <img alt="fig/chiriin2xyz.png" src="../fig/chiriin2xyz.png" /> <figcaption>基盤地図情報ビューアによるxyz形式への変換時の画面．(標高データ: 国土地理院基盤地図情報数値標高モデル)</figcaption> </figure>
 <h3 id="_3">データの読み込み</h3>
 <p>作成したxyzファイルは，numpyを使ってcsvと同じ方法で読み込める．
 すなわちdelimiterを「，」にしてnp.loadtxt()である．
@@ -1672,7 +1672,7 @@ kobe <span style="color: #666666">=</span> []
         pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p&#39;</span>
         )
 </code></pre></div></p>
-<p>{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/pygmt/fig/trainjson.png" caption="xyz2grdを用いて変換したデータをプロットした例．適切な設定を行わなければこのように正常にプロットできない．()" caption="国交省からダウンロードした鉄道データをjsonライブラリを用いて読み込みプロットした結果．（標高データ: 国土地理院基盤地図情報数値標高モデル; 鉄道路線データ: 国土交通省国土数値情報）"  &gt;}}</p>
+<figure>  <img alt="fig/trainjson.png" src="../fig/trainjson.png" /> <figcaption>xyz2grdを用いて変換したデータをプロットした例．適切な設定を行わなければこのように正常にプロットできない．()</figcaption> <figcaption>国交省からダウンロードした鉄道データをjsonライブラリを用いて読み込みプロットした結果．（標高データ: 国土地理院基盤地図情報数値標高モデル; 鉄道路線データ: 国土交通省国土数値情報）</figcaption> </figure>
 <h3 id="geopandas">geopandasの利用</h3>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>gpd<span style="color: #666666">.</span>read_file(<span style="color: #666666">&lt;</span>utf<span style="color: #666666">-8</span>のgeojsonデータ<span style="color: #666666">&gt;</span>, encoding<span style="color: #666666">=</span><span style="color: #BA2121">&#39;utf_8_sig&#39;</span>)
 </code></pre></div>

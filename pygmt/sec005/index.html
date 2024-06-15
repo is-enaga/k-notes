@@ -988,7 +988,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 画像生成とフォント設定
+    第1章 導入
   </span>
   
 
@@ -1009,7 +1009,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 点，線のプロット
+    第2章 必須手順
   </span>
   
 
@@ -1030,7 +1030,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 2次元メッシュのプロット
+    第3章 一般
   </span>
   
 
@@ -1051,7 +1051,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 付加要素
+    第4章 点・図形のプロット
   </span>
   
 
@@ -1072,7 +1072,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 軸・ラベル・枠
+    第5章 線のプロット
   </span>
   
 
@@ -1093,7 +1093,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 作品例
+    第6章 震源メカニズム解
   </span>
   
 
@@ -1193,7 +1193,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 Ubuntu一般
+    第1章 導入
   </span>
   
 
@@ -1214,7 +1214,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 ファイル管理
+    第2章 必須手順
   </span>
   
 
@@ -1235,7 +1235,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 SSH接続
+    第3章 一般
   </span>
   
 
@@ -1256,7 +1256,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 Git
+    第4章 点・図形のプロット
   </span>
   
 
@@ -1277,7 +1277,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 パッケージ
+    第5章 線のプロット
   </span>
   
 
@@ -1298,7 +1298,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 プログラミング
+    第6章 震源メカニズム解
   </span>
   
 
@@ -1319,7 +1319,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 メール送信
+    第7章 二次元プロット
   </span>
   
 
@@ -1340,7 +1340,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 WSL2
+    第8章 グラフ内のテキスト
   </span>
   
 
@@ -1428,7 +1428,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 WINシステムのインストール
+    第1章 導入
   </span>
   
 
@@ -1449,7 +1449,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 WINおよびhypomh関連ファイルのフォーマット
+    第2章 必須手順
   </span>
   
 
@@ -1576,8 +1576,8 @@
 </code></pre></div>
 <p>データのほかに単純にpenだけを与えると，点データの座標を順に結ぶ折れ線を描画できる．
 直線や半直線をプロットするメソッドはないようだ．</p>
-<p>penの3つ目の要素でスタイルを設定できる(図<em>※相互参照無効</em>)．
-{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/pygmt/fig/linestyle.png" caption="線のスタイル．"  &gt;}}</p>
+<p>penの3つ目の要素でスタイルを設定できる(図<em>※相互参照無効</em>)．</p>
+<figure>  <img alt="fig/linestyle.png" src="../fig/linestyle.png" /> <figcaption>線のスタイル．</figcaption> </figure>
 <!--  ============================================================================= -->
 <h2 id="bezie-spline">曲線（Bezie Spline）</h2>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>plot(
@@ -1616,7 +1616,7 @@ fig<span style="color: #666666">.</span>basemap(
     )
 fig<span style="color: #666666">.</span>show()
 </code></pre></div></p>
-<p>{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/pygmt/fig/Bezie.png" caption="補間によるなめらかな曲線(赤)．黒円で示した5点から赤の曲線を引いている．"  &gt;}}</p>
+<figure>  <img alt="fig/Bezie.png" src="../fig/Bezie.png" /> <figcaption>補間によるなめらかな曲線(赤)．黒円で示した5点から赤の曲線を引いている．</figcaption> </figure>
 <!--  =============================================================================== -->
 
 <!--  ============================================================================= -->
@@ -1642,8 +1642,8 @@ fig<span style="color: #666666">.</span>show()
 <p>「f」は"line \underbar{f}ronts"の意味だと思われる．</p>
 <p>要するに最低「f&lt;間隔&gt;/<size>+l+t」とすれば寒冷前線や沈み込み帯が描ける．
 +tがtriangleを表す．</p>
-<p>図形の位置が気に入らない場合（曲線の角に図形が入ってしまう場合など）は，+oで図形の位置を曲線に沿ってずらすことができる．
-{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/pygmt/fig/linefronts.png" caption="線の装飾の一覧．"  &gt;}}</p>
+<p>図形の位置が気に入らない場合（曲線の角に図形が入ってしまう場合など）は，+oで図形の位置を曲線に沿ってずらすことができる．</p>
+<figure>  <img alt="fig/linefronts.png" src="../fig/linefronts.png" /> <figcaption>線の装飾の一覧．</figcaption> </figure>
 <!--  ================================================================== -->
 <h2 id="_3">閉曲線（多角形）</h2>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>plot(

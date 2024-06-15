@@ -2,187 +2,332 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://is-enaga.github.io/k-notes/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/about/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/plt/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/plt/sec001/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/plt/sec002/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/plt/sec003/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/plt/sec004/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/plt/sec005/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/plt/sec006/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/plt/sec007/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/plt/sec008/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/plt/sec009/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/plt/sec010/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/plt/sec011/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/plt/sec012/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/plt/sec013/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/plt/sec014/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/plt/sec015/</loc>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec001/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec002/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec003/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec004/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec005/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec006/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec007/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec008/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec009/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec010/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec011/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec012/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec013/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec014/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/pygmt/sec015/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/ubuntu/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/ubuntu/sec001/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/ubuntu/sec002/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/ubuntu/sec003/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/ubuntu/sec004/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/ubuntu/sec005/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/ubuntu/sec006/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/ubuntu/sec007/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/ubuntu/sec008/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/ubuntu/sec009/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/ubuntu/sec010/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/ubuntu/sec011/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/ubuntu/sec012/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/ubuntu/sec013/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/ubuntu/sec014/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/ubuntu/sec015/</loc>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/win/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/win/sec001/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://is-enaga.github.io/k-notes/win/sec002/</loc>
-         <lastmod>2024-06-12</lastmod>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec003/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec004/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec005/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec006/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec007/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec008/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec009/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec010/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec011/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec012/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec013/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec014/</loc>
+         <lastmod>2024-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://is-enaga.github.io/k-notes/win/sec015/</loc>
+         <lastmod>2024-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

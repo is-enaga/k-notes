@@ -22,7 +22,7 @@
     
     
       
-        <title>第1章 WINシステムのインストール - K-Notes</title>
+        <title>第1章 導入 - K-Notes</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-win" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              第1章 WINシステムのインストール
+              第1章 導入
             
           </span>
         </div>
@@ -907,7 +907,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 画像生成とフォント設定
+    第1章 導入
   </span>
   
 
@@ -928,7 +928,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 点，線のプロット
+    第2章 必須手順
   </span>
   
 
@@ -949,7 +949,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 2次元メッシュのプロット
+    第3章 一般
   </span>
   
 
@@ -970,7 +970,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 付加要素
+    第4章 点・図形のプロット
   </span>
   
 
@@ -991,7 +991,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 軸・ラベル・枠
+    第5章 線のプロット
   </span>
   
 
@@ -1012,7 +1012,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 作品例
+    第6章 震源メカニズム解
   </span>
   
 
@@ -1112,7 +1112,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 Ubuntu一般
+    第1章 導入
   </span>
   
 
@@ -1133,7 +1133,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 ファイル管理
+    第2章 必須手順
   </span>
   
 
@@ -1154,7 +1154,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 SSH接続
+    第3章 一般
   </span>
   
 
@@ -1175,7 +1175,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 Git
+    第4章 点・図形のプロット
   </span>
   
 
@@ -1196,7 +1196,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 パッケージ
+    第5章 線のプロット
   </span>
   
 
@@ -1217,7 +1217,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 プログラミング
+    第6章 震源メカニズム解
   </span>
   
 
@@ -1238,7 +1238,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 メール送信
+    第7章 二次元プロット
   </span>
   
 
@@ -1259,7 +1259,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 WSL2
+    第8章 グラフ内のテキスト
   </span>
   
 
@@ -1361,7 +1361,7 @@
           
   
   <span class="md-ellipsis">
-    第1章 WINシステムのインストール
+    第1章 導入
   </span>
   
 
@@ -1372,7 +1372,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 WINシステムのインストール
+    第1章 導入
   </span>
   
 
@@ -1394,193 +1394,79 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#pygmt" class="md-nav__link">
     <span class="md-ellipsis">
-      概要
+      PyGMTのインストール手順
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="概要">
+    <nav class="md-nav" aria-label="PyGMTのインストール手順">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mamba" class="md-nav__link">
+    <span class="md-ellipsis">
+      （任意）mambaのインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      仮想環境の作成
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      事前準備
+      パッケージのインストール
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#win" class="md-nav__link">
-    <span class="md-ellipsis">
-      WINのダウンロードとインストール
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      パスを通す
+      作図の流れ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作図の流れ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#figure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figureの生成
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#gui" class="md-nav__link">
+  <a href="#projectionregion" class="md-nav__link">
     <span class="md-ellipsis">
-      GUI環境の準備
+      プロット（最初のみprojectionとregionの指定もする）
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      事前準備
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#win_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      WINのダウンロードとインストール
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      パスの通し方
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gui_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      GUI環境の準備
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GUI環境の準備">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#x-window-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      X Window Systemのインストール
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      Windowsでの追加作業
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Windowsでの追加作業">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#vcxsrv" class="md-nav__link">
-    <span class="md-ellipsis">
-      VcXsrvのインストール
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vcxsrv_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      VcXsrvの設定
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiple-windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      「Multiple windows」を選択．
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-no-client" class="md-nav__link">
-    <span class="md-ellipsis">
-      「Start no client」
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      追加設定
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      設定の保存
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      自動起動設定（設定を保存した場合のみ）
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bashrc" class="md-nav__link">
-    <span class="md-ellipsis">
-      .bashrcの設定
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#win_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      WINをデフォルトのターミナルから使用するには
+      結果の表示または保存
     </span>
   </a>
   
@@ -1611,7 +1497,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 WINおよびhypomh関連ファイルのフォーマット
+    第2章 必須手順
   </span>
   
 
@@ -1675,193 +1561,79 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#pygmt" class="md-nav__link">
     <span class="md-ellipsis">
-      概要
+      PyGMTのインストール手順
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="概要">
+    <nav class="md-nav" aria-label="PyGMTのインストール手順">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mamba" class="md-nav__link">
+    <span class="md-ellipsis">
+      （任意）mambaのインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      仮想環境の作成
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      事前準備
+      パッケージのインストール
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#win" class="md-nav__link">
-    <span class="md-ellipsis">
-      WINのダウンロードとインストール
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      パスを通す
+      作図の流れ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="作図の流れ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#figure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Figureの生成
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#gui" class="md-nav__link">
+  <a href="#projectionregion" class="md-nav__link">
     <span class="md-ellipsis">
-      GUI環境の準備
+      プロット（最初のみprojectionとregionの指定もする）
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      事前準備
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#win_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      WINのダウンロードとインストール
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      パスの通し方
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gui_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      GUI環境の準備
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GUI環境の準備">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#x-window-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      X Window Systemのインストール
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      Windowsでの追加作業
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Windowsでの追加作業">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#vcxsrv" class="md-nav__link">
-    <span class="md-ellipsis">
-      VcXsrvのインストール
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vcxsrv_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      VcXsrvの設定
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiple-windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      「Multiple windows」を選択．
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-no-client" class="md-nav__link">
-    <span class="md-ellipsis">
-      「Start no client」
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      追加設定
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      設定の保存
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      自動起動設定（設定を保存した場合のみ）
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bashrc" class="md-nav__link">
-    <span class="md-ellipsis">
-      .bashrcの設定
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#win_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      WINをデフォルトのターミナルから使用するには
+      結果の表示または保存
     </span>
   </a>
   
@@ -1890,226 +1662,43 @@
   
 
 
-<h1 id="1-win">第1章　WINシステムのインストール</h1>
-<!-- ######################################### -->
-<p>{{% callout note %}}</p>
-<p>WINシステムホームページ<br />
-<a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/">https://wwweic.eri.u-tokyo.ac.jp/WIN/</a></p>
-<p>{{% /callout %}}</p>
-<!-- =================================== -->
-<h2 id="_1">概要</h2>
-<!-- =================================== -->
-<p>ここではWINシステムのインストール方法について記す．</p>
-<p>一連の流れを簡潔にまとめると以下のようになる．
+<h1 id="1">第1章　導入</h1>
+<h2 id="pygmt">PyGMTのインストール手順</h2>
+<p>WindowsのAnacondaであればAnaconda Prompt上でインストールを行う．
+WindowsのWSL上やLinuxにインストールしたAnacondaであれば通常のターミナルで良い．
 {{% steps %}}</p>
-<h3 id="_2">事前準備</h3>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo apt update 
-sudo apt install tk libmosquitto<span style="color: #666666">-</span>dev gawk build<span style="color: #666666">-</span>essential libx11<span style="color: #666666">-</span>dev libtool build<span style="color: #666666">-</span>essential gfortran 
+<h3 id="mamba">（任意）mambaのインストール</h3>
+<!--  仮想環境base上で -->
+<!--  ```python -->
+<!--      conda install -c conda-forge mamba -->
+<!--  ``` -->
+<p>mambaのホームページからmambaをインストールしておくと，
+その後のパッケージのインストールが高速になる．
+なくても全く問題ない．</p>
+<h3 id="_1">仮想環境の作成</h3>
+<p>デフォルトのbaseという環境では
+pygmtをインストールできない場合があるので，
+先に仮想環境を作成すると良い．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>conda create <span style="color: #666666">-</span>n <span style="color: #666666">&lt;</span>仮想環境の名前<span style="border: 1px solid #FF0000">（</span>自由<span style="border: 1px solid #FF0000">）</span><span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<h3 id="_2">パッケージのインストール</h3>
+<p>先にmambaをインストール済みであれば
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>mamba install <span style="color: #666666">-</span>c conda<span style="color: #666666">-</span>forge pygmt
 </code></pre></div>
-<h3 id="win">WINのダウンロードとインストール</h3>
-<p>ダウンロード
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cd <span style="color: #666666">/</span>usr<span style="color: #666666">/</span>local
-sudo wget https:<span style="color: #666666">//</span>wwweic<span style="color: #666666">.</span>eri<span style="color: #666666">.</span>u<span style="color: #666666">-</span>tokyo<span style="color: #666666">.</span>ac<span style="color: #666666">.</span>jp<span style="color: #666666">/</span>WIN<span style="color: #666666">/</span>pub<span style="color: #666666">/</span>win<span style="color: #666666">/</span>WIN_pkg<span style="color: #666666">-3.0.11.</span>tar<span style="color: #666666">.</span>gz
-tar <span style="color: #666666">-</span>xzvf WIN_pkg<span style="color: #666666">-3.0.11.</span>tar<span style="color: #666666">.</span>gz
-</code></pre></div>
-コンパイル
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cd WIN_pkg<span style="color: #666666">-3.0.11</span>
-sudo <span style="color: #666666">./</span>configure <span style="color: #666666">--</span>prefix<span style="color: #666666">=/</span>usr<span style="color: #666666">/</span>local<span style="color: #666666">/</span>win
-sudo make
-sudo make install
-</code></pre></div>
-うまくいかない場合は先にGUI環境の準備を行ってからやり直してみる．</p>
-<h3 id="_3">パスを通す</h3>
-<p>「.bashrc」に以下の行を書き加える．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>export PATH<span style="color: #666666">=</span><span style="color: #BA2121">&quot;$PATH&quot;</span>:<span style="color: #666666">/</span>usr<span style="color: #666666">/</span>local<span style="color: #666666">/</span>win<span style="color: #666666">/</span><span style="color: #008000">bin</span>
-</code></pre></div>
-ターミナルに戻り以下を実行．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>source <span style="color: #666666">~/.</span>bashrc
-</code></pre></div></p>
-<h3 id="gui">GUI環境の準備</h3>
-<p><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo apt install xserver<span style="color: #666666">-</span>xorg x11<span style="color: #666666">-</span>utils xterm x11<span style="color: #666666">-</span>apps
-</code></pre></div>
-Windowsの場合はVcXsrvのインストールと設定が必要．</p>
-<p>{{% /steps %}}</p>
-<p>以下でそれぞれについて詳しく記す．</p>
-<!-- ---------------------------------- -->
-<h2 id="_4">事前準備</h2>
-<!-- ---------------------------------- -->
-<p>あらかじめ必要なパッケージをインストールしておく．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo apt update 
-sudo apt install tk libmosquitto<span style="color: #666666">-</span>dev gawk build<span style="color: #666666">-</span>essential libx11<span style="color: #666666">-</span>dev libtool build<span style="color: #666666">-</span>essential gfortran 
-</code></pre></div></p>
-<p>他にも必要なパッケージがあるかもしれない．
-要確認．</p>
-<!-- ---------------------------------- -->
-<h2 id="win_1">WINのダウンロードとインストール</h2>
-<!-- ---------------------------------- -->
-<p>{{% callout note %}}</p>
-<p>HTTPダウンロード先<br />
-<a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/">https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/</a></p>
-<p>{{% /callout %}}</p>
-<p>上記のサイトの中からダウンロードするバージョンを選ぶことができる．</p>
-<p>Ubuntuでは以下のようにしてダウンロードできる．
-ダウンロードを行う場所は/usr/localとすることが多いようだが，
-他の場所でも良い．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cd <span style="color: #666666">/</span>usr<span style="color: #666666">/</span>local
-sudo wget https:<span style="color: #666666">//</span>wwweic<span style="color: #666666">.</span>eri<span style="color: #666666">.</span>u<span style="color: #666666">-</span>tokyo<span style="color: #666666">.</span>ac<span style="color: #666666">.</span>jp<span style="color: #666666">/</span>WIN<span style="color: #666666">/</span>pub<span style="color: #666666">/</span>win<span style="color: #666666">/</span>WIN_pkg<span style="color: #666666">-3.0.11.</span>tar<span style="color: #666666">.</span>gz
-tar <span style="color: #666666">-</span>xzvf WIN_pkg<span style="color: #666666">-3.0.11.</span>tar<span style="color: #666666">.</span>gz
-</code></pre></div></p>
-<p>なお上記のwgetのあとのurlは，ダウンロードページから
-目的のバージョンのリンクをコピーして貼り付けると良い．</p>
-<p>tar -xzvfのあとのファイル名はダウンロードしたファイル名に合わせること．</p>
-<p>展開したディレクトリの中にあるREADMEの手順に従って，
-WINシステムを構成するプログラムのコンパイルを行う．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cd WIN_pkg<span style="color: #666666">-3.0.11</span>
-sudo <span style="color: #666666">./</span>configure <span style="color: #666666">--</span>prefix<span style="color: #666666">=/</span>usr<span style="color: #666666">/</span>local<span style="color: #666666">/</span>win
-sudo make
-sudo make install
-</code></pre></div></p>
-<p>あとはパスを通せばどこからでもwinのコマンドを使える．</p>
-<!-- ---------------------------------- -->
-<h2 id="_5">パスの通し方</h2>
-<!-- ---------------------------------- -->
-<p>コンパイルしてできたWIN関連の実行ファイル群は
-/usr/local/win/binにある．
-ターミナルでどこからでもこのディレクトリにある
-コマンドを実行できるようにするためには，
-「パスを通す」必要がある．</p>
-<p>LinuxやWindowsのWSLの場合は，
-ホームディレクトリ（「cd ~」で移動できる）にある
-「.bashrc」に以下の行を書き加えればばよい．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>export PATH<span style="color: #666666">=</span><span style="color: #BA2121">&quot;$PATH&quot;</span>:<span style="color: #666666">/</span>usr<span style="color: #666666">/</span>local<span style="color: #666666">/</span>win<span style="color: #666666">/</span><span style="color: #008000">bin</span>
-</code></pre></div></p>
-<p>ただし「/usr/local/win/bin」の部分は，
-他のディレクトリにWINの実行ファイルがある場合は
-そのディレクトリに読み替えること．</p>
-<p>この記述を追加した後はターミナルを再起動するか，
-以下のコマンドを実行することでパスが通る．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>source <span style="color: #666666">~/.</span>bashrc
-</code></pre></div></p>
-<p>これで試しに「win」とコマンドを打ってみて，
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #666666">***</span>  win  (<span style="color: #666666">2015.12.15</span>(<span style="color: #666666">+</span>Hi<span style="color: #666666">-</span>net))  <span style="color: #666666">***</span>
-WIN_pkg package Version <span style="color: #666666">3.0.11</span> [<span style="color: #666666">64-</span>bit]
-Default output <span style="color: #666666">4</span> byte sample size : <span style="color: #666666">4</span>
-parameter file <span style="color: #BA2121">&#39;win.prm&#39;</span> <span style="color: #AA22FF; font-weight: bold">not</span> found
-</code></pre></div></p>
-<p>のように表示されれば正しくできている．</p>
-<p>一方でパスが通っていない場合はつぎのように表示される．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>win: command <span style="color: #AA22FF; font-weight: bold">not</span> found
-</code></pre></div></p>
-<!-- ---------------------------------- -->
-<h2 id="gui_1">GUI環境の準備</h2>
-<!-- ---------------------------------- -->
-<p>winコマンドではGUIを使って波形を読み取ることができる．
-そのためにはX Window Systemなどの準備が必要になる．</p>
-<!-- ............................. -->
-<h3 id="x-window-system">X Window Systemのインストール</h3>
-<!-- ............................. -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo apt install xserver<span style="color: #666666">-</span>xorg x11<span style="color: #666666">-</span>utils xterm x11<span style="color: #666666">-</span>apps
-</code></pre></div>
-<p>x11-appsは動作確認用に入れておくと良い．
-これで試しに「xeyes」などのコマンドを実行してみて，
-ウィンドウが表示されればGUIの設定は成功である．</p>
-<p>ただしWindowsの場合は，テストの前に次節の作業が追加で必要になる．</p>
-<p>winのテストは，ダウンロードしたディレクトリの中にあるサンプルファイルを使って行う．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cd <span style="color: #666666">/</span>usr<span style="color: #666666">/</span>local<span style="color: #666666">/</span>WIN_pkg<span style="color: #666666">-3.0.11/</span>etc
-win <span style="color: #666666">991109.064607</span>
-</code></pre></div></p>
-<!-- ---------------------------------- -->
-<h2 id="windows">Windowsでの追加作業</h2>
-<!-- ---------------------------------- -->
-<p>WindowsのWSLでUbuntuを動かしている場合は，
-GUIを利用するにあたり
-Xサーバーを立ち上げるソフトが必要である．</p>
-<!-- ............................. -->
-<h3 id="vcxsrv">VcXsrvのインストール</h3>
-<!-- ............................. -->
-<p>以下のリンクではVcXsrvをインストールする．
-{{% callout note %}}</p>
-<p>VcXsrvのダウンロードページ：<br />
-<a href="https://sourceforge.net/projects/vcxsrv/">https://sourceforge.net/projects/vcxsrv/</a></p>
-<p>{{% /callout %}}</p>
-<p>ダウンロードページ（図<em>※相互参照無効</em>）の
-「Download」をクリックする．
-{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/win/fig/vcxsrv.png" caption="VcXsrvのダウンロードページ"  &gt;}}
-ダウンロードされるインストーラを実行し，
-指示に従ってインストールする．
-特別な設定は不要なので，インストール先などにこだわりがなければ
-「Next」で進めて最後に「Install」をクリックするだけで良い．</p>
-<!-- ............................. -->
-<h3 id="vcxsrv_1">VcXsrvの設定</h3>
-<!-- ............................. -->
-<p>インストールが終わったらスタートメニューに
-XLaunch(図<em>※相互参照無効</em>)があるので起動する．
-{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/win/fig/start_xlaunch.png" caption="XLaunch"  &gt;}}</p>
-<p>起動した画面から以下のように設定して進める．
+で良い．
+mambaをインストールしていない場合は，
+mambaの部分をcondaに書き換えるだけ．</p>
+<p>{{% /steps %}}
+以上で終わり．GMTはPyGMTと一緒にインストールされるため，個別にインストールする必要はない．</p>
+<h2 id="_3">作図の流れ</h2>
+<p>図を作るおおまかな流れは次の通り：
 {{% steps %}}</p>
-<h3 id="multiple-windows">「Multiple windows」を選択．</h3>
-<p>{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/win/fig/xlaunch1.png" caption="1ページ目"  &gt;}}</p>
-<h3 id="start-no-client">「Start no client」</h3>
-<p>{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/win/fig/xlaunch2.png" caption="2ページ目"  &gt;}}</p>
-<h3 id="_6">追加設定</h3>
-<p>一番下の欄に-acを追加する．うまくいかない場合は「Disable access control」にもチェックを入れる．
-{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/win/fig/xlaunch3.png" caption="3ページ目"  &gt;}}</p>
-<h3 id="_7">設定の保存</h3>
-<p>4ページ目は設定を保存するかどうかの確認画面．
-毎回手動でXLaunchを開く場合はこのまま「完了」を選択して終了する．<br />
-使用頻度が高い場合は，設定を保存しておくと次回から楽になる．
-設定の保存は「Save configuration」を選択し，保存先を指定して「Save」をクリックする．
-{{&lt; figure   src="https://raw.githubusercontent.com/is-enaga/mynote/main/win/fig/xlaunch4.png" caption="4ページ目"  &gt;}}</p>
-<h3 id="_8">自動起動設定（設定を保存した場合のみ）</h3>
-<p>毎回自動でVcXsrcを起動するために「スタートアップ」に登録する．<br />
-「Win+r」を押すと「ファイル名を指定して実行」が開くので，
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>shell:startup
-</code></pre></div>
-と入力して「OK」をクリックする．
-開いたフォルダに，先ほど保存したxlaunchの設定ファイル
-（例: config.xlaunch）のショートカットを作成する．</p>
-<p>{{% /steps %}}</p>
-<!-- ............................. -->
-<h3 id="bashrc">.bashrcの設定</h3>
-<!-- ............................. -->
-<p>WINDOWIDの設定を行う．
-WSL(Ubuntu)のホームディレクトリにある
-「.bashrc」を開き，以下の記述を追加する．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>export DISPLAY<span style="color: #666666">=</span><span style="border: 1px solid #FF0000">$</span>(cat <span style="color: #666666">/</span>etc<span style="color: #666666">/</span>resolv<span style="color: #666666">.</span>conf <span style="color: #666666">|</span> grep nameserver <span style="color: #666666">|</span> awk <span style="color: #BA2121">&#39;{print $2}&#39;</span>):<span style="color: #666666">0</span>
-export WINDOWID<span style="color: #666666">=</span><span style="color: #BA2121">&#39;:0&#39;</span>
-</code></pre></div></p>
-<p>その後ターミナルを再起動するか，「source ~/.basrhc」を実行する．
-ここで「xeyes」を実行してウインドウが表示されれば成功．</p>
-<p>次にwinについてはデフォルトのターミナルではなく，xtermを使う必要がある．
-まずターミナル上で「xterm」と入力して実行．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>xterm
-</code></pre></div></p>
-<p>xtermのウィンドウが出てきたら，以下のコマンドを実行する．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cd <span style="color: #666666">/</span>usr<span style="color: #666666">/</span>local<span style="color: #666666">/</span>WIN_pkg<span style="color: #666666">-3.0.11/</span>etc
-win <span style="color: #666666">991109.064607</span>
-</code></pre></div></p>
-<p>これでウィンドウが表示されれば成功．</p>
-<p>デフォルトのターミナルでもwinの画面は開いて一見問題ないが，
-WINDOWIDを使う動作が伴った際（「HYPO」を押したときなど）
-にエラーが生じて強制終了してしまう．</p>
-<!-- ............................. -->
-<h3 id="win_2">WINをデフォルトのターミナルから使用するには</h3>
-<!-- ............................. -->
-<p>xtermのターミナルはデフォルトのターミナルと比べると画面が見づらく，
-普段の作業には向かない．
-しかしwinを使用する際にわざわざxtermを使うのも面倒である．</p>
-<p>そこでデフォルトのターミナルからwinをすぐに使うために，
-次のようなbashスクリプトを作成すると便利である．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #3D7B7B; font-style: italic">#!/bin/bash</span>
-xterm <span style="color: #666666">-</span>e <span style="color: #BA2121">&quot;cd $(pwd); win $@&quot;</span>
-</code></pre></div></p>
-<p>このファイルをxwin.shなどとして保存する．</p>
-<p>そして次のようにしてパスの通った場所にリンクを作成すると
-どこからでも使用できるようになる．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cd <span style="color: #666666">/</span>usr<span style="color: #666666">/</span>local<span style="color: #666666">/</span><span style="color: #008000">bin</span>
-sudo ln <span style="color: #666666">-</span>s <span style="color: #666666">&lt;</span>xwin<span style="color: #666666">.</span>shがあるディレクトリ<span style="color: #666666">/</span>xwin<span style="color: #666666">.</span>sh<span style="color: #666666">&gt;</span> xwin
-</code></pre></div></p>
-<p>これで「xwin <winファイル名>」と入力するだけで
-デフォルトのターミナルから
-自動でxtermを立ち上げてwinを実行できる．</p>
-<!-- ######################################### -->
+<h3 id="figure">Figureの生成</h3>
+<h3 id="projectionregion">プロット（最初のみprojectionとregionの指定もする）</h3>
+<h3 id="_4">結果の表示または保存</h3>
+<p>{{% /steps %}}
+つぎの章でそれぞれの手順について詳しく説明する．</p>
+<!--  ############################################################################## -->
 
 
 
@@ -2204,13 +1793,13 @@ sudo ln <span style="color: #666666">-</span>s <span style="color: #666666">&lt;
         
         
           
-          <a href="../sec002/" class="md-footer__link md-footer__link--next" aria-label="次: 第2章 WINおよびhypomh関連ファイルのフォーマット">
+          <a href="../sec002/" class="md-footer__link md-footer__link--next" aria-label="次: 第2章 必須手順">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                第2章 WINおよびhypomh関連ファイルのフォーマット
+                第2章 必須手順
               </div>
             </div>
             <div class="md-footer__button md-icon">
