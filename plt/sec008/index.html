@@ -901,7 +901,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 画像生成とフォント設定
   </span>
   
 
@@ -922,7 +922,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 点，線のプロット
   </span>
   
 
@@ -943,7 +943,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 一般
+    第3章 2次元メッシュのプロット
   </span>
   
 
@@ -964,7 +964,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 付加要素
   </span>
   
 
@@ -985,7 +985,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 軸・ラベル・枠
   </span>
   
 
@@ -1006,7 +1006,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 作品例
   </span>
   
 
@@ -1106,7 +1106,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 Ubuntu一般
   </span>
   
 
@@ -1127,7 +1127,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 ファイル管理
   </span>
   
 
@@ -1148,7 +1148,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 一般
+    第3章 SSH接続
   </span>
   
 
@@ -1169,7 +1169,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 Git
   </span>
   
 
@@ -1190,7 +1190,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 パッケージ
   </span>
   
 
@@ -1211,7 +1211,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 プログラミング
   </span>
   
 
@@ -1232,7 +1232,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 二次元プロット
+    第7章 メール送信
   </span>
   
 
@@ -1253,7 +1253,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 グラフ内のテキスト
+    第8章 WSL2
   </span>
   
 
@@ -1341,7 +1341,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 WINシステムのインストール
   </span>
   
 
@@ -1362,7 +1362,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 WINおよびhypomh関連ファイルのフォーマット
   </span>
   
 
@@ -1458,6 +1458,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      線に沿ったテキスト
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1535,6 +1544,79 @@ fig<span style="color: #666666">.</span>text(
 )
 fig<span style="color: #666666">.</span>show()
 </code></pre></div></p>
+<figure>  <img alt="fig/textbox.png" src="../fig/textbox.png" /> <figcaption>テキストボックスの余白設定．</figcaption> </figure>
+<!--  ========================================================================== -->
+<h2 id="_4">線に沿ったテキスト</h2>
+<p>参考) GMT公式マニュアル</p>
+<ul>
+<li><a href="https://docs.generic-mapping-tools.org/dev/plot.html">https://docs.generic-mapping-tools.org/dev/plot.html</a></li>
+<li><a href="https://docs.generic-mapping-tools.org/6.0/cookbook/contour_annotations.html#contour-label-9">https://docs.generic-mapping-tools.org/6.0/cookbook/contour_annotations.html#contour-label-9</a></li>
+</ul>
+<p>テキストを直線や曲線に沿って配置できる．
+テキストが線より長い場合はテキストが表示されないので注意．
+加えて文字の位置の自由度が低く，好きな位置に文字を配置しにくい．</p>
+<p>普通の曲線をプロットするときと同じように線のデータを与え，
+styleに'q'で始まる設定を指定する．
+qは"\underline{q}uoted line"の頭文字のようだ．
+線を消して曲線上に並べたテキストだけ書くこともできるし，
+線とテキストが重ならないようにテキストの位置をずらすこともできる．
+等値線のラベルと同様の処理のようだ．</p>
+<p>書き方はちょっとややこしい．qの後にテキスト配置方法やテキスト情報の入力方法（テキストファイルで与えるか，直接与えるか）などの設定を入力し，そのあと「:」で区切って「+」で始まるオプションを入力する．個人的によく使いそうだと思うオプションは次の通り：
+{{% callout note %}}</p>
+<p>controlling algorithm:</p>
+<ul>
+<li>d: ここで指定した間隔ごとにテキストを設置する．狭くしすぎるとテキストが重なってしまう．</li>
+<li>n: 一番楽に使えそう．線上にテキストを配置する数を指定．これを1にすると線の中心にテキストが追加される．2以上なら繰り返し同じテキストが等間隔に配置される．</li>
+<li>N: N1なら終点に，N-1なら始点に「テキストの左端」がくるようにテキストが配置される．N2なら線の両端に「文字の中心」がくるように２つのテキストが配置される．+jオプションで文字列のどの位置を線の端に合せるかを指定可能．+vオプションをつけるとテキストが表示されなかったりエラーで停止するので注意．</li>
+</ul>
+<p>{{% /callout %}}</p>
+<p>{{% callout note %}}</p>
+<p>オプション:</p>
+<ul>
+<li>+l: これでテキストを指定．テキストファイルを与えないなら必須．</li>
+<li>+v: テキストを曲線に沿わせる．これをつけないとテキストはまっすぐに配置される．</li>
+<li>+i: 線を透明にしてテキストだけ表示する．線は不要で文字だけ表示したいならこれ．</li>
+<li>+w: よくわからないが曲がり具合の判定に使う点の数？+vを使ったときに文字の間隔がおかしいときなどにこれをいじると良くなったりする．デフォルトは10．</li>
+<li></li>
+<li>+f: 文字サイズや色の指定．例：+f10p,black</li>
+<li>+j: 文字を線に揃える位置．上端を線にそろえるとか．左：L，右：R，上：T，下：B．例：+jMC, +jMT.</li>
+<li>+n: テキストの位置を平行移動．+vとの併用不可．Nとの併用もできないようだ．x方向で線に沿った方向，y方向で線に直交する方向の移動量を指定する．例：+n0/10p</li>
+<li></li>
+<li>+a: テキストのアングル．線に沿う方向なら指定不要．90にすると線に直交．</li>
+<li>+e: テキストが最前面に描画されるようにしてくれる．</li>
+<li></li>
+<li>+u: テキストの後に加える文字を指定．（単位など）</li>
+<li>+=: テキストの前に加える文字を指定．</li>
+<li></li>
+<li>+g: テキストボックスの色．</li>
+<li>+p: テキストボックスの枠．ex.) +p1p,black</li>
+<li>+o: テキストボックスの角を円くする．+vとの併用不可．</li>
+<li></li>
+<li>+r: これよりも曲がりが急な部分にテキストを表示しない．デフォルトは0なのでどんだけ急に曲がっているところにもテキストが配置される．</li>
+</ul>
+<p>{{% /callout %}}</p>
+<p>例）コサイン曲線に沿ったテキスト．出力：図<em>※相互参照無効</em>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+
+x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">-5</span>,<span style="color: #666666">5</span>,<span style="color: #666666">100</span>)
+y <span style="color: #666666">=</span> np<span style="color: #666666">.</span>cos(x)
+
+fig <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>Figure()
+fig<span style="color: #666666">.</span>plot(
+    x <span style="color: #666666">=</span> x,
+    y <span style="color: #666666">=</span> y,
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;qn1:+l&quot;text along cos curve&quot;+v+f10p,red+jMC+gblack@100&#39;</span>,
+    region <span style="color: #666666">=</span> [<span style="color: #666666">-5</span>,<span style="color: #666666">5</span>,<span style="color: #666666">-1.2</span>,<span style="color: #666666">1.2</span>],
+    projection <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;X8c/3c&#39;</span>,
+)
+fig<span style="color: #666666">.</span>basemap(
+    frame <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;agf&#39;</span>,
+)
+fig<span style="color: #666666">.</span>show()
+</code></pre></div></p>
+<figure>  <img alt="fig/textalongline.png" src="../fig/textalongline.png" /> <figcaption>線に沿ったテキスト</figcaption> </figure>
+<!--  ############################################################################ -->
 
 
 

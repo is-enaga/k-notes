@@ -22,7 +22,7 @@
     
     
       
-        <title>第1章 導入 - K-Notes</title>
+        <title>第1章 Ubuntu一般 - K-Notes</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-ubuntu" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              第1章 導入
+              第1章 Ubuntu一般
             
           </span>
         </div>
@@ -907,7 +907,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 画像生成とフォント設定
   </span>
   
 
@@ -928,7 +928,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 点，線のプロット
   </span>
   
 
@@ -949,7 +949,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 一般
+    第3章 2次元メッシュのプロット
   </span>
   
 
@@ -970,7 +970,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 付加要素
   </span>
   
 
@@ -991,7 +991,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 軸・ラベル・枠
   </span>
   
 
@@ -1012,7 +1012,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 作品例
   </span>
   
 
@@ -1126,7 +1126,7 @@
           
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 Ubuntu一般
   </span>
   
 
@@ -1137,7 +1137,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 Ubuntu一般
   </span>
   
 
@@ -1159,37 +1159,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pygmt" class="md-nav__link">
-    <span class="md-ellipsis">
-      PyGMTのインストール手順
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="PyGMTのインストール手順">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mamba" class="md-nav__link">
-    <span class="md-ellipsis">
-      （任意）mambaのインストール
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      仮想環境の作成
+      ユーザー管理
     </span>
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#root" class="md-nav__link">
+    <span class="md-ellipsis">
+      rootユーザーの初期設定
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rootユーザーの初期設定">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      パッケージのインストール
+      ユーザーの一覧
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ユーザーの切り替え
     </span>
   </a>
   
@@ -1201,37 +1201,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      作図の流れ
+      カーネル起動時の出力表示
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="作図の流れ">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ネットワーク
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ネットワーク">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#figure" class="md-nav__link">
+  <a href="#ip" class="md-nav__link">
     <span class="md-ellipsis">
-      Figureの生成
+      IPアドレスの確認
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#projectionregion" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      プロット（最初のみprojectionとregionの指定もする）
+      接続の確認
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#ssh" class="md-nav__link">
     <span class="md-ellipsis">
-      結果の表示または保存
+      ssh鍵の登録
     </span>
   </a>
   
@@ -1239,6 +1248,195 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      マウント
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="マウント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      外付けディスク
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="外付けディスク">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      一般ユーザーによる書き込み権限の付加
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nas" class="md-nav__link">
+    <span class="md-ellipsis">
+      NASのマウント
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onedrive" class="md-nav__link">
+    <span class="md-ellipsis">
+      OneDriveのマウント
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OneDriveのマウント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rclone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rcloneの準備
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rclone_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      rcloneのリモートのマウント
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      アンマウント
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      LVMの構成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LVMの構成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      単純な例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      ストライプ化する例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lvm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      LVMの認識
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロセス
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プロセス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロセスの確認
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      バックグラウンドプロセス
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="バックグラウンドプロセス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      出力の確認
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      シャットダウン・再起動
+    </span>
+  </a>
   
 </li>
       
@@ -1262,7 +1460,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 ファイル管理
   </span>
   
 
@@ -1283,7 +1481,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 一般
+    第3章 SSH接続
   </span>
   
 
@@ -1304,7 +1502,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 Git
   </span>
   
 
@@ -1325,7 +1523,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 パッケージ
   </span>
   
 
@@ -1346,7 +1544,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 プログラミング
   </span>
   
 
@@ -1367,7 +1565,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 二次元プロット
+    第7章 メール送信
   </span>
   
 
@@ -1388,7 +1586,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 グラフ内のテキスト
+    第8章 WSL2
   </span>
   
 
@@ -1476,7 +1674,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 WINシステムのインストール
   </span>
   
 
@@ -1497,7 +1695,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 WINおよびhypomh関連ファイルのフォーマット
   </span>
   
 
@@ -1561,37 +1759,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pygmt" class="md-nav__link">
-    <span class="md-ellipsis">
-      PyGMTのインストール手順
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="PyGMTのインストール手順">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mamba" class="md-nav__link">
-    <span class="md-ellipsis">
-      （任意）mambaのインストール
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      仮想環境の作成
+      ユーザー管理
     </span>
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#root" class="md-nav__link">
+    <span class="md-ellipsis">
+      rootユーザーの初期設定
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rootユーザーの初期設定">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      パッケージのインストール
+      ユーザーの一覧
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ユーザーの切り替え
     </span>
   </a>
   
@@ -1603,37 +1801,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      作図の流れ
+      カーネル起動時の出力表示
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="作図の流れ">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ネットワーク
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ネットワーク">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#figure" class="md-nav__link">
+  <a href="#ip" class="md-nav__link">
     <span class="md-ellipsis">
-      Figureの生成
+      IPアドレスの確認
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#projectionregion" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      プロット（最初のみprojectionとregionの指定もする）
+      接続の確認
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#ssh" class="md-nav__link">
     <span class="md-ellipsis">
-      結果の表示または保存
+      ssh鍵の登録
     </span>
   </a>
   
@@ -1641,6 +1848,195 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      マウント
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="マウント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      外付けディスク
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="外付けディスク">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      一般ユーザーによる書き込み権限の付加
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nas" class="md-nav__link">
+    <span class="md-ellipsis">
+      NASのマウント
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onedrive" class="md-nav__link">
+    <span class="md-ellipsis">
+      OneDriveのマウント
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OneDriveのマウント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rclone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rcloneの準備
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rclone_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      rcloneのリモートのマウント
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      アンマウント
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      LVMの構成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LVMの構成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      単純な例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      ストライプ化する例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lvm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      LVMの認識
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロセス
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プロセス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロセスの確認
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      バックグラウンドプロセス
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="バックグラウンドプロセス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      出力の確認
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      シャットダウン・再起動
+    </span>
+  </a>
   
 </li>
       
@@ -1662,43 +2058,434 @@
   
 
 
-<h1 id="1">第1章　導入</h1>
-<h2 id="pygmt">PyGMTのインストール手順</h2>
-<p>WindowsのAnacondaであればAnaconda Prompt上でインストールを行う．
-WindowsのWSL上やLinuxにインストールしたAnacondaであれば通常のターミナルで良い．
-{{% steps %}}</p>
-<h3 id="mamba">（任意）mambaのインストール</h3>
-<!--  仮想環境base上で -->
-<!--  ```python -->
-<!--      conda install -c conda-forge mamba -->
-<!--  ``` -->
-<p>mambaのホームページからmambaをインストールしておくと，
-その後のパッケージのインストールが高速になる．
-なくても全く問題ない．</p>
-<h3 id="_1">仮想環境の作成</h3>
-<p>デフォルトのbaseという環境では
-pygmtをインストールできない場合があるので，
-先に仮想環境を作成すると良い．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>conda create <span style="color: #666666">-</span>n <span style="color: #666666">&lt;</span>仮想環境の名前<span style="border: 1px solid #FF0000">（</span>自由<span style="border: 1px solid #FF0000">）</span><span style="color: #666666">&gt;</span>
+<h1 id="1-ubuntu">第1章　Ubuntu一般</h1>
+<!-- =================================== -->
+<h2 id="_1">ユーザー管理</h2>
+<!-- =================================== -->
+
+<!-- ---------------------------------- -->
+<h2 id="root">rootユーザーの初期設定</h2>
+<!-- ---------------------------------- -->
+<p>Ubuntuの初期ではrootユーザーが使えない．
+これは初期設定ではrootのパスワードが未設定であるためだ．
+したがってsuコマンドでrootユーザーを使えるようにするためには，
+初めにrootユーザーのパスワードを設定する必要がある．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo passwd root
 </code></pre></div></p>
-<h3 id="_2">パッケージのインストール</h3>
-<p>先にmambaをインストール済みであれば
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>mamba install <span style="color: #666666">-</span>c conda<span style="color: #666666">-</span>forge pygmt
+<p>これでパスワードを設定すれば，以降suコマンドでrootユーザーになることができる．</p>
+<p>rootのシェルを使うだけであれば，
+以下のようにOSインストール時に作成したユーザー（というかsudoでroot権限が使えるユーザー）でsudoを使い，root権限のシェルを使えるようになれる．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo <span style="color: #666666">-</span>s
+</code></pre></div></p>
+<!-- ---------------------------------- -->
+<h3 id="_2">ユーザーの一覧</h3>
+<!-- ---------------------------------- -->
+<p>登録されているユーザー名を確認するには，
+以下のようにして「/etc/passwd」の中身を確認する．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cat <span style="color: #666666">/</span>etc<span style="color: #666666">/</span>passwd
+</code></pre></div></p>
+<p>ユーザー名とともに付随情報も列挙される．</p>
+<p>付随情報なしでユーザー名のみを取り出したい場合は
+次のようにする．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cut <span style="color: #666666">-</span>d: <span style="color: #666666">-</span>f1 <span style="color: #666666">/</span>etc<span style="color: #666666">/</span>passwd
+</code></pre></div></p>
+<!-- ---------------------------------- -->
+<h3 id="_3">ユーザーの切り替え</h3>
+<!-- ---------------------------------- -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>su <span style="color: #666666">&lt;</span>username<span style="color: #666666">&gt;</span>
 </code></pre></div>
-で良い．
-mambaをインストールしていない場合は，
-mambaの部分をcondaに書き換えるだけ．</p>
-<p>{{% /steps %}}
-以上で終わり．GMTはPyGMTと一緒にインストールされるため，個別にインストールする必要はない．</p>
-<h2 id="_3">作図の流れ</h2>
-<p>図を作るおおまかな流れは次の通り：
-{{% steps %}}</p>
-<h3 id="figure">Figureの生成</h3>
-<h3 id="projectionregion">プロット（最初のみprojectionとregionの指定もする）</h3>
-<h3 id="_4">結果の表示または保存</h3>
-<p>{{% /steps %}}
-つぎの章でそれぞれの手順について詳しく説明する．</p>
-<!--  ############################################################################## -->
+<!-- =================================== -->
+<h2 id="_4">カーネル起動時の出力表示</h2>
+<!-- =================================== -->
+<p>起動に時間がかかるなど，起動において異常がある際の参考になる．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>dmesg
+</code></pre></div></p>
+<p>出力が多い場合は，以下のようにしてlessやmoreで見ることも可能．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>dmesg <span style="color: #666666">|</span> less
+</code></pre></div></p>
+<!--  =========================================================================== -->
+<h2 id="_5">ネットワーク</h2>
+<h3 id="ip">IPアドレスの確認</h3>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>  ip a
+</code></pre></div>
+<p>これでIPアドレスを表示できる．</p>
+<!--  --------------------------------------------------- -->
+<h3 id="_6">接続の確認</h3>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>  ping <span style="color: #666666">&lt;</span>IP address<span style="color: #666666">&gt;</span>
+</code></pre></div>
+<p>接続先のIPアドレスを引数に与えることで，通信が可能か確認できる．</p>
+<!-- ---------------------------------- -->
+<h3 id="ssh">ssh鍵の登録</h3>
+<!-- ---------------------------------- -->
+
+<!--  =========================================================================== -->
+
+<!--  ============================================== -->
+
+<!-- =================================== -->
+<h2 id="_7">マウント</h2>
+<!-- =================================== -->
+
+<!-- ---------------------------------- -->
+<h3 id="_8">外付けディスク</h3>
+<!-- ---------------------------------- -->
+<h4 id="_9">一般ユーザーによる書き込み権限の付加</h4>
+<p>そのままマウントすると，一般ユーザーでディスクに書き込みできない．
+マウント時に次のように設定することで書き込み可能にできる．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>  <span style="color: #008000">id</span>
+  sudo mount <span style="color: #666666">-</span>o uid<span style="color: #666666">=&lt;</span>userid<span style="color: #666666">&gt;</span>,gid<span style="color: #666666">=&lt;</span>groupid<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<p>idコマンドで確認したid番号を，mountコマンドに与える．
+ネットではマウント後にchownコマンドで権限付加できるという記述があったが，
+そのコマンド自体が権限で拒否されて失敗した．</p>
+<!-- ---------------------------------- -->
+<h3 id="nas">NASのマウント</h3>
+<!-- ---------------------------------- -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>  sudo apt<span style="color: #666666">-</span>get install cifs<span style="color: #666666">-</span>utils 
+
+  sudo mkdir <span style="color: #666666">/</span>mnt<span style="color: #666666">/</span>nas(他の名前でも可)
+  sudo mount <span style="color: #666666">-</span>t cifs <span style="color: #666666">//172.17.26.172/</span>disk1 <span style="color: #666666">/</span>mnt<span style="color: #666666">/</span>nas <span style="color: #666666">-</span>o username<span style="color: #666666">=&lt;</span>name<span style="color: #666666">&gt;</span>,password<span style="color: #666666">=&lt;</span>pw<span style="color: #666666">&gt;</span>
+</code></pre></div>
+<p>GUIでNASに接続するのは容易であるが，CUIでもNASに接続できる．
+cfi-utilsをインストールしていなければインストールする．
+<code>username</code>と<code>password</code>はあらかじめNASに登録したユーザーIDとパスワード．</p>
+<!-- ---------------------------------- -->
+<h3 id="onedrive">OneDriveのマウント</h3>
+<!-- ---------------------------------- -->
+<p>クラウドにはGoogle Driveもある．
+しかし大学のライセンスではOneDriveの方が容量が大きいため，
+ここではOneDriveのマウントを試みた．</p>
+<!-- ............................. -->
+<h4 id="rclone">Rcloneの準備</h4>
+<!-- ............................. -->
+<p>{{% callout note %}}</p>
+<p>作業時参照サイト(2024.2.7):<br />
+<a href="https://www.fujimiya-san.com/archives/2439">https://www.fujimiya-san.com/archives/2439</a></p>
+<p>{{% /callout %}}</p>
+<p>まずはcurlとRcloneをインストールする．</p>
+<!--  ```python -->
+
+<!--  sudo apt install curl -->
+
+<!--  curl <https://rclone.org/install.sh> | sudo bash -->
+
+<!--  ``` -->
+
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo apt install curl
+sudo <span style="color: #666666">-</span>v ; curl https:<span style="color: #666666">//</span>rclone<span style="color: #666666">.</span>org<span style="color: #666666">/</span>install<span style="color: #666666">.</span>sh <span style="color: #666666">|</span> sudo bash
+</code></pre></div>
+<p>続いてRcloneの設定を行う．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>rclone config
+</code></pre></div></p>
+<p>次のように「n」で新リモートを作成し，名前を指定する．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>No remotes found, make a new one<span style="border: 1px solid #FF0000">?</span>
+n) New remote
+s) Set configuration password
+q) Quit config
+n<span style="color: #666666">/</span>s<span style="color: #666666">/</span>q<span style="color: #666666">&gt;</span> n
+
+Enter name <span style="color: #008000; font-weight: bold">for</span> new remote<span style="color: #666666">.</span>
+name<span style="color: #666666">&gt;</span> onedrive_utokyo
+</code></pre></div></p>
+<p>続いて赤と緑の文字でストレージの種類を尋ねられるため，
+ここでOneDriveを探してその番号を入力する．
+以下の例では34番．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #666666">...</span>
+<span style="color: #666666">33</span> <span style="color: #666666">/</span> Microsoft Azure Files
+   \ (azurefiles)
+<span style="color: #666666">34</span> <span style="color: #666666">/</span> Microsoft OneDrive
+   \ (onedrive)
+<span style="color: #666666">35</span> <span style="color: #666666">/</span> OpenDrive
+   \ (opendrive)
+<span style="color: #666666">...</span>
+Storage<span style="color: #666666">&gt;</span> <span style="color: #666666">34</span>
+</code></pre></div></p>
+<p>クライアント関連は未入力．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Option client_id<span style="color: #666666">.</span>
+OAuth Client Id<span style="color: #666666">.</span>
+Leave blank normally<span style="color: #666666">.</span>
+Enter a value<span style="color: #666666">.</span> Press Enter to leave empty<span style="color: #666666">.</span>
+client_id<span style="color: #666666">&gt;</span>
+
+Option client_secret<span style="color: #666666">.</span>
+OAuth Client Secret<span style="color: #666666">.</span>
+Leave blank normally<span style="color: #666666">.</span>
+Enter a value<span style="color: #666666">.</span> Press Enter to leave empty<span style="color: #666666">.</span>
+client_secret<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<p>その次はregionの設定．
+ほとんどの場合は1.
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Option region<span style="color: #666666">.</span>
+Choose national cloud region <span style="color: #008000; font-weight: bold">for</span> OneDrive<span style="color: #666666">.</span>
+Choose a number <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">below</span>, <span style="color: #AA22FF; font-weight: bold">or</span> <span style="color: #008000">type</span> <span style="color: #AA22FF; font-weight: bold">in</span> your own string value<span style="color: #666666">.</span>
+Press Enter <span style="color: #008000; font-weight: bold">for</span> the default (<span style="color: #008000; font-weight: bold">global</span>)<span style="color: #666666">.</span>
+<span style="color: #666666">1</span> <span style="color: #666666">/</span> Microsoft Cloud Global
+\ (<span style="color: #008000; font-weight: bold">global</span>)
+<span style="color: #666666">2</span> <span style="color: #666666">/</span> Microsoft Cloud <span style="color: #008000; font-weight: bold">for</span> US Government
+\ (us)
+<span style="color: #666666">3</span> <span style="color: #666666">/</span> Microsoft Cloud Germany
+\ (de)
+<span style="color: #666666">4</span> <span style="color: #666666">/</span> Azure <span style="color: #AA22FF; font-weight: bold">and</span> Office <span style="color: #666666">365</span> operated by Vnet Group <span style="color: #AA22FF; font-weight: bold">in</span> China
+\ (cn)
+region<span style="color: #666666">&gt;</span> <span style="color: #666666">1</span>
+</code></pre></div></p>
+<p>高度な設定はNo．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Edit advanced config<span style="border: 1px solid #FF0000">?</span>
+y) Yes
+n) No (default)
+y<span style="color: #666666">/</span>n<span style="color: #666666">&gt;</span> n
+</code></pre></div></p>
+<p>ブラウザーが開き，Microsoftアカウントへのログインが求められる．
+希望のアカウントを入力しログインする．
+自動でブラウザの画面が送られてきたが，
+フリーズしていたため何度か繰り返して待つと動くようになった．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #666666">2024/02/07</span> <span style="color: #666666">20</span>:<span style="color: #666666">08</span>:<span style="color: #666666">40</span> NOTICE: If your browser doesn<span style="color: #BA2121">&#39;t open automatically go to the following link: http://127.0.0.1:53682/auth?state=CXNFxfxcx7kFU0xTNmRlig</span>
+<span style="color: #666666">2024/02/07</span> <span style="color: #666666">20</span>:<span style="color: #666666">08</span>:<span style="color: #666666">40</span> NOTICE: Log <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #AA22FF; font-weight: bold">and</span> authorize rclone <span style="color: #008000; font-weight: bold">for</span> access
+<span style="color: #666666">2024/02/07</span> <span style="color: #666666">20</span>:<span style="color: #666666">08</span>:<span style="color: #666666">40</span> NOTICE: Waiting <span style="color: #008000; font-weight: bold">for</span> code<span style="color: #666666">...</span>
+<span style="color: #666666">2024/02/07</span> <span style="color: #666666">20</span>:<span style="color: #666666">13</span>:<span style="color: #666666">44</span> NOTICE: Got code
+</code></pre></div></p>
+<p>入力すると最後の行のように直ちにGot codeと表示され次へ進む．</p>
+<p>1を選ぶ．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Option config_type<span style="color: #666666">.</span>
+Type of connection
+Choose a number <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">below</span>, <span style="color: #AA22FF; font-weight: bold">or</span> <span style="color: #008000">type</span> <span style="color: #AA22FF; font-weight: bold">in</span> an existing string value<span style="color: #666666">.</span>
+Press Enter <span style="color: #008000; font-weight: bold">for</span> the default (onedrive)<span style="color: #666666">.</span>
+ <span style="color: #666666">1</span> <span style="color: #666666">/</span> OneDrive Personal <span style="color: #AA22FF; font-weight: bold">or</span> Business
+   \ (onedrive)
+ <span style="color: #666666">2</span> <span style="color: #666666">/</span> Root Sharepoint site
+   \ (sharepoint)
+   <span style="color: #666666">/</span> Sharepoint site name <span style="color: #AA22FF; font-weight: bold">or</span> URL
+ <span style="color: #666666">3</span> <span style="color: #666666">|</span> E<span style="color: #666666">.</span>g<span style="color: #666666">.</span> mysite <span style="color: #AA22FF; font-weight: bold">or</span> https:<span style="color: #666666">//</span>contoso<span style="color: #666666">.</span>sharepoint<span style="color: #666666">.</span>com<span style="color: #666666">/</span>sites<span style="color: #666666">/</span>mysite
+   \ (url)
+ <span style="color: #666666">4</span> <span style="color: #666666">/</span> Search <span style="color: #008000; font-weight: bold">for</span> a Sharepoint site
+   \ (search)
+ <span style="color: #666666">5</span> <span style="color: #666666">/</span> Type <span style="color: #AA22FF; font-weight: bold">in</span> driveID (advanced)
+   \ (driveid)
+ <span style="color: #666666">6</span> <span style="color: #666666">/</span> Type <span style="color: #AA22FF; font-weight: bold">in</span> SiteID (advanced)
+   \ (siteid)
+   <span style="color: #666666">/</span> Sharepoint server<span style="color: #666666">-</span>relative path (advanced)
+ <span style="color: #666666">7</span> <span style="color: #666666">|</span> E<span style="color: #666666">.</span>g<span style="color: #666666">.</span> <span style="color: #666666">/</span>teams<span style="color: #666666">/</span>hr
+   \ (path)
+config_type<span style="color: #666666">&gt;</span> <span style="color: #666666">1</span>
+</code></pre></div></p>
+<p>ドライブを選ぶ．１つしかないので1を選択．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Option config_driveid<span style="color: #666666">.</span>
+Select drive you want to use
+Choose a number <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">below</span>, <span style="color: #AA22FF; font-weight: bold">or</span> <span style="color: #008000">type</span> <span style="color: #AA22FF; font-weight: bold">in</span> your own string value<span style="color: #666666">.</span>
+Press Enter <span style="color: #008000; font-weight: bold">for</span> the default (b<span style="border: 1px solid #FF0000">!</span>B6VhbJMLPUO0uUYMDaOGBLuNH5pR9adBsJsyk5sSt3cZ9VcKJQa<span style="color: #666666">-</span>Sreej4jO7Oeq)<span style="color: #666666">.</span>
+ <span style="color: #666666">1</span> <span style="color: #666666">/</span> OneDrive (business)
+   \ (<span style="color: #666666">...</span>)
+</code></pre></div></p>
+<p>ドライブが見つかり，表示内容で良ければy.
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Drive OK<span style="border: 1px solid #FF0000">?</span>
+
+Found drive <span style="color: #BA2121">&quot;root&quot;</span> of <span style="color: #008000">type</span> <span style="color: #BA2121">&quot;business&quot;</span>
+URL: <span style="color: #666666">...</span>
+
+y) Yes (default)
+n) No
+y<span style="color: #666666">/</span>n<span style="color: #666666">&gt;</span> y
+</code></pre></div></p>
+<p>最後の確認．良ければy.
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #666666">...</span>
+<span style="color: #666666">-</span> drive_type: business
+Keep this <span style="color: #BA2121">&quot;onedrive_utokyo&quot;</span> remote<span style="border: 1px solid #FF0000">?</span>
+y) Yes this <span style="color: #AA22FF; font-weight: bold">is</span> OK (default)
+e) Edit this remote
+d) Delete this remote
+y<span style="color: #666666">/</span>e<span style="color: #666666">/</span>d<span style="color: #666666">&gt;</span> y
+</code></pre></div></p>
+<p>完了すると以下のトップ画面になる．
+先ほどのドライブが登録されている．
+qで終了する．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Current remotes:
+
+Name                 Type
+<span style="color: #666666">====</span>                 <span style="color: #666666">====</span>
+onedrive_utokyo      onedrive
+
+e) Edit existing remote
+n) New remote
+d) Delete remote
+r) Rename remote
+c) Copy remote
+s) Set configuration password
+q) Quit config
+e<span style="color: #666666">/</span>n<span style="color: #666666">/</span>d<span style="color: #666666">/</span>r<span style="color: #666666">/</span>c<span style="color: #666666">/</span>s<span style="color: #666666">/</span>q<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<!-- ............................. -->
+<h4 id="rclone_1">rcloneのリモートのマウント</h4>
+<!-- ............................. -->
+<p>{{% callout note %}}</p>
+<p>参照: Rclone公式<br />
+<a href="https://rclone.org/commands/rclone_mount/">https://rclone.org/commands/rclone_mount/</a></p>
+<p>{{% /callout %}}</p>
+<p>ドライブを登録できたらそれをマウントする．
+マウントもrcloneのコマンドで行う．</p>
+<p>--vfs-cache-mode writesというオプションをつけないと
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>NOTICE: <span style="color: #BA2121">&quot;onedrive_utokyo&quot;</span> refers to a local folder, use <span style="color: #BA2121">&quot;onedrive_utokyo:&quot;</span> to refer to your remote <span style="color: #AA22FF; font-weight: bold">or</span> <span style="color: #BA2121">&quot;./onedrive_utokyo&quot;</span> to hide this warning
+</code></pre></div></p>
+<p>というメッセージが出る．
+またマウント先のディレクトリの権限を775にしないと
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #666666">2024/02/07</span> <span style="color: #666666">20</span>:<span style="color: #666666">57</span>:<span style="color: #666666">31</span> mount helper error: fusermount3: user has no write access to mountpoint <span style="color: #666666">/</span>mnt<span style="color: #666666">/</span>onedrive
+<span style="color: #666666">2024/02/07</span> <span style="color: #666666">20</span>:<span style="color: #666666">57</span>:<span style="color: #666666">31</span> Fatal error: failed to mount FUSE fs: fusermount: exit status <span style="color: #666666">1</span>
+</code></pre></div></p>
+<p>のようなエラーが出た．</p>
+<p>--daemonオプションをつけるとバックグラウンドでつないでくれる．一方でこのオプションがないと新しくターミナルを開かないと作業できなくなるので注意．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>rclone mount onedrive_utokyo:<span style="color: #666666">/</span> <span style="color: #666666">/</span>mnt<span style="color: #666666">/</span>onedrive<span style="color: #666666">/</span> <span style="color: #666666">--</span>vfs<span style="color: #666666">-</span>cache<span style="color: #666666">-</span>mode writes <span style="color: #666666">--</span>daemon
+</code></pre></div></p>
+<p>最後に今後自動でマウントするために設定ファイルに書き込む．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>storage_name: <span style="color: #666666">&lt;</span>マウント先<span style="color: #666666">&gt;</span> rclone rw,noauto,nofail,_netdev,x<span style="color: #666666">-</span>systemd<span style="color: #666666">.</span>automount,args2env,vfs_cache_mode<span style="color: #666666">=</span>writes,config<span style="color: #666666">=&lt;</span>rclone config file で表示されるパス<span style="color: #666666">&gt;</span>,cache_dir<span style="color: #666666">=/</span>var<span style="color: #666666">/</span>cache<span style="color: #666666">/</span>rclone <span style="color: #666666">0</span> <span style="color: #666666">0</span>
+</code></pre></div></p>
+<p>マウント先とconfigファイルのパスを適宜入れること．</p>
+<!-- =================================== -->
+<h3 id="_10">アンマウント</h3>
+<!-- =================================== -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo umount <span style="color: #666666">&lt;</span>マウント先<span style="color: #666666">&gt;</span>
+</code></pre></div>
+<p>{{% callout note %}}</p>
+<p>オプション:</p>
+<ul>
+<li>-f: 強制アンマウント </li>
+<li>-l: -fでアンマウントできない場合でも強制的にアンマウント</li>
+</ul>
+<p>{{% /callout %}}</p>
+<!-- ---------------------------------- -->
+<h2 id="lvm">LVMの構成</h2>
+<!-- ............................. -->
+<h3 id="_11">単純な例</h3>
+<!-- ............................. -->
+<p>LVMは複数のディスクをまとめて一つのストレージとして扱う技術である．
+複数のディスクにまたがるほど大容量のデータを保存したいときに役立つだろう．</p>
+<p>まずは必要なライブラリをインストールする．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo apt install lvm2
+sudo apt install xfsprogs
+</code></pre></div></p>
+<p>続けて，ここで自動でディスクがマウントされた場合はアンマウントする:
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo umount <span style="color: #666666">&lt;</span>disk<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<p>すでにパーティションが作成されている場合（lsblkなどで確認），
+それも削除する．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo wipefs <span style="color: #666666">-</span>a <span style="color: #666666">&lt;</span>partition; e<span style="color: #666666">.</span>g<span style="color: #666666">.</span> <span style="color: #666666">/</span>dev<span style="color: #666666">/</span>sda<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<p>ここから作業.
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo pvcreate <span style="color: #666666">&lt;</span>e<span style="color: #666666">.</span>g<span style="color: #666666">.</span> <span style="color: #666666">/</span>dev<span style="color: #666666">/</span>sda<span style="color: #666666">&gt;</span>
+sudo vgcreate <span style="color: #666666">&lt;</span>hdddGroup<span style="color: #666666">&gt;</span> <span style="color: #666666">&lt;/</span>dev<span style="color: #666666">/</span>sda <span style="color: #666666">/</span>dev<span style="color: #666666">/</span>sdb <span style="color: #666666">...&gt;</span>
+sudo lvcreate <span style="color: #666666">-</span>l <span style="color: #666666">100</span>
+<span style="color: #666666">&lt;</span><span style="border: 1px solid #FF0000">!</span><span style="color: #666666">--</span> FREE <span style="color: #666666">-</span>n lv0 <span style="color: #666666">&lt;</span>hddGroup<span style="color: #666666">&gt;</span> <span style="color: #666666">--&gt;</span>
+
+sudo mkfs <span style="color: #666666">-</span>t xfs <span style="color: #666666">&lt;/</span>dev<span style="color: #666666">/</span>hddGroup<span style="color: #666666">/</span>lv0<span style="color: #666666">&gt;</span>
+sudo mount <span style="color: #666666">-</span>t xfs <span style="color: #666666">&lt;/</span>dev<span style="color: #666666">/</span>hddGroup<span style="color: #666666">/</span>lv0<span style="color: #666666">&gt;</span> <span style="color: #666666">&lt;</span>mount先<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<p>次にgeditなどで/etc/fstabに追記する．
+これは自動でmountが行われるようにするための作業である．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo gedit <span style="color: #666666">/</span>etc<span style="color: #666666">/</span>fstab
+</code></pre></div></p>
+<p>追記内容は以下:
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #666666">/</span>dev<span style="color: #666666">/</span>mapper<span style="color: #666666">/</span>hddGroup<span style="color: #666666">-</span>lv0 <span style="color: #666666">&lt;</span>mount先<span style="color: #666666">&gt;</span> <span style="color: #666666">/</span>hdd xfs defaults <span style="color: #666666">0</span> <span style="color: #666666">0</span>
+</code></pre></div></p>
+<!-- ............................. -->
+<h3 id="_12">ストライプ化する例</h3>
+<!-- ............................. -->
+<p>ストライプ化によりデータを細かく分割して分散保存する．
+これにより高速化が期待される．</p>
+<p>事前準備として，必要なライブラリをインストールする．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo apt install lvm2
+sudo apt install xfsprogs
+</code></pre></div></p>
+<p>続けて，ここで自動でディスクがマウントされた場合はアンマウントする:
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo umount <span style="color: #666666">&lt;</span>disk<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<p>すでにパーティションが作成されている場合（lsblkなどで確認），
+それも削除する．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo wipefs <span style="color: #666666">-</span>a <span style="color: #666666">&lt;</span>partition; e<span style="color: #666666">.</span>g<span style="color: #666666">.</span> <span style="color: #666666">/</span>dev<span style="color: #666666">/</span>sda<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<p>ここからが本筋の作業である．
+まずはまとめたいディクスにLVMのラベルを付与する．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo pvcreate <span style="color: #666666">&lt;/</span>dev<span style="color: #666666">/</span>sda <span style="color: #666666">/</span>dev<span style="color: #666666">/</span>sdb <span style="color: #666666">...&gt;</span>
+</code></pre></div></p>
+<p>これらをボリュームグループにまとめる．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo vgcreate <span style="color: #666666">&lt;</span>vg name<span style="color: #666666">&gt;</span> <span style="color: #666666">&lt;/</span>dev<span style="color: #666666">/</span>sda <span style="color: #666666">/</span>dev<span style="color: #666666">/</span>sdb <span style="color: #666666">...&gt;</span>
+</code></pre></div></p>
+<p>ストライプ化した論理ボリュームを作成する．
+-iはストライプ数で，まとめたいディスクの数にすればよい．
+-Iはストライプサイズ．適切な値はよくわからない．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo lvcreate <span style="color: #666666">-</span>l <span style="color: #666666">100</span>
+<span style="color: #666666">&lt;</span><span style="border: 1px solid #FF0000">!</span><span style="color: #666666">--</span> VG <span style="color: #666666">-</span>i <span style="color: #666666">&lt;</span>ディスク数<span style="color: #666666">&gt;</span> <span style="color: #666666">-</span>I <span style="color: #666666">64</span> <span style="color: #666666">-</span>n <span style="color: #666666">&lt;</span>lv name<span style="color: #666666">&gt;</span> <span style="color: #666666">&lt;</span>vg name<span style="color: #666666">&gt;</span> <span style="color: #666666">--&gt;</span>
+</code></pre></div></p>
+<p>最後に論理ボリュームにファイルシステムを作成する．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo mkfs<span style="color: #666666">.</span>xfs <span style="color: #666666">-</span>f <span style="color: #666666">/</span>dev<span style="color: #666666">/&lt;</span>lv name<span style="color: #666666">&gt;/&lt;</span>vg name<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<p>これで/dev/<lv name>/<vg name>を通常のディスクのようにマウントできるようになる．</p>
+<!-- ---------------------------------- -->
+<h3 id="lvm_1">LVMの認識</h3>
+<!-- ---------------------------------- -->
+<p>LVM構成のディスクを指しているにもかかわらず，LVMが認識されない場合，
+LVMを認識する作業が必要である．</p>
+<p>以下のようにボリュームグループ (vg) のスキャンとアクティブ化，論理ボリューム (lv) のスキャンを行う．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo vgscan
+sudo vgchange <span style="color: #666666">-</span>ay
+sudo lvscan
+</code></pre></div></p>
+<p>これでLVMをマウントできるようになるはず．</p>
+<p>上記のコマンドを使用するにはlvm2のインストールが必要である．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>dpkg <span style="color: #666666">-</span>l <span style="color: #666666">|</span> grep lvm
+</code></pre></div></p>
+<p>をしてインストールされていないことがわかれば，
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo apt install lvm2
+</code></pre></div></p>
+<p>でインストールする．</p>
+<!-- ---------------------------------- -->
+
+<!--  ======================================= -->
+
+<!-- =================================== -->
+<h2 id="_13">プロセス</h2>
+<!-- =================================== -->
+
+<!-- ---------------------------------- -->
+<h3 id="_14">プロセスの確認</h3>
+<!-- ---------------------------------- -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>ps <span style="color: #666666">-&lt;</span>option<span style="color: #666666">&gt;</span>
+</code></pre></div>
+<p><code>ps -x</code>など．実行中のプロセスを表示する．</p>
+<p>または，
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>top
+</code></pre></div></p>
+<p>でリアルタイムでプロセスを確認できる．
+Windowsでいうタスクマネージャーのような感じ．</p>
+<!-- ---------------------------------- -->
+<h3 id="_15">バックグラウンドプロセス</h3>
+<!-- ---------------------------------- -->
+
+<!-- ............................. -->
+<h4 id="_16">出力の確認</h4>
+<!-- ............................. -->
+<p>出力は<code>/proc/&lt;process ID&gt;/fd/1</code>に格納されている．
+したがって
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cat <span style="color: #666666">/</span>proc<span style="color: #666666">/&lt;</span>process ID<span style="color: #666666">&gt;/</span>fd<span style="color: #666666">/1</span>
+</code></pre></div></p>
+<p>で確認可能．プロセスIDはpsなどで調べておく．
+実行コマンド名や実行時間などをもとに目的のプロセスを探すこと．</p>
+<!-- =================================== -->
+<h2 id="_17">シャットダウン・再起動</h2>
+<!-- =================================== -->
+<p>shutdownコマンドの引数でシャットダウン，
+シャットダウンの場合 (--poweroff)：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>shutdown <span style="color: #666666">-</span>P now
+</code></pre></div></p>
+<p>マシンの電源を切る．shutdownコマンドのデフォルトがこれなので，オプションはなくてもよさそうだ．
+なお「-h」引数でも同じである．</p>
+<p>ただし，オプションを「-H」とした場合はCPUのみ停止し，マシン自体の電源は切らないので注意．</p>
+<p>再起動の場合 (--reboot)：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>shutdown <span style="color: #666666">-</span>r now
+</code></pre></div></p>
+<p>最後にはnowのみならず任意の時刻を指定できる．
+5分後であれば「shutdown -h +5」，3時であれば「shutdown -h 03:00」のようにする．</p>
+<p>なお，時刻指定をした場合は次のコマンドでシャットダウン/再起動の予定をキャンセルできる：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>shutdown <span style="color: #666666">-</span>c
+</code></pre></div></p>
+<!--  ####################################### -->
 
 
 
@@ -1793,13 +2580,13 @@ mambaの部分をcondaに書き換えるだけ．</p>
         
         
           
-          <a href="../sec002/" class="md-footer__link md-footer__link--next" aria-label="次: 第2章 必須手順">
+          <a href="../sec002/" class="md-footer__link md-footer__link--next" aria-label="次: 第2章 ファイル管理">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                第2章 必須手順
+                第2章 ファイル管理
               </div>
             </div>
             <div class="md-footer__button md-icon">

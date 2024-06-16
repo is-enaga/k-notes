@@ -901,7 +901,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 画像生成とフォント設定
   </span>
   
 
@@ -922,7 +922,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 点，線のプロット
   </span>
   
 
@@ -943,7 +943,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 一般
+    第3章 2次元メッシュのプロット
   </span>
   
 
@@ -964,7 +964,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 付加要素
   </span>
   
 
@@ -985,7 +985,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 軸・ラベル・枠
   </span>
   
 
@@ -1006,7 +1006,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 作品例
   </span>
   
 
@@ -1106,7 +1106,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 Ubuntu一般
   </span>
   
 
@@ -1127,7 +1127,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 ファイル管理
   </span>
   
 
@@ -1148,7 +1148,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 一般
+    第3章 SSH接続
   </span>
   
 
@@ -1169,7 +1169,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 Git
   </span>
   
 
@@ -1190,7 +1190,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 パッケージ
   </span>
   
 
@@ -1211,7 +1211,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 プログラミング
   </span>
   
 
@@ -1232,7 +1232,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 二次元プロット
+    第7章 メール送信
   </span>
   
 
@@ -1253,7 +1253,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 グラフ内のテキスト
+    第8章 WSL2
   </span>
   
 
@@ -1341,7 +1341,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 WINシステムのインストール
   </span>
   
 
@@ -1362,7 +1362,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 WINおよびhypomh関連ファイルのフォーマット
   </span>
   
 
@@ -1444,6 +1444,48 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      データの読み込み
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      国交省による道路等の線データの利用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="国交省による道路等の線データの利用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      jsonライブラリの利用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geopandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      geopandasの利用
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1474,8 +1516,59 @@
 これを扱いやすくするために緯度，経度，標高のxyz形式にするため，
 同じく地理院からダウンロードできる基盤地図情報ビューアをインストールする．
 これを起動して開く画面に，標高メッシュのzipファイルをドラッグすると地形が描画される．</p>
-<p>「エクスポート&gt;標高メッシュをシェープファイルへ出力」を選んで開く画面で，(1)直角座標系に出力するチェックを外し，(2)出力ファイル名の拡張子を「.xyz」に変える．拡張子がデフォルトのままだと，後で開いても文字化けして読み取れなかった．ただし(1)はナントカ座標系とやらのxyz座標で出力したいのならチェックが必要(図<em>※相互参照無効</em>)．
-</p>
+<p>「エクスポート&gt;標高メッシュをシェープファイルへ出力」を選んで開く画面で，(1)直角座標系に出力するチェックを外し，(2)出力ファイル名の拡張子を「.xyz」に変える．拡張子がデフォルトのままだと，後で開いても文字化けして読み取れなかった．ただし(1)はナントカ座標系とやらのxyz座標で出力したいのならチェックが必要(図<em>※相互参照無効</em>)．</p>
+<figure>  <img alt="fig/chiriin2xyz.png" src="../fig/chiriin2xyz.png" /> <figcaption>基盤地図情報ビューアによるxyz形式への変換時の画面．(標高データ: 国土地理院基盤地図情報数値標高モデル)</figcaption> </figure>
+<h3 id="_3">データの読み込み</h3>
+<p>作成したxyzファイルは，numpyを使ってcsvと同じ方法で読み込める．
+すなわちdelimiterを「，」にしてnp.loadtxt()である．
+ただそのままだと最初の列に行番号が入っているので，
+必要なxyzの列だけを取り出すためにusecols=[1,2,3]としてcolumnを指定すると良い．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>dat <span style="color: #666666">=</span> np<span style="color: #666666">.</span>loadtxt(<span style="color: #BA2121">r&quot;out.xyz&quot;</span>,
+                 delimiter<span style="color: #666666">=</span><span style="color: #BA2121">&quot;,&quot;</span>,
+                 usecols<span style="color: #666666">=</span>[<span style="color: #666666">1</span>,<span style="color: #666666">2</span>,<span style="color: #666666">3</span>])
+</code></pre></div></p>
+<h2 id="_4">国交省による道路等の線データの利用</h2>
+<p>道路や鉄道路線などのデータをダウンロードすると，シェープファイルやgeojsonファイルなどが入っている．これをライブラリを使って取り込んでプロットする．</p>
+<h3 id="json">jsonライブラリの利用</h3>
+<p>(1)import json. (2)open(&lt;.geojson&gt;, 'r', encoding=<utf\958\95sig>) (3)json.load(openfile) (4)条件で絞込．(5)リストに格納してプロット．</p>
+<p>ダウンロードしたファイルのutf-8フォルダー中にある方の.geojsonデータを使う．直上のフォルダにも.geojsonがあるがencodingを何にすれば良いのかわからず使えなかった．'cp932'にしてみたがエラーが出た．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">json</span>
+train_path_gj <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;鉄道/utf8/N02-21_RailroadSection.geojson&quot;</span>
+jopen <span style="color: #666666">=</span> <span style="color: #008000">open</span>(train_path_gj,
+             <span style="color: #BA2121">&#39;r&#39;</span>,
+             encoding <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;utf_8_sig&#39;</span>
+             )
+dat_j <span style="color: #666666">=</span> json<span style="color: #666666">.</span>load(jopen)
+
+kobe <span style="color: #666666">=</span> []
+<span style="color: #3D7B7B; font-style: italic"># ftr = []</span>
+<span style="color: #008000; font-weight: bold">for</span> data <span style="color: #AA22FF; font-weight: bold">in</span> dat_j[<span style="color: #BA2121">&quot;features&quot;</span>]:
+    <span style="color: #008000; font-weight: bold">if</span> <span style="color: #BA2121">&quot;神戸電鉄&quot;</span> <span style="color: #AA22FF; font-weight: bold">in</span> data[<span style="color: #BA2121">&quot;properties&quot;</span>][<span style="color: #BA2121">&quot;N02_004&quot;</span>]:
+        <span style="color: #3D7B7B; font-style: italic"># ftr.append(data[&quot;properties&quot;][&quot;N02_004&quot;])</span>
+        tmp <span style="color: #666666">=</span> data[<span style="color: #BA2121">&quot;geometry&quot;</span>][<span style="color: #BA2121">&quot;coordinates&quot;</span>]
+        kobe<span style="color: #666666">.</span>append(tmp)
+<span style="border: 1px solid #FF0000">（</span>略<span style="border: 1px solid #FF0000">）</span>
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(kobe)):
+    fig<span style="color: #666666">.</span>plot(
+        data <span style="color: #666666">=</span> kobe[i],
+        style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;f0.2c/0.1c&#39;</span>,
+        pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p&#39;</span>
+        )
+</code></pre></div></p>
+<figure>  <img alt="fig/trainjson.png" src="../fig/trainjson.png" /> <figcaption>xyz2grdを用いて変換したデータをプロットした例．適切な設定を行わなければこのように正常にプロットできない．()</figcaption> <figcaption>国交省からダウンロードした鉄道データをjsonライブラリを用いて読み込みプロットした結果．（標高データ: 国土地理院基盤地図情報数値標高モデル; 鉄道路線データ: 国土交通省国土数値情報）</figcaption> </figure>
+<h3 id="geopandas">geopandasの利用</h3>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>gpd<span style="color: #666666">.</span>read_file(<span style="color: #666666">&lt;</span>utf<span style="color: #666666">-8</span>のgeojsonデータ<span style="color: #666666">&gt;</span>, encoding<span style="color: #666666">=</span><span style="color: #BA2121">&#39;utf_8_sig&#39;</span>)
+</code></pre></div>
+<p>condaでインストールできるライブラリgeopandasを使う方法．(1)shpファイルを使う場合：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>train_path <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;鉄道/N02-21_RailroadSection.shp&quot;</span>
+df <span style="color: #666666">=</span> gpd<span style="color: #666666">.</span>read_file(train_path_gj, encoding<span style="color: #666666">=</span><span style="color: #BA2121">&#39;cp932&#39;</span>)
+</code></pre></div></p>
+<p>(2)geojsonファイルを使う場合：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">geopandas</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">gpd</span>
+train_path_gj <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;鉄道/N02-21_RailroadSection.geojson&quot;</span>
+df <span style="color: #666666">=</span> gpd<span style="color: #666666">.</span>read_file(train_path_gj, encoding<span style="color: #666666">=</span><span style="color: #BA2121">&#39;utf_8_sig&#39;</span>)
+</code></pre></div></p>
+<!--  ############################################################################# -->
 
 
 

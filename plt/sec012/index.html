@@ -901,7 +901,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 画像生成とフォント設定
   </span>
   
 
@@ -922,7 +922,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 点，線のプロット
   </span>
   
 
@@ -943,7 +943,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 一般
+    第3章 2次元メッシュのプロット
   </span>
   
 
@@ -964,7 +964,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 付加要素
   </span>
   
 
@@ -985,7 +985,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 軸・ラベル・枠
   </span>
   
 
@@ -1006,7 +1006,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 作品例
   </span>
   
 
@@ -1106,7 +1106,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 Ubuntu一般
   </span>
   
 
@@ -1127,7 +1127,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 ファイル管理
   </span>
   
 
@@ -1148,7 +1148,7 @@
         
   
   <span class="md-ellipsis">
-    第3章 一般
+    第3章 SSH接続
   </span>
   
 
@@ -1169,7 +1169,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 Git
   </span>
   
 
@@ -1190,7 +1190,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 パッケージ
   </span>
   
 
@@ -1211,7 +1211,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 プログラミング
   </span>
   
 
@@ -1232,7 +1232,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 二次元プロット
+    第7章 メール送信
   </span>
   
 
@@ -1253,7 +1253,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 グラフ内のテキスト
+    第8章 WSL2
   </span>
   
 
@@ -1341,7 +1341,7 @@
         
   
   <span class="md-ellipsis">
-    第1章 導入
+    第1章 WINシステムのインストール
   </span>
   
 
@@ -1362,7 +1362,7 @@
         
   
   <span class="md-ellipsis">
-    第2章 必須手順
+    第2章 WINおよびhypomh関連ファイルのフォーマット
   </span>
   
 
@@ -1439,6 +1439,15 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       点からの距離によるデータ分類
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      水・陸でのデータ分類
     </span>
   </a>
   
@@ -1557,6 +1566,81 @@ fig<span style="color: #666666">.</span>plot(
 )
 fig<span style="color: #666666">.</span>show()
 </code></pre></div></p>
+<figure>  <img alt="fig/dist2pt.png" src="../fig/dist2pt.png" /><figcaption>南西端の点から距離「2」以内の点に色を付けた図．coltype='g'を与えていないため地理的距離で処理されていない．</figcaption> </figure>
+<!-- ---------------------------------- -->
+<h3 id="_3">水・陸でのデータ分類</h3>
+<!-- ---------------------------------- -->
+<p>{{% callout note %}}</p>
+<p>海と陸でデータを分別する場合：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>mask <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;wet/dry&#39;</span>
+</code></pre></div></p>
+<p>または
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>mask <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;ocean/land/lake/island/pond&#39;</span>
+</code></pre></div></p>
+<p>それぞれを含むなら「k」(kept)，
+除外するなら「s」（skipped）を指定する．
+文字列またはリストで指定．</p>
+<p>{{% /callout %}}</p>
+<p>例）ランダムな点のうち，内陸を青，海域を赤でプロットする：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+
+<span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;描画範囲，図法&quot;&quot;&quot;</span>
+rgn <span style="color: #666666">=</span> [<span style="color: #666666">134</span>,<span style="color: #666666">138</span>,<span style="color: #666666">33</span>,<span style="color: #666666">36</span>]
+prj <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;M6c&#39;</span>
+
+<span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;random data作成&quot;&quot;&quot;</span>
+xlen <span style="color: #666666">=</span> rgn[<span style="color: #666666">1</span>]<span style="color: #666666">-</span>rgn[<span style="color: #666666">0</span>]
+ylen <span style="color: #666666">=</span> rgn[<span style="color: #666666">3</span>]<span style="color: #666666">-</span>rgn[<span style="color: #666666">2</span>]
+
+dat <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>rand(<span style="color: #666666">5000</span>,<span style="color: #666666">2</span>)
+dat[:,<span style="color: #666666">0</span>] <span style="color: #666666">=</span> dat[:,<span style="color: #666666">0</span>]<span style="color: #666666">*</span> xlen <span style="color: #666666">+</span> rgn[<span style="color: #666666">0</span>]
+dat[:,<span style="color: #666666">1</span>] <span style="color: #666666">=</span> dat[:,<span style="color: #666666">1</span>]<span style="color: #666666">*</span> ylen <span style="color: #666666">+</span> rgn[<span style="color: #666666">2</span>]
+
+<span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;陸海でデータ分離&quot;&quot;&quot;</span>
+land <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>select(
+    data <span style="color: #666666">=</span> dat,
+    mask <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;s/k/k/k/k&#39;</span>,
+    )
+ocean <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>select(
+    data <span style="color: #666666">=</span> dat,
+    mask <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;k/s/s/s/s&#39;</span>,
+    )
+
+<span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;プロット&quot;&quot;&quot;</span>
+fig <span style="color: #666666">=</span>pygmt<span style="color: #666666">.</span>Figure()
+<span style="color: #3D7B7B; font-style: italic"># 海岸線</span>
+fig<span style="color: #666666">.</span>coast(
+    shorelines <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p,black&#39;</span>,
+    water <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;blue@90&#39;</span>,
+    land <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;green@90&#39;</span>,
+    projection <span style="color: #666666">=</span> prj,
+    region <span style="color: #666666">=</span> rgn,
+    )
+
+<span style="color: #3D7B7B; font-style: italic"># 内陸</span>
+fig<span style="color: #666666">.</span>plot(
+    data <span style="color: #666666">=</span> land,
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;c2p&#39;</span>,
+    color <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;#33CCFF@50&#39;</span>,
+    )
+<span style="color: #3D7B7B; font-style: italic"># 海域</span>
+fig<span style="color: #666666">.</span>plot(
+    data <span style="color: #666666">=</span> ocean,
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;c2p&#39;</span>,
+    color <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;red@50&#39;</span>,
+    )
+
+<span style="color: #3D7B7B; font-style: italic">#枠</span>
+fig<span style="color: #666666">.</span>basemap(
+    frame <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;agf&#39;</span>,
+    )
+fig<span style="color: #666666">.</span>show()
+</code></pre></div></p>
+<figure>  <img alt="fig/select.png" src="../fig/select.png" /> <figcaption>select関数による海陸での点の分別結果．</figcaption> </figure>
+<!--  ################################################################## -->
+
+<!-- ######################################### -->
 
 
 
