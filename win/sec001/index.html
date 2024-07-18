@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/logo.jpg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
@@ -1012,7 +1012,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 作品例
+    第6章 高等処理
   </span>
   
 
@@ -2076,7 +2076,13 @@ WSL(Ubuntu)のホームディレクトリにある
 export WINDOWID<span style="color: #666666">=</span><span style="color: #BA2121">&#39;:0&#39;</span>
 </code></pre></div></p>
 <p>その後ターミナルを再起動するか，「source ~/.basrhc」を実行する．
-ここで「xeyes」を実行してウインドウが表示されれば成功．</p>
+ここで「xeyes」などを実行してウインドウが表示されれば成功．</p>
+<p>もし上記の設定でxeyes等のコマンド実行時に
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Error: Can<span style="color: #BA2121">&#39;t open display: (ipアドレス):0</span>
+</code></pre></div></p>
+<p>と表示される場合は，export DISPLAYの行を次のように変えてみる．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>export DISPLAY<span style="color: #666666">=</span><span style="border: 1px solid #FF0000">$</span>(ip route <span style="color: #008000">list</span> default <span style="color: #666666">|</span> awk <span style="color: #BA2121">&#39;{print $3}&#39;</span>):<span style="color: #666666">0</span>
+</code></pre></div></p>
 <p>次にwinについてはデフォルトのターミナルではなく，xtermを使う必要がある．
 まずターミナル上で「xterm」と入力して実行．
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>xterm

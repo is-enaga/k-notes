@@ -18,11 +18,11 @@
       
       
       <link rel="icon" href="../../assets/logo.jpg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
-        <title>第6章 作品例 - K-Notes</title>
+        <title>第6章 高等処理 - K-Notes</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              第6章 作品例
+              第6章 高等処理
             
           </span>
         </div>
@@ -1026,7 +1026,7 @@
           
   
   <span class="md-ellipsis">
-    第6章 作品例
+    第6章 高等処理
   </span>
   
 
@@ -1037,7 +1037,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 作品例
+    第6章 高等処理
   </span>
   
 
@@ -1061,7 +1061,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      数学風グラフ
+      メモリの解放
     </span>
   </a>
   
@@ -1488,7 +1488,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      数学風グラフ
+      メモリの解放
     </span>
   </a>
   
@@ -1512,93 +1512,23 @@
   
 
 
-<h1 id="6">第6章　作品例</h1>
-<h2 id="_1">数学風グラフ</h2>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
-<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
+<h1 id="6">第6章　高等処理</h1>
+<!-- ######################################### -->
 
-fig, ax <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>subplots(figsize<span style="color: #666666">=</span>(<span style="color: #666666">4</span>,<span style="color: #666666">4</span>))
-
-<span style="color: #3D7B7B; font-style: italic"># frame</span>
-ax<span style="color: #666666">.</span>spines[:]<span style="color: #666666">.</span>set_position(<span style="color: #BA2121">&#39;zero&#39;</span>)
-ax<span style="color: #666666">.</span>set_aspect(<span style="color: #BA2121">&#39;equal&#39;</span>,<span style="color: #BA2121">&#39;box&#39;</span>)
-ax<span style="color: #666666">.</span>tick_params(direction <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;inout&#39;</span>)
-ax<span style="color: #666666">.</span>set_ylim(<span style="color: #666666">-1.5</span>,<span style="color: #666666">1.5</span>)
-ax<span style="color: #666666">.</span>set_xlim(<span style="color: #666666">-1.5</span>,<span style="color: #666666">1.5</span>)
-<span style="color: #3D7B7B; font-style: italic"># ax.grid()</span>
-
-<span style="color: #3D7B7B; font-style: italic"># data</span>
-ax<span style="color: #666666">.</span>scatter(
-    x<span style="color: #666666">=0</span>,
-    y<span style="color: #666666">=0</span>,
-    marker <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;o&#39;</span>,
-    c <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;r&#39;</span>,
-    s <span style="color: #666666">=</span> <span style="color: #666666">50</span>,
-    label <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;zero&#39;</span>,
-)
-ax<span style="color: #666666">.</span>scatter(
-    x<span style="color: #666666">=2/</span>np<span style="color: #666666">.</span>sqrt(<span style="color: #666666">3</span>),
-    y<span style="color: #666666">=0</span>,
-    marker <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;o&#39;</span>,
-    c <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;b&#39;</span>,
-    s <span style="color: #666666">=</span> <span style="color: #666666">50</span>,
-    label <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;pole&#39;</span>,
-)
-
-<span style="color: #3D7B7B; font-style: italic"># label</span>
-ax<span style="color: #666666">.</span>text(
-    x <span style="color: #666666">=</span> ax<span style="color: #666666">.</span>get_xlim()[<span style="color: #666666">-1</span>]<span style="color: #666666">*1.05</span>,
-    y <span style="color: #666666">=</span> <span style="color: #666666">0</span>,
-    s <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;Re&#39;</span>
-)
-ax<span style="color: #666666">.</span>text(
-    x <span style="color: #666666">=</span> <span style="color: #666666">0</span>,
-    y <span style="color: #666666">=</span> ax<span style="color: #666666">.</span>get_ylim()[<span style="color: #666666">-1</span>]<span style="color: #666666">*1.05</span>,
-    s <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;Im&#39;</span>
-)
-
-<span style="color: #3D7B7B; font-style: italic"># unit circle</span>
-theta <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">0</span>,<span style="color: #666666">2</span>,<span style="color: #666666">100</span>) <span style="color: #666666">*</span> np<span style="color: #666666">.</span>pi
-x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>cos(theta)
-y <span style="color: #666666">=</span> np<span style="color: #666666">.</span>sin(theta)
-ax<span style="color: #666666">.</span>plot(
-    x,y,
-    lw <span style="color: #666666">=</span> <span style="color: #666666">0.8</span>,
-    ls <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;--&#39;</span>,
-    c <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;k&#39;</span>
-)
-ax<span style="color: #666666">.</span>arrow(<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,
-        ax<span style="color: #666666">.</span>get_xlim()[<span style="color: #666666">-1</span>],
-        <span style="color: #666666">0</span>,
-        width<span style="color: #666666">=0</span>,
-        head_width <span style="color: #666666">=</span> <span style="color: #666666">0.1</span>,
-        head_length<span style="color: #666666">=0.15</span>,
-        overhang<span style="color: #666666">=0.3</span>,
-        length_includes_head<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>,
-        fc <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;k&#39;</span>,
-        lw<span style="color: #666666">=0</span>,
-        )
-ax<span style="color: #666666">.</span>arrow(<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,
-        <span style="color: #666666">0</span>,
-        ax<span style="color: #666666">.</span>get_ylim()[<span style="color: #666666">-1</span>],
-        width<span style="color: #666666">=0</span>,
-        head_width <span style="color: #666666">=</span> <span style="color: #666666">0.1</span>,
-        head_length<span style="color: #666666">=0.15</span>,
-        overhang<span style="color: #666666">=0.3</span>,
-        length_includes_head<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>,
-        fc <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;k&#39;</span>,
-        lw<span style="color: #666666">=0</span>,
-        )
-
-ax<span style="color: #666666">.</span>legend(
-    <span style="color: #3D7B7B; font-style: italic"># frameon=False,</span>
-    fancybox <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">False</span>,
-    edgecolor <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;k&#39;</span>,
-    )<span style="color: #666666">.</span>get_frame()<span style="color: #666666">.</span>set_linewidth(<span style="color: #666666">0.8</span>)
-
-fig<span style="color: #666666">.</span>tight_layout()
+<!-- =================================== -->
+<h2 id="_1">メモリの解放</h2>
+<!-- =================================== -->
+<p>{{% callout note %}}</p>
+<p>参考:
+<a href="https://qiita.com/Masahiro_T/items/bdd0482a8efd84cdd270">https://qiita.com/Masahiro_T/items/bdd0482a8efd84cdd270</a></p>
+<p>{{% /callout %}}</p>
+<p>繰り返し処理で多数の図を作るとき，
+メモリがいっぱいになり途中で終了することがある．</p>
+<p>そのため都度メモリを開放する処理を挟む必要がある．</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>plt<span style="color: #666666">.</span>clf()
+plt<span style="color: #666666">.</span>close()
 </code></pre></div>
-<figure>  <img alt="fig/ex_mathematical.png" src="../fig/ex_mathematical.png" /> <figcaption>数学風グラフ．</figcaption></figure>
+<!--  ============================= -->
 
 
 
