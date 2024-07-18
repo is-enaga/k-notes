@@ -1755,7 +1755,7 @@ fig <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</s
 <!--  ============================================================================ -->
 <h2 id="_1">図法</h2>
 <p><code>projection</code>引数に与える投影図法．
-最初の描画系メソッドの引数にregion(\rightarrow 第<em>※相互参照無効</em>節)とともに指定する必要がある．</p>
+最初の描画系メソッドの引数にregion(\rightarrow 第--節)とともに指定する必要がある．</p>
 <h3 id="_2">直交座標</h3>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #BA2121">&#39;X&lt;size&gt;&#39;</span>
 </code></pre></div>
@@ -1783,7 +1783,7 @@ projectionの設定はそのままに，regionを次のように指定する．
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>region <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;左下のlon&gt;/&lt;左下のlat&gt;/&lt;右上のlon&gt;/&lt;右上のlat&gt;+r&#39;</span>
 </code></pre></div></p>
 <p>矩形領域に収める領域の左下の座標と右上の座標を与え，最後に「+r」(rectangularの頭文字) を付す．</p>
-<p>例）アルベルス正積円錐図法の矩形図．出力：図<em>※相互参照無効</em></p>
+<p>例）アルベルス正積円錐図法の矩形図．出力：図--</p>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
 <span style="color: #3D7B7B; font-style: italic"># rectangular</span>
 rgn <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;139/35/145/42+r&#39;</span>
@@ -1802,8 +1802,8 @@ fig<span style="color: #666666">.</span>show()
 <figure>  <img alt="fig/rectangularmap.png" src="../fig/rectangularmap.png" /> <figcaption>アルベルス正積円錐図法を矩形にプロットした図．</figcaption> </figure>
 <!--  ============================================================================ -->
 <h2 id="_6">描画範囲の指定</h2>
-<p>一番初めの描画系メソッドの引数にはregion, projection(\rightarrow 第<em>※相互参照無効</em>節)を指定する必要がある．</p>
-<p>直交座標の場合はともかく，地理的な投影図法の場合，座標の指定で入力する値は「度」単位の十進法で扱われる．だが地理的な投影図法の場合は「度分秒」単位でプロットしたい場合も多い．これについては第<em>※相互参照無効</em>節に記す．</p>
+<p>一番初めの描画系メソッドの引数にはregion, projection(\rightarrow 第--節)を指定する必要がある．</p>
+<p>直交座標の場合はともかく，地理的な投影図法の場合，座標の指定で入力する値は「度」単位の十進法で扱われる．だが地理的な投影図法の場合は「度分秒」単位でプロットしたい場合も多い．これについては第--節に記す．</p>
 <h3 id="_7">手動指定</h3>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>region <span style="color: #666666">=</span> [<span style="color: #666666">&lt;</span>xmin<span style="color: #666666">&gt;</span>,<span style="color: #666666">&lt;</span>xmax<span style="color: #666666">&gt;</span>,<span style="color: #666666">&lt;</span>ymin<span style="color: #666666">&gt;</span>,<span style="color: #666666">&lt;</span>ymax<span style="color: #666666">&gt;</span>]
 または
