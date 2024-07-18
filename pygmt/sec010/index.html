@@ -2251,13 +2251,14 @@ frameにおけるグリッドや目盛りの間隔の設定で度分秒を使う
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>    frame <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;agf&gt;+&lt;平行移動量&gt;&#39;</span>
 </code></pre></div></p>
 <p>すなわち，最後に「+&lt;数値&gt;」を付すことで任意の量だけグリッドや目盛りを移動できる．</p>
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>&lt;注意&gt;</p>
 <p>アノテーションを小数表記にした地図（cf. 第<em>※相互参照無効</em>節）および直交座標（X）のグラフにのみ適用可能なようである．</p>
 <p>第<em>※相互参照無効</em>節にある度分秒表記とは相性が悪いようで，
 正常に動作しない（バグ? 仕様?）．
 移動が適用されなかったり，移動してもアノテーションの「分」以下の数字が切り捨てられて表示されたりする．</p>
-<p>{{% /callout %}}</p>
+</div>
 <p>例）出力：図<em>※相互参照無効</em>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
 

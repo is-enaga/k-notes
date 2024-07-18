@@ -1628,16 +1628,19 @@ fig<span style="color: #666666">.</span>show()
     <span style="color: #666666">...</span>,
     )
 </code></pre></div></p>
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
 <p>[leftmargin=7em]
 - &lt;図形間隔&gt;： 正の数にすれば図形の間隔．負の数にすれば図形の数で指定できる．
 - +<l/r>： left or right．指定しなければcenterになる．
 - +&lt;図形の種類&gt;： box, circle, fault (default), slip, or triangle．bやcを+l/rと使うと半分の四角や半円になるようだ．
 - +i; invisible： 直線を消して図形のみにできる．
 - +p; pen： 図形のpenを曲線と別に指定できる．図形の枠線をなくしたい場合は+pとのみ入力する．</p>
-<p>参考）PyGMT公式</p>
-<p><a href="https://www.pygmt.org/latest/gallery/lines/linefronts.html#sphx-glr-gallery-lines-linefronts-py">https://www.pygmt.org/latest/gallery/lines/linefronts.html#sphx-glr-gallery-lines-linefronts-py</a></p>
-<p>{{% /callout %}}</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>  参考）PyGMT公式
+
+  [https://www.pygmt.org/latest/gallery/lines/linefronts.html#sphx-glr-gallery-lines-linefronts-py](https://www.pygmt.org/latest/gallery/lines/linefronts.html#sphx-glr-gallery-lines-linefronts-py)
+</code></pre></div>
 <p>私鉄の線路のような「キ」の字スタイルについては，図形を示す記号はいらない．他の場合はcなど図形の種類を+で指定する．</p>
 <p>「f」は"line \underbar{f}ronts"の意味だと思われる．</p>
 <p>要するに最低「f&lt;間隔&gt;/<size>+l+t」とすれば寒冷前線や沈み込み帯が描ける．

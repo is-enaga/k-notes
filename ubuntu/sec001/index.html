@@ -2158,10 +2158,11 @@ cfi-utilsをインストールしていなければインストールする．
 <!-- ............................. -->
 <h4 id="rclone">Rcloneの準備</h4>
 <!-- ............................. -->
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>作業時参照サイト(2024.2.7):<br />
 <a href="https://www.fujimiya-san.com/archives/2439">https://www.fujimiya-san.com/archives/2439</a></p>
-<p>{{% /callout %}}</p>
+</div>
 <p>まずはcurlとRcloneをインストールする．</p>
 <!--  ```python -->
 
@@ -2316,10 +2317,11 @@ e<span style="color: #666666">/</span>n<span style="color: #666666">/</span>d<sp
 <!-- ............................. -->
 <h4 id="rclone_1">rcloneのリモートのマウント</h4>
 <!-- ............................. -->
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>参照: Rclone公式<br />
 <a href="https://rclone.org/commands/rclone_mount/">https://rclone.org/commands/rclone_mount/</a></p>
-<p>{{% /callout %}}</p>
+</div>
 <p>ドライブを登録できたらそれをマウントする．
 マウントもrcloneのコマンドで行う．</p>
 <p>--vfs-cache-mode writesというオプションをつけないと
@@ -2343,13 +2345,14 @@ e<span style="color: #666666">/</span>n<span style="color: #666666">/</span>d<sp
 <!-- =================================== -->
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>sudo umount <span style="color: #666666">&lt;</span>マウント先<span style="color: #666666">&gt;</span>
 </code></pre></div>
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>オプション:</p>
+</div>
 <ul>
 <li>-f: 強制アンマウント </li>
 <li>-l: -fでアンマウントできない場合でも強制的にアンマウント</li>
 </ul>
-<p>{{% /callout %}}</p>
 <!-- ---------------------------------- -->
 <h2 id="lvm">LVMの構成</h2>
 <!-- ............................. -->

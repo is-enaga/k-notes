@@ -1815,11 +1815,12 @@ grd <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</s
 )
 </code></pre></div></p>
 <p>引数gridにグリッドデータをファイル名または変数で与える．</p>
-<p>{{% callout note %}}</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>annotationのオプション（抜粋）:  
-アノテーションの文字の向きなどの設定を行う．  
-(参考:GMT公式マニュアル [https://docs.generic-mapping-tools.org/dev/grdcontour.html](https://docs.generic-mapping-tools.org/dev/grdcontour.html))
-</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note<p>annotationのオプション（抜粋）:<br />
+アノテーションの文字の向きなどの設定を行う．<br />
+(参考:GMT公式マニュアル <a href="https://docs.generic-mapping-tools.org/dev/grdcontour.html">https://docs.generic-mapping-tools.org/dev/grdcontour.html</a>)</p>
+</p>
+</div>
 <ul>
 <li>+f:
 アノテーションのフォント設定を行う．<br />
@@ -1843,13 +1844,13 @@ grd <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</s
 <li>+i:
 ラインを非表示 (invisible) にし，アノテーションだけを描画する．</li>
 </ul>
-<p>{{% /callout %}}</p>
-<p>{{% callout note %}}</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>label\_placementのオプション (抜粋):  
-等値線に対するアノテーションラベルの位置や数を指定する．  
+<div class="admonition note">
+<p class="admonition-title">Note<p>label_placementのオプション (抜粋):<br />
+等値線に対するアノテーションラベルの位置や数を指定する．<br />
 （参考: GMT公式マニュアル
-[https://docs.generic-mapping-tools.org/6.0/cookbook/contour_annotations.html](https://docs.generic-mapping-tools.org/6.0/cookbook/contour_annotations.html)）
-</code></pre></div>
+<a href="https://docs.generic-mapping-tools.org/6.0/cookbook/contour_annotations.html">https://docs.generic-mapping-tools.org/6.0/cookbook/contour_annotations.html</a>）</p>
+</p>
+</div>
 <ul>
 <li>d:
 「d&lt;間隔&gt;」で等値線に沿った間隔を指定することでアノテーションの位置を調整する．<br />
@@ -1874,16 +1875,15 @@ lオプションとほぼ同じだが，線分を大円経路で考える．</li
 <li>N:
 nオプションとほぼ同じだが，アノテーションが等分された等値線の各区間の終点に配置される．</li>
 </ul>
-<p>{{% /callout %}}</p>
 <p>levelsやlimitをプロットするデータの値域やregionの領域に合わせないと，
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>grdcontour [WARNING]: No contours within specified <span style="color: #666666">-</span>L
 </code></pre></div></p>
 <p>というエラーが出てプロットできないので注意．</p>
-<p>{{% callout note %}}</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>（参照）  
-[https://www.pygmt.org/latest/tutorials/advanced/contour_map.html#sphx-glr-tutorials-advanced-contour-map-py](https://www.pygmt.org/latest/tutorials/advanced/contour_map.html#sphx-glr-tutorials-advanced-contour-map-py)
-</code></pre></div>
-<p>{{% /callout %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note<p>（参照）<br />
+<a href="https://www.pygmt.org/latest/tutorials/advanced/contour_map.html#sphx-glr-tutorials-advanced-contour-map-py">https://www.pygmt.org/latest/tutorials/advanced/contour_map.html#sphx-glr-tutorials-advanced-contour-map-py</a></p>
+</p>
+</div>
 <!--  #### 等値線アノテーションのサイズ -->
 
 <!--  ```python -->

@@ -1556,9 +1556,10 @@ PyGMTの図は左下の角が原点となるようにされる．
 <p>GMTのmapprojectメソッドで地図のサイズを取得できるが，
 PyGMTではmapprojectがまだ未実装なようである．</p>
 <p>したがって手順は増えるが下記のようにして地図サイズを取得する．</p>
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>参考: <a href="https://docs.generic-mapping-tools.org/dev/mapproject.html">https://docs.generic-mapping-tools.org/dev/mapproject.html</a></p>
-<p>{{% /callout %}}</p>
+</div>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>(figを先に作成しておく)
 <span style="color: #008000; font-weight: bold">with</span> pygmt<span style="color: #666666">.</span>clib<span style="color: #666666">.</span>Session() <span style="color: #008000; font-weight: bold">as</span> session:
     <span style="color: #008000; font-weight: bold">with</span> pygmt<span style="color: #666666">.</span>helpers<span style="color: #666666">.</span>GMTTempFile() <span style="color: #008000; font-weight: bold">as</span> tmp:

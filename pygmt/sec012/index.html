@@ -1566,24 +1566,28 @@
 <!-- =================================== -->
 <h2 id="_1">地理的条件による点データの抽出</h2>
 <!-- =================================== -->
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>参照)<br />
 <a href="https://www.pygmt.org/dev/api/generated/pygmt.select.html">https://www.pygmt.org/dev/api/generated/pygmt.select.html</a></p>
-<p>{{% /callout %}}</p>
-<p>内陸，海域，湖など，地理的条件によって点データを抽出するselect関数が存在する．
-{{% callout note %}}</p>
+</div>
+<p>内陸，海域，湖など，地理的条件によって点データを抽出するselect関数が存在する．</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>参照: GMTの例，PyGMT公式マニュアル</p>
 <p><a href="https://docs.generic-mapping-tools.org/latest/gallery/ex24.html">https://docs.generic-mapping-tools.org/latest/gallery/ex24.html</a>
 <a href="https://www.pygmt.org/latest/api/generated/pygmt.select.html">https://www.pygmt.org/latest/api/generated/pygmt.select.html</a></p>
-<p>{{% /callout %}}</p>
+</div>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #666666">&lt;</span>out<span style="color: #666666">&gt;</span> <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>select(
     <span style="color: #666666">&lt;</span>オプション<span style="color: #666666">&gt;</span>
     )
 </code></pre></div>
 <p>条件により与えたデータから地理的条件によってデータを抽出できる．
 海岸線基準，点または線からの距離基準，多角形・緯度経度範基準など．
-詳しくは公式マニュアルを参照．基準は次の６つ：
-{{% callout note %}}</p>
+詳しくは公式マニュアルを参照．基準は次の６つ：</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
 <ul>
 <li>inside a rectangular region (region [and projection])</li>
 <li>within dist km of any point in pointfile</li>
@@ -1593,7 +1597,6 @@
 <li>has z-values within a given range, or</li>
 <li>inside bins of a grid mask whose nodes are non-zero</li>
 </ul>
-<p>{{% /callout %}}</p>
 <!-- %---------------------------------- -->
 <h3 id="_2">点からの距離によるデータ分類</h3>
 <!-- ---------------------------------- -->
@@ -1654,7 +1657,8 @@ fig<span style="color: #666666">.</span>show()
 <!-- ---------------------------------- -->
 <h3 id="_3">水・陸でのデータ分類</h3>
 <!-- ---------------------------------- -->
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>海と陸でデータを分別する場合：
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>mask <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;wet/dry&#39;</span>
 </code></pre></div></p>
@@ -1664,7 +1668,7 @@ fig<span style="color: #666666">.</span>show()
 <p>それぞれを含むなら「k」(kept)，
 除外するなら「s」（skipped）を指定する．
 文字列またはリストで指定．</p>
-<p>{{% /callout %}}</p>
+</div>
 <p>例）ランダムな点のうち，内陸を青，海域を赤でプロットする：
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>

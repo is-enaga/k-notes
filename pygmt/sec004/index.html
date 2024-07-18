@@ -1666,16 +1666,14 @@ fig<span style="color: #666666">.</span>savefig(
 )
 </code></pre></div></p>
 <figure>  <img alt="fig/elliplse.png" src="../fig/elliplse.png" /><figcaption>地図投影によらない楕円（左，青, style e）と地図投影に従った楕円（右，赤, style E）．右側の楕円は球面に従ってプロットされているため，長軸半径が緯度0°に比べて60°では地図上では倍に伸びて見える．styleをEにして描かれる楕円を用いれば，誤差楕円を描画できる．</figcaption> </figure>
-<p>{{% callout note %}}</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>参照: [https://docs.generic-mapping-tools.org/6.1/psxy.html](https://docs.generic-mapping-tools.org/6.1/psxy.html)
-
--Se  
-ellipse. Direction (in degrees counter-clockwise from horizontal), major\_axis, and minor\_axis must be found in columns 3, 4, and 5. This yields a Cartesian ellipse whose shape is unaffected by the map projection.
-
--SE  
-Same as -Se, except azimuth (in degrees east of north) should be given instead of direction. The azimuth will be mapped into an angle based on the chosen map projection (-Se leaves the directions unchanged.) Furthermore, the axes lengths must be given in geographical instead of plot-distance units. An exception occurs for a linear projection in which we assume the ellipse axes are given in the same units as -R. For degenerate ellipses (circles) with just the diameter given, use -SE-. The diameter is excepted to be given in column 3. Alternatively, append the desired diameter to -SE- and this fixed diameter is used instead. For allowable geographical units, see Units [Default is k for km]. The shape of the ellipse will be affected by the properties of the map projection.
-</code></pre></div>
-<p>{{% /callout %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note<p>参照: <a href="https://docs.generic-mapping-tools.org/6.1/psxy.html">https://docs.generic-mapping-tools.org/6.1/psxy.html</a></p>
+<p>-Se<br />
+ellipse. Direction (in degrees counter-clockwise from horizontal), major_axis, and minor_axis must be found in columns 3, 4, and 5. This yields a Cartesian ellipse whose shape is unaffected by the map projection.</p>
+<p>-SE<br />
+Same as -Se, except azimuth (in degrees east of north) should be given instead of direction. The azimuth will be mapped into an angle based on the chosen map projection (-Se leaves the directions unchanged.) Furthermore, the axes lengths must be given in geographical instead of plot-distance units. An exception occurs for a linear projection in which we assume the ellipse axes are given in the same units as -R. For degenerate ellipses (circles) with just the diameter given, use -SE-. The diameter is excepted to be given in column 3. Alternatively, append the desired diameter to -SE- and this fixed diameter is used instead. For allowable geographical units, see Units [Default is k for km]. The shape of the ellipse will be affected by the properties of the map projection.</p>
+</p>
+</div>
 <!--  ############################################################################### -->
 
 

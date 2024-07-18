@@ -1539,10 +1539,12 @@
     resolution <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;c/l/i/h/f&gt;&#39;</span>,
     )
 </code></pre></div>
-<p>海岸線や海陸の色を指定して描画できる．
-{{% callout note %}}</p>
+<p>海岸線や海陸の色を指定して描画できる．</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>解像度resolutionは低い順に以下の通り．<br />
 (参考: <a href="https://www.pygmt.org/dev/tutorials/basics/coastlines.html">https://www.pygmt.org/dev/tutorials/basics/coastlines.html</a>)</p>
+</div>
 <ul>
 <li>c: crude</li>
 <li>l: low: 規定値</li>
@@ -1550,7 +1552,6 @@
 <li>h: high</li>
 <li>f: full</li>
 </ul>
-<p>{{% /callout %}}</p>
 <h2 id="_2">断面図</h2>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>pygmt<span style="color: #666666">.</span>project(
     infile <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>xyz成分のデータ<span style="border: 1px solid #FF0000">．</span>ndarrayも良いらしいが<span style="border: 1px solid #FF0000">，</span>なぜか失敗した<span style="border: 1px solid #FF0000">．</span><span style="color: #666666">&gt;</span>,

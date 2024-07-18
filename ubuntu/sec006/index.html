@@ -1607,13 +1607,14 @@
 <p>Intel Fortranは高品質なFortranコンパイラ．
 gFortranも無料で使えるが，内部で一度Cに変換している．
 gfortでコンパイルできないものもifortではコンパイルできるかもしれない．</p>
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>参照:<br />
-  [https://qiita.com/implicit_none/items/35bc4be8f2022903747a#apt</p>
-<!-- E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB](https://qiita.com/implicit_none/items/35bc4be8f2022903747a#apt%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)   -->
-<p>公式:<br />
+<a href="https://qiita.com/implicit_none/items/35bc4be8f2022903747a#apt%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">https://qiita.com/implicit_none/items/35bc4be8f2022903747a#apt
+&lt;!-- E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB</a>   --&gt;
+  公式:<br />
 <a href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&amp;distributions=aptpackagemanager">https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&amp;distributions=aptpackagemanager</a></p>
-<p>{{% /callout %}}</p>
+</div>
 <p>Intelのリポジトリの公開鍵を取得する．
 さらにその鍵で署名されているアーカイブが信頼されるよう，鍵をAPTのキーリングに追加．
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>wget https:<span style="color: #666666">//</span>apt<span style="color: #666666">.</span>repos<span style="color: #666666">.</span>intel<span style="color: #666666">.</span>com<span style="color: #666666">/</span>intel<span style="color: #666666">-</span>gpg<span style="color: #666666">-</span>keys<span style="color: #666666">/</span>GPG<span style="color: #666666">-</span>PUB<span style="color: #666666">-</span>KEY<span style="color: #666666">-</span>INTEL<span style="color: #666666">-</span>SW<span style="color: #666666">-</span>PRODUCTS<span style="color: #666666">.</span>PUB

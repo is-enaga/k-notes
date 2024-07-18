@@ -1818,8 +1818,10 @@ fig<span style="color: #666666">.</span>show()
     <span style="color: #666666">...</span>,
 </code></pre></div>
 <p>basemapまたはcoastの中で指定することができる．</p>
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>オプション：</p>
+</div>
 <ul>
 <li>+j: justify. 左右位置からKRM, 上下位置からTBCのいずれかを選び，グラフ内での位置を指定する．(ex. +jMT)</li>
 <li>+w: width. スケールで示す距離．(ex. +w100k)</li>
@@ -1828,7 +1830,6 @@ fig<span style="color: #666666">.</span>show()
 <li>+u: unit. +wの単位に基づき，スケールの数字に単位をつける．</li>
 <li>+c: どの緯度 (経度) におけるスケールを示すかを指定する．</li>
 </ul>
-<p>{{% /callout %}}</p>
 <p>図<em>※相互参照無効</em>も参照．</p>
 <h3 id="_6">太さ</h3>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">with</span> pygmt<span style="color: #666666">.</span>config(
@@ -1872,27 +1873,28 @@ position=で場所や方向を指定する．
     position<span style="color: #666666">=</span><span style="color: #BA2121">&#39;JML+o5c/-0.1c+w-7.8c&#39;</span>,
     )
 </code></pre></div></p>
-<p>{{% callout note %}}</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>frame引数でのオプション：
-</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note<p>frame引数でのオプション：</p>
+</p>
+</div>
 <ul>
 <li>
 <p>+l: label.</p>
-<p>他もbasemapなどで使うframeと共通でagf等が使える．</p>
-<p>position引数でのオプション：</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>他もbasemapなどで使うframeと共通でagf等が使える．
+
+position引数でのオプション：
+</code></pre></div>
 </li>
 <li>
 <p>+j: justify. 左右位置からKRM, 上下位置からTBCのいずれかを選び，グラフ内での位置を指定する．(ex. +jMT)</p>
 </li>
 <li>+w: width. 「+w&lt;長さ&gt;/&lt;太さ&gt;」の形で使用．カラーバーの長さと太さ．</li>
-<li>
-<p>+e: これを付けると，カラーバーの両端に三角が付く．さらに数字を加えると三角の大きさを指定できる．</p>
-<p>frameとpositionの引数で各項目を調整する．
+<li>+e: これを付けると，カラーバーの両端に三角が付く．さらに数字を加えると三角の大きさを指定できる．<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>frameとpositionの引数で各項目を調整する．
 +wで長さのみならず太さも指定できる．また+eでカラーバーの両端に三角を付けられる．
-このように調整方法が距離スケールバーとはやや異なるので注意．</p>
+このように調整方法が距離スケールバーとはやや異なるので注意．
+</code></pre></div>
 </li>
 </ul>
-<p>{{% /callout %}}</p>
 <!--  ============================================================================ -->
 <h2 id="_9">凡例</h2>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>fig<span style="color: #666666">.</span>colorbar(

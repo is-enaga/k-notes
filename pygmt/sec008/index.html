@@ -1654,17 +1654,20 @@ qは"\underline{q}uoted line"の頭文字のようだ．
 線を消して曲線上に並べたテキストだけ書くこともできるし，
 線とテキストが重ならないようにテキストの位置をずらすこともできる．
 等値線のラベルと同様の処理のようだ．</p>
-<p>書き方はちょっとややこしい．qの後にテキスト配置方法やテキスト情報の入力方法（テキストファイルで与えるか，直接与えるか）などの設定を入力し，そのあと「:」で区切って「+」で始まるオプションを入力する．個人的によく使いそうだと思うオプションは次の通り：
-{{% callout note %}}</p>
+<p>書き方はちょっとややこしい．qの後にテキスト配置方法やテキスト情報の入力方法（テキストファイルで与えるか，直接与えるか）などの設定を入力し，そのあと「:」で区切って「+」で始まるオプションを入力する．個人的によく使いそうだと思うオプションは次の通り：</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>controlling algorithm:</p>
+</div>
 <ul>
 <li>d: ここで指定した間隔ごとにテキストを設置する．狭くしすぎるとテキストが重なってしまう．</li>
 <li>n: 一番楽に使えそう．線上にテキストを配置する数を指定．これを1にすると線の中心にテキストが追加される．2以上なら繰り返し同じテキストが等間隔に配置される．</li>
 <li>N: N1なら終点に，N-1なら始点に「テキストの左端」がくるようにテキストが配置される．N2なら線の両端に「文字の中心」がくるように２つのテキストが配置される．+jオプションで文字列のどの位置を線の端に合せるかを指定可能．+vオプションをつけるとテキストが表示されなかったりエラーで停止するので注意．</li>
 </ul>
-<p>{{% /callout %}}</p>
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>オプション:</p>
+</div>
 <ul>
 <li>+l: これでテキストを指定．テキストファイルを与えないなら必須．</li>
 <li>+v: テキストを曲線に沿わせる．これをつけないとテキストはまっすぐに配置される．</li>
@@ -1687,7 +1690,6 @@ qは"\underline{q}uoted line"の頭文字のようだ．
 <li></li>
 <li>+r: これよりも曲がりが急な部分にテキストを表示しない．デフォルトは0なのでどんだけ急に曲がっているところにもテキストが配置される．</li>
 </ul>
-<p>{{% /callout %}}</p>
 <p>例）コサイン曲線に沿ったテキスト．出力：図<em>※相互参照無効</em>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>

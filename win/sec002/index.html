@@ -1584,10 +1584,11 @@
 <!-- =================================== -->
 <h2 id="win">WINフォーマット</h2>
 <!-- =================================== -->
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>詳しくは以下を参照：
 <a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/man.ja/winformat.html">https://wwweic.eri.u-tokyo.ac.jp/WIN/man.ja/winformat.html</a></p>
-<p>{{% /callout %}}</p>
+</div>
 <p>WINフォーマットはバイナリ列のデータで，
 あらかじめ定められた先頭からのByte数を基準に，
 どこに何の情報が入っているかが決まっている．</p>
@@ -1601,21 +1602,24 @@
 <!-- =================================== -->
 <h2 id="stan">速度構造(stan)ファイル</h2>
 <!-- =================================== -->
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>参考：</p>
+</div>
 <ul>
 <li><a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/man.ja/win.html">https://wwweic.eri.u-tokyo.ac.jp/WIN/man.ja/win.html</a></li>
 <li>hypomh.f 989行目~</li>
 </ul>
-<p>{{% /callout %}}</p>
 <p>hypomhの説明ではstanファイルと記されている．
 震源決定プログラムhypomhで用いられる速度構造ファイル．</p>
 <p>行ごとに内容が定められ，かつ固定長である．
 P, Sの速度を個別に指定することはできず，P波速度(Vp [km/s])構造だけを指定する．
 深さは0から始まり，km単位で各層の厚さを指定する．</p>
-<p>stanファイルについて，震源決定において以下の仕様があることに留意せよ．
-{{% callout note %}}</p>
+<p>stanファイルについて，震源決定において以下の仕様があることに留意せよ．</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>震源決定時の仕様:</p>
+</div>
 <ul>
 <li>S波速度Vsは, Vp/Vs=1.73として扱われる．</li>
 <li>標高0kmより高い部分のVpは，0kmにおけるVpとする．</li>
@@ -1624,7 +1628,6 @@ P, Sの速度を個別に指定することはできず，P波速度(Vp [km/s])�
 <li>初期震源の時刻の不確かさは入力が必要だが，使われない．</li>
 <li>直接hypomhを使わずにwinで震源決定するときは，初期震源の緯度と経度は使われない（深さは使われるようだ）．</li>
 </ul>
-<p>{{% /callout %}}</p>
 <p>ファイルの構成は以下の通り：</p>
 <ul>
 <li>1行目: 初期震源の位置<br />
@@ -1645,13 +1648,14 @@ P, Sの速度を個別に指定することはできず，P波速度(Vp [km/s])�
 <!-- =================================== -->
 <h2 id="final">震源結果(final)ファイル</h2>
 <!-- =================================== -->
-<p>{{% callout note %}}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>参考：</p>
+</div>
 <ul>
 <li><a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/man.ja/pickfile.html">https://wwweic.eri.u-tokyo.ac.jp/WIN/man.ja/pickfile.html</a></li>
 <li>hypomh.f 289行目~</li>
 </ul>
-<p>{{% /callout %}}</p>
 <p>hypomhによる震源決定で出力されるfinalファイルのフォーマットについて記す．
 winから震源決定を行った場合はpickファイルの「#f」で始まる行に出力される．</p>
 <p>ファイルの構成は以下の通り：</p>
