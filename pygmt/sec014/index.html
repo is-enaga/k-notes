@@ -22,7 +22,7 @@
     
     
       
-        <title>第14章 地理院・国交省データの利用 - K-Notes</title>
+        <title>第14章 外部データの利用 - K-Notes</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              第14章 地理院・国交省データの利用
+              第14章 外部データの利用
             
           </span>
         </div>
@@ -804,7 +804,7 @@
           
   
   <span class="md-ellipsis">
-    第14章 地理院・国交省データの利用
+    第14章 外部データの利用
   </span>
   
 
@@ -815,7 +815,7 @@
         
   
   <span class="md-ellipsis">
-    第14章 地理院・国交省データの利用
+    第14章 外部データの利用
   </span>
   
 
@@ -839,11 +839,11 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      標高メッシュデータ
+      国土地理院標高メッシュデータ
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="標高メッシュデータ">
+    <nav class="md-nav" aria-label="国土地理院標高メッシュデータ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -872,6 +872,39 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
+      シェープファイルのプロット
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="シェープファイルのプロット">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#geopandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      geopandasのインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロット
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
       国交省による道路等の線データの利用
     </span>
   </a>
@@ -889,7 +922,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#geopandas" class="md-nav__link">
+  <a href="#geopandas_1" class="md-nav__link">
     <span class="md-ellipsis">
       geopandasの利用
     </span>
@@ -1545,11 +1578,11 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      標高メッシュデータ
+      国土地理院標高メッシュデータ
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="標高メッシュデータ">
+    <nav class="md-nav" aria-label="国土地理院標高メッシュデータ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1578,6 +1611,39 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
+      シェープファイルのプロット
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="シェープファイルのプロット">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#geopandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      geopandasのインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロット
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
       国交省による道路等の線データの利用
     </span>
   </a>
@@ -1595,7 +1661,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#geopandas" class="md-nav__link">
+  <a href="#geopandas_1" class="md-nav__link">
     <span class="md-ellipsis">
       geopandasの利用
     </span>
@@ -1626,8 +1692,9 @@
   
 
 
-<h1 id="14">第14章　地理院・国交省データの利用</h1>
-<h2 id="_1">標高メッシュデータ</h2>
+<h1 id="14">第14章　外部データの利用</h1>
+<p>ここでは国土地理院や国土交通省など，GMT外部から得たデータの使用方法について記す．</p>
+<h2 id="_1">国土地理院標高メッシュデータ</h2>
 <h3 id="_2">データの下準備</h3>
 <p>地理院からデータをダウンロードするとzipで圧縮されている．中にはXML形式のファイルが入っている．
 これを扱いやすくするために緯度，経度，標高のxyz形式にするため，
@@ -1644,7 +1711,102 @@
                  delimiter<span style="color: #666666">=</span><span style="color: #BA2121">&quot;,&quot;</span>,
                  usecols<span style="color: #666666">=</span>[<span style="color: #666666">1</span>,<span style="color: #666666">2</span>,<span style="color: #666666">3</span>])
 </code></pre></div></p>
-<h2 id="_4">国交省による道路等の線データの利用</h2>
+<!-- =================================== -->
+<h2 id="_4">シェープファイルのプロット</h2>
+<!-- =================================== -->
+<p>(v0.12.0)  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>データの例:<br />
+国土数値情報（国土交通省）の海岸線<br />
+<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-C23.html">https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-C23.html</a></p>
+</div>
+<p>国交省による国土数値情報などはシェープファイルで提供されるが，
+PyGMT単体ではシェープファイルは読み込めない．
+そこでgeopanasを使えばシェープファイルを読み込んでfig.plotでプロットできる．</p>
+<!-- ---------------------------------- -->
+<h3 id="geopandas">geopandasのインストール</h3>
+<!-- ---------------------------------- -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>mamba install geopandas
+</code></pre></div>
+<p>mambaを使用していない場合は「conda install geopandas」でも良い．</p>
+<!-- ---------------------------------- -->
+<h3 id="_5">プロット</h3>
+<!-- ---------------------------------- -->
+
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">geopandas</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
+
+<span style="color: #3D7B7B; font-style: italic"># ファイル読み込み</span>
+coast <span style="color: #666666">=</span> geopandas<span style="color: #666666">.</span>read_file(<span style="color: #666666">&lt;</span>入力ファイル<span style="color: #666666">.</span>shp<span style="color: #666666">&gt;</span>)
+<span style="color: #3D7B7B; font-style: italic"># coast = geopandas.read_file(&lt;入力ファイル.zip&gt;) も可．</span>
+
+<span style="color: #3D7B7B; font-style: italic"># プロット</span>
+pygmt<span style="color: #666666">.</span>Figure()
+<span style="color: #666666">...</span>
+fig<span style="color: #666666">.</span>plot(
+    data <span style="color: #666666">=</span> coast,
+    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p&#39;</span>,
+    )
+<span style="color: #666666">...</span>
+</code></pre></div>
+<p>国土数値情報などからダウンロードしたファイルで
+zipファイルの中にshpファイルがある場合，
+展開して中のshpファイルをgeopandasで読み込んでも良いが，
+展開せずに直接zipファイルをgeopandas.read_fileで読み込むこともできる．</p>
+<!--  使用するにはデータの変換が必要である． -->
+
+<!--  ### shp形式からgmt形式への変換 -->
+
+<!--  %............................. -->
+
+<!--  #### コマンドのインストール -->
+
+<!--  %............................. -->
+
+<!--  ogr2ogrを使ってshpファイルをgmt形式に変換する． -->
+
+<!--  ogr2ogrのインストールはUbuntuでは以下のようにする． -->
+
+<!--  ```python -->
+
+<!--  sudo add-apt-repository ppa:ubuntugis/ppa -->
+
+<!--  sudo apt update -->
+
+<!--  sudo apt isntall gdal-bin -->
+
+<!--  ``` -->
+
+<!--  インストール後の確認は以下で行える： -->
+
+<!--  ```python -->
+
+<!--  ogrinfo --version -->
+
+<!--  ``` -->
+
+<!--  出力例: -->
+
+<!--  ```python -->
+
+<!--  GDAL 3.8.5, released 2024/04/02 -->
+
+<!--  ``` -->
+
+<!--  %............................. -->
+
+<!--  #### 変換の実行 -->
+
+<!--  %............................. -->
+
+<!--  ```python -->
+
+<!--  ogr2ogr -f "GMT" 出力ファイル名.gmt 入力ファイル名.shp -->
+
+<!--  ``` -->
+
+<h2 id="_6">国交省による道路等の線データの利用</h2>
 <p>道路や鉄道路線などのデータをダウンロードすると，シェープファイルやgeojsonファイルなどが入っている．これをライブラリを使って取り込んでプロットする．</p>
 <h3 id="json">jsonライブラリの利用</h3>
 <p>(1)import json. (2)open(&lt;.geojson&gt;, 'r', encoding=<utf\958\95sig>) (3)json.load(openfile) (4)条件で絞込．(5)リストに格納してプロット．</p>
@@ -1673,7 +1835,7 @@ kobe <span style="color: #666666">=</span> []
         )
 </code></pre></div></p>
 <figure>  <img alt="fig/trainjson.png" src="../fig/trainjson.png" /> <figcaption>xyz2grdを用いて変換したデータをプロットした例．適切な設定を行わなければこのように正常にプロットできない．()</figcaption> <figcaption>国交省からダウンロードした鉄道データをjsonライブラリを用いて読み込みプロットした結果．（標高データ: 国土地理院基盤地図情報数値標高モデル; 鉄道路線データ: 国土交通省国土数値情報）</figcaption> </figure>
-<h3 id="geopandas">geopandasの利用</h3>
+<h3 id="geopandas_1">geopandasの利用</h3>
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>gpd<span style="color: #666666">.</span>read_file(<span style="color: #666666">&lt;</span>utf<span style="color: #666666">-8</span>のgeojsonデータ<span style="color: #666666">&gt;</span>, encoding<span style="color: #666666">=</span><span style="color: #BA2121">&#39;utf_8_sig&#39;</span>)
 </code></pre></div>
 <p>condaでインストールできるライブラリgeopandasを使う方法．(1)shpファイルを使う場合：
