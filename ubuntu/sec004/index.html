@@ -1238,12 +1238,22 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="ssh鍵の登録">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      リポジトリの作成からプッシュまでの流れ
+      鍵の作成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHubへの公開鍵の登録
     </span>
   </a>
   
@@ -1252,7 +1262,7 @@
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      リモートの強制上書き
+      接続確認
     </span>
   </a>
   
@@ -1260,6 +1270,38 @@
         
           <li class="md-nav__item">
   <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      リモートリポジトリURLの登録
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      リポジトリの作成からプッシュまでの流れ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      リモートの強制上書き
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_1" class="md-nav__link">
     <span class="md-ellipsis">
       リモートURLの確認・変更
     </span>
@@ -1544,12 +1586,22 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="ssh鍵の登録">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      リポジトリの作成からプッシュまでの流れ
+      鍵の作成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHubへの公開鍵の登録
     </span>
   </a>
   
@@ -1558,7 +1610,7 @@
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      リモートの強制上書き
+      接続確認
     </span>
   </a>
   
@@ -1566,6 +1618,38 @@
         
           <li class="md-nav__item">
   <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      リモートリポジトリURLの登録
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      リポジトリの作成からプッシュまでの流れ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      リモートの強制上書き
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_1" class="md-nav__link">
     <span class="md-ellipsis">
       リモートURLの確認・変更
     </span>
@@ -1606,6 +1690,10 @@
 <!-- ---------------------------------- -->
 <h3 id="ssh">ssh鍵の登録</h3>
 <!-- ---------------------------------- -->
+
+<!-- ............................. -->
+<h4 id="_1">鍵の作成</h4>
+<!-- ............................. -->
 <p>GitHubにssh鍵を登録しておくと，スムーズにリモートへ接続できる．
 パスワード認証によるアクセスは廃止されている．</p>
 <p>鍵を作成して，公開鍵をGitHubに登録する．
@@ -1613,9 +1701,37 @@
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>cd <span style="color: #666666">~/.</span>ssh
 ssh<span style="color: #666666">-</span>keygen <span style="color: #666666">-</span>t ed25519
 </code></pre></div></p>
-<p>実行すると鍵の名前を最初に聞かれるので，そこで「github」などわかりやすい名前にしておくと楽．</p>
+<p>実行すると鍵の名前を最初に聞かれるので，そこで「github」などわかりやすい名前にしておくと楽．
+さらにここで名前を自分で決めた際は，~/.ssh/configに次の記述を加えることでエイリアスを登録する:
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Host github
+  HostName github<span style="color: #666666">.</span>com
+  User git
+  IdentityFile <span style="color: #666666">~/.</span>ssh<span style="color: #666666">/</span>github
+</code></pre></div></p>
+<!-- ............................. -->
+<h4 id="github_1">GitHubへの公開鍵の登録</h4>
+<!-- ............................. -->
+<p>GitHunのSettingsから「SSH and GPG keys」のページを開いて「New SSH key」を選択し，
+Titleにわかりやすい名前を自由につけて，
+Keyの欄に公開鍵（.pubがついているもの）の中身をコピーして登録する．</p>
+<!-- ............................. -->
+<h4 id="_2">接続確認</h4>
+<!-- ............................. -->
+<p>以下は上述のエイリアスを登録した場合．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>ssh <span style="color: #666666">-</span>T github
+</code></pre></div></p>
+<!-- ............................. -->
+<h4 id="url">リモートリポジトリURLの登録</h4>
+<!-- ............................. -->
+<p>URLは次のようになる．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>git<span style="color: #AA22FF">@github</span>:<span style="color: #666666">&lt;</span>user name<span style="color: #666666">&gt;/&lt;</span>repository name<span style="color: #666666">&gt;.</span>git
+</code></pre></div></p>
+<p>すでに別のURLが登録されている場合は，
+gitを使うディレクトリ内で次のようして変更する．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>git remote <span style="color: #008000">set</span><span style="color: #666666">-</span>url origin <span style="color: #666666">&lt;</span>URL<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
 <!-- ---------------------------------- -->
-<h3 id="_1">リポジトリの作成からプッシュまでの流れ</h3>
+<h3 id="_3">リポジトリの作成からプッシュまでの流れ</h3>
 <!-- ---------------------------------- -->
 <p>GitHub上でリポジトリを作成し，
 ローカルファイルを初めてリモートにプッシュするまでの手順を示す．
@@ -1635,7 +1751,7 @@ git push -u origin masterでリモートリポジトリにプッシュする．<
 <p>GitHubを使わずローカルでのみ管理する場合は，
 commitまでで十分である．</p>
 <!-- ---------------------------------- -->
-<h3 id="_2">リモートの強制上書き</h3>
+<h3 id="_4">リモートの強制上書き</h3>
 <!-- ---------------------------------- -->
 <p>git push origin mainを試みるとき，
 リモートとローカルの食い違いが原因で次のようなエラーが出る場合がある：
@@ -1652,7 +1768,7 @@ hint: See the <span style="color: #BA2121">&#39;Note about fast-forwards&#39;</s
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>git push <span style="color: #666666">-</span>f origin main
 </code></pre></div></p>
 <!-- ---------------------------------- -->
-<h3 id="url">リモートURLの確認・変更</h3>
+<h3 id="url_1">リモートURLの確認・変更</h3>
 <!-- ---------------------------------- -->
 <p>次のコマンドでリモートリポジトリのURLを確認できる．
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>git remote <span style="color: #666666">-</span>v
