@@ -1314,6 +1314,72 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gitによるバージョン管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gitによるバージョン管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ブランチ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ブランチ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      新規ブランチの発行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ブランチの切り替え
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ブランチの削除
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      バージョンの付加
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1662,6 +1728,72 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gitによるバージョン管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gitによるバージョン管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ブランチ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ブランチ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      新規ブランチの発行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ブランチの切り替え
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ブランチの削除
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      バージョンの付加
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1776,6 +1908,39 @@ hint: See the <span style="color: #BA2121">&#39;Note about fast-forwards&#39;</s
 <p>リモートリポジトリのURLを変更するには以下のコマンドを実行する．
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>git remote <span style="color: #008000">set</span><span style="color: #666666">-</span>url origin <span style="color: #666666">&lt;</span>URL<span style="color: #666666">&gt;</span>
 </code></pre></div></p>
+<!-- =================================== -->
+<h2 id="git">Gitによるバージョン管理</h2>
+<!-- =================================== -->
+
+<!-- ---------------------------------- -->
+<h3 id="_5">ブランチ</h3>
+<!-- ---------------------------------- -->
+
+<!-- ............................. -->
+<h4 id="_6">新規ブランチの発行</h4>
+<!-- ............................. -->
+<p>新しい機能を追加するときなどに，ブランチを発行したい場合は次のようにする．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>git branch <span style="color: #666666">&lt;</span>branch name<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<!-- ............................. -->
+<h4 id="_7">ブランチの切り替え</h4>
+<!-- ............................. -->
+<p>別のブランチに切りかえるには次のようにする．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>git checkout <span style="color: #666666">&lt;</span>branch name<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<!-- ............................. -->
+<h4 id="_8">ブランチの削除</h4>
+<!-- ............................. -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>git branch <span style="color: #666666">-</span>d <span style="color: #666666">&lt;</span>branch name<span style="color: #666666">&gt;</span>
+</code></pre></div>
+<!-- ---------------------------------- -->
+<h3 id="_9">バージョンの付加</h3>
+<!-- ---------------------------------- -->
+<p>ファイルにバージョン番号を付けて管理する場合，以下のようにすればよい．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>git tag <span style="color: #666666">-</span>a <span style="color: #666666">&lt;</span>tag name<span style="color: #666666">&gt;</span> <span style="color: #666666">-</span>m <span style="color: #BA2121">&quot;&lt;message&gt;&quot;</span>
+git push origin <span style="color: #666666">&lt;</span>tag name<span style="color: #666666">&gt;</span>
+</code></pre></div></p>
+<p>これで現在の状態にバージョンを付加し，リモートにプッシュすることができる．</p>
 <!-- ######################################### -->
 
 
