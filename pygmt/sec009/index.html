@@ -22,7 +22,7 @@
     
     
       
-        <title>第9章 地図のプロット - K-Notes</title>
+        <title>第9章 グラフ内のテキスト - K-Notes</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              第9章 地図のプロット
+              第9章 グラフ内のテキスト
             
           </span>
         </div>
@@ -585,7 +585,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 テキストの追加・設定
   </span>
   
 
@@ -606,7 +606,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 点・図形のプロット
   </span>
   
 
@@ -627,7 +627,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 線のプロット
   </span>
   
 
@@ -648,7 +648,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 二次元プロット
+    第7章 震源メカニズム解
   </span>
   
 
@@ -669,7 +669,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 グラフ内のテキスト
+    第8章 二次元プロット
   </span>
   
 
@@ -699,7 +699,7 @@
           
   
   <span class="md-ellipsis">
-    第9章 地図のプロット
+    第9章 グラフ内のテキスト
   </span>
   
 
@@ -710,7 +710,7 @@
         
   
   <span class="md-ellipsis">
-    第9章 地図のプロット
+    第9章 グラフ内のテキスト
   </span>
   
 
@@ -734,16 +734,40 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      海岸線，海陸のプロット
+      テキストボックス
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="テキストボックス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      余白
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      角を丸める
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      断面図
+      線に沿ったテキスト
     </span>
   </a>
   
@@ -769,7 +793,7 @@
         
   
   <span class="md-ellipsis">
-    第10章 軸・枠回り
+    第10章 地図のプロット
   </span>
   
 
@@ -790,7 +814,7 @@
         
   
   <span class="md-ellipsis">
-    第11章 周辺要素
+    第11章 軸・枠回り
   </span>
   
 
@@ -811,7 +835,7 @@
         
   
   <span class="md-ellipsis">
-    第12章 データの処理
+    第12章 周辺要素
   </span>
   
 
@@ -832,7 +856,7 @@
         
   
   <span class="md-ellipsis">
-    第13章 グラフ紙面上の処理
+    第13章 データの処理
   </span>
   
 
@@ -853,7 +877,7 @@
         
   
   <span class="md-ellipsis">
-    第14章 外部データの利用
+    第14章 グラフ紙面上の処理
   </span>
   
 
@@ -874,7 +898,7 @@
         
   
   <span class="md-ellipsis">
-    第15章 その他
+    第15章 外部データの利用
   </span>
   
 
@@ -1497,16 +1521,40 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      海岸線，海陸のプロット
+      テキストボックス
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="テキストボックス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      余白
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      角を丸める
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      断面図
+      線に沿ったテキスト
     </span>
   </a>
   
@@ -1530,40 +1578,139 @@
   
 
 
-<h1 id="9">第9章　地図のプロット</h1>
-<h2 id="_1">海岸線，海陸のプロット</h2>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>fig<span style="color: #666666">.</span>coast(
-    shorelines <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;width&gt;,&lt;color&gt;&#39;</span>,
-    land <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>color<span style="color: #666666">&gt;</span>,
-    water <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>color<span style="color: #666666">&gt;</span>,
-    resolution <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;c/l/i/h/f&gt;&#39;</span>,
-    )
+<h1 id="9">第9章　グラフ内のテキスト</h1>
+<h2 id="_1">テキストボックス</h2>
+<h3 id="_2">余白</h3>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>fig<span style="color: #666666">.</span>text(
+    <span style="color: #666666">...</span>,
+    pen <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>pen<span style="color: #666666">&gt;</span>,
+    fill <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>fill<span style="color: #666666">&gt;</span>
+    clearance <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;余白の大きさ&gt;&#39;</span>,
+    <span style="color: #666666">...</span>,
+)
 </code></pre></div>
-<p>海岸線や海陸の色を指定して描画できる．</p>
+<p>fig.textメソッドのclearance引数に余白の大きさを与える（図--）．
+ただし，penまたはfillが用いられている場合のみ有効．</p>
+<h3 id="_3">角を丸める</h3>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>fig<span style="color: #666666">.</span>text(
+    <span style="color: #666666">...</span>,
+    pen <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>pen<span style="color: #666666">&gt;</span>,
+    fill <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>fill<span style="color: #666666">&gt;</span>
+    clearance <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;+tO&#39;</span>,
+    <span style="color: #666666">...</span>,
+)
+</code></pre></div>
+<p>テキストボックスの角を円くできる．clearanceに+tOオプションを指定する．テキストを付加するときに少し雰囲気を変えることができる．
+なお，デフォルトでは「+to」となっており，これは角を直角にする設定である．</p>
+<p>ただしclearance引数が有効になるのはpenまたはfillが指定されているときのみ．</p>
+<p>例）余白の設定とボックスの角　出力：図--
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
+fig <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>Figure()
+fig<span style="color: #666666">.</span>basemap(
+    region <span style="color: #666666">=</span> [<span style="color: #666666">-1</span>,<span style="color: #666666">1</span>,<span style="color: #666666">0</span>,<span style="color: #666666">2</span>],
+    projection <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;X4c/4c&#39;</span>,
+    frame <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;agf&#39;</span>,
+)
+fig<span style="color: #666666">.</span>text(
+    x <span style="color: #666666">=</span> <span style="color: #666666">0</span>,
+    y <span style="color: #666666">=</span> <span style="color: #666666">1.5</span>,
+    text <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;clearance = &#39;1p&#39;&quot;</span>,
+    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p,black&#39;</span>,
+    fill <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;white&#39;</span>,
+    clearance <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;1p&#39;</span>
+)
+fig<span style="color: #666666">.</span>text(
+    x <span style="color: #666666">=</span> <span style="color: #666666">0</span>,
+    y <span style="color: #666666">=</span> <span style="color: #666666">1</span>,
+    text <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;clearance = &#39;3p&#39;&quot;</span>,
+    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p,black&#39;</span>,
+    fill <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;white&#39;</span>,
+    clearance <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;3p&#39;</span>
+)
+fig<span style="color: #666666">.</span>text(
+    x <span style="color: #666666">=</span> <span style="color: #666666">0</span>,
+    y <span style="color: #666666">=</span> <span style="color: #666666">0.5</span>,
+    text <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;clearance = &#39;3p+tO&#39;&quot;</span>,
+    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p,black&#39;</span>,
+    fill <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;white&#39;</span>,
+    clearance <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;3p+tO&#39;</span>,
+)
+fig<span style="color: #666666">.</span>show()
+</code></pre></div></p>
+<figure>  <img alt="fig/textbox.png" src="../fig/textbox.png" /> <figcaption>テキストボックスの余白設定．</figcaption> </figure>
+<!--  ========================================================================== -->
+<h2 id="_4">線に沿ったテキスト</h2>
+<p>参考) GMT公式マニュアル</p>
+<ul>
+<li><a href="https://docs.generic-mapping-tools.org/dev/plot.html">https://docs.generic-mapping-tools.org/dev/plot.html</a></li>
+<li><a href="https://docs.generic-mapping-tools.org/6.0/cookbook/contour_annotations.html#contour-label-9">https://docs.generic-mapping-tools.org/6.0/cookbook/contour_annotations.html#contour-label-9</a></li>
+</ul>
+<p>テキストを直線や曲線に沿って配置できる．
+テキストが線より長い場合はテキストが表示されないので注意．
+加えて文字の位置の自由度が低く，好きな位置に文字を配置しにくい．</p>
+<p>普通の曲線をプロットするときと同じように線のデータを与え，
+styleに'q'で始まる設定を指定する．
+qは"\underline{q}uoted line"の頭文字のようだ．
+線を消して曲線上に並べたテキストだけ書くこともできるし，
+線とテキストが重ならないようにテキストの位置をずらすこともできる．
+等値線のラベルと同様の処理のようだ．</p>
+<p>書き方はちょっとややこしい．qの後にテキスト配置方法やテキスト情報の入力方法（テキストファイルで与えるか，直接与えるか）などの設定を入力し，そのあと「:」で区切って「+」で始まるオプションを入力する．個人的によく使いそうだと思うオプションは次の通り：</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>解像度resolutionは低い順に以下の通り．<br />
-(参考: <a href="https://www.pygmt.org/dev/tutorials/basics/coastlines.html">https://www.pygmt.org/dev/tutorials/basics/coastlines.html</a>)</p>
+<p>controlling algorithm:</p>
 </div>
 <ul>
-<li>c: crude</li>
-<li>l: low: 規定値</li>
-<li>i: intermediate</li>
-<li>h: high</li>
-<li>f: full</li>
+<li>d: ここで指定した間隔ごとにテキストを設置する．狭くしすぎるとテキストが重なってしまう．</li>
+<li>n: 一番楽に使えそう．線上にテキストを配置する数を指定．これを1にすると線の中心にテキストが追加される．2以上なら繰り返し同じテキストが等間隔に配置される．</li>
+<li>N: N1なら終点に，N-1なら始点に「テキストの左端」がくるようにテキストが配置される．N2なら線の両端に「文字の中心」がくるように２つのテキストが配置される．+jオプションで文字列のどの位置を線の端に合せるかを指定可能．+vオプションをつけるとテキストが表示されなかったりエラーで停止するので注意．</li>
 </ul>
-<h2 id="_2">断面図</h2>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>pygmt<span style="color: #666666">.</span>project(
-    infile <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>xyz成分のデータ<span style="border: 1px solid #FF0000">．</span>ndarrayも良いらしいが<span style="border: 1px solid #FF0000">，</span>なぜか失敗した<span style="border: 1px solid #FF0000">．</span><span style="color: #666666">&gt;</span>,
-    unit <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>Trueにすると<span style="border: 1px solid #FF0000">，</span>値の単位が位置はdegree<span style="border: 1px solid #FF0000">，</span>幅はkmになる<span style="border: 1px solid #FF0000">．</span>デフォルトはすべてdegree<span style="border: 1px solid #FF0000">?</span><span style="color: #666666">&gt;</span>,
-    )
-</code></pre></div>
-<p>dataに（x,y,z）の値を入れたnumpyのndarrayを与えると失敗した
-他のプロセスがパッケージを使ってるというエラーが出たり，カーネルが再起動したり．明確な原因はわからなかった．
-そこでdataにはndarrayをnp.savetxt(<outfilename>, <ndarary>, delimiter=’/t’)でtxtに出力したファイルを与えるとうまく動いた．
-しかしデータが大きいとsaveやprojectでいちいち結構な時間がかかる．
-outfileを指定しなければ変数にpandasのdataframeを格納できる．
-outfileを指定するとファイルが出力される代わりに何も返ってこない．</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>オプション:</p>
+</div>
+<ul>
+<li>+l: これでテキストを指定．テキストファイルを与えないなら必須．</li>
+<li>+v: テキストを曲線に沿わせる．これをつけないとテキストはまっすぐに配置される．</li>
+<li>+i: 線を透明にしてテキストだけ表示する．線は不要で文字だけ表示したいならこれ．</li>
+<li>+w: よくわからないが曲がり具合の判定に使う点の数？+vを使ったときに文字の間隔がおかしいときなどにこれをいじると良くなったりする．デフォルトは10．</li>
+<li></li>
+<li>+f: 文字サイズや色の指定．例：+f10p,black</li>
+<li>+j: 文字を線に揃える位置．上端を線にそろえるとか．左：L，右：R，上：T，下：B．例：+jMC, +jMT.</li>
+<li>+n: テキストの位置を平行移動．+vとの併用不可．Nとの併用もできないようだ．x方向で線に沿った方向，y方向で線に直交する方向の移動量を指定する．例：+n0/10p</li>
+<li></li>
+<li>+a: テキストのアングル．線に沿う方向なら指定不要．90にすると線に直交．</li>
+<li>+e: テキストが最前面に描画されるようにしてくれる．</li>
+<li></li>
+<li>+u: テキストの後に加える文字を指定．（単位など）</li>
+<li>+=: テキストの前に加える文字を指定．</li>
+<li></li>
+<li>+g: テキストボックスの色．</li>
+<li>+p: テキストボックスの枠．ex.) +p1p,black</li>
+<li>+o: テキストボックスの角を円くする．+vとの併用不可．</li>
+<li></li>
+<li>+r: これよりも曲がりが急な部分にテキストを表示しない．デフォルトは0なのでどんだけ急に曲がっているところにもテキストが配置される．</li>
+</ul>
+<p>例）コサイン曲線に沿ったテキスト．出力：図--
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+
+x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">-5</span>,<span style="color: #666666">5</span>,<span style="color: #666666">100</span>)
+y <span style="color: #666666">=</span> np<span style="color: #666666">.</span>cos(x)
+
+fig <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>Figure()
+fig<span style="color: #666666">.</span>plot(
+    x <span style="color: #666666">=</span> x,
+    y <span style="color: #666666">=</span> y,
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;qn1:+l&quot;text along cos curve&quot;+v+f10p,red+jMC+gblack@100&#39;</span>,
+    region <span style="color: #666666">=</span> [<span style="color: #666666">-5</span>,<span style="color: #666666">5</span>,<span style="color: #666666">-1.2</span>,<span style="color: #666666">1.2</span>],
+    projection <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;X8c/3c&#39;</span>,
+)
+fig<span style="color: #666666">.</span>basemap(
+    frame <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;agf&#39;</span>,
+)
+fig<span style="color: #666666">.</span>show()
+</code></pre></div></p>
+<figure>  <img alt="fig/textalongline.png" src="../fig/textalongline.png" /> <figcaption>線に沿ったテキスト</figcaption> </figure>
 <!--  ############################################################################ -->
 
 
@@ -1642,7 +1789,7 @@ outfileを指定するとファイルが出力される代わりに何も返っ�
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../sec008/" class="md-footer__link md-footer__link--prev" aria-label="前: 第8章 グラフ内のテキスト">
+          <a href="../sec008/" class="md-footer__link md-footer__link--prev" aria-label="前: 第8章 二次元プロット">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1652,20 +1799,20 @@ outfileを指定するとファイルが出力される代わりに何も返っ�
                 前
               </span>
               <div class="md-ellipsis">
-                第8章 グラフ内のテキスト
+                第8章 二次元プロット
               </div>
             </div>
           </a>
         
         
           
-          <a href="../sec010/" class="md-footer__link md-footer__link--next" aria-label="次: 第10章 軸・枠回り">
+          <a href="../sec010/" class="md-footer__link md-footer__link--next" aria-label="次: 第10章 地図のプロット">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                第10章 軸・枠回り
+                第10章 地図のプロット
               </div>
             </div>
             <div class="md-footer__button md-icon">

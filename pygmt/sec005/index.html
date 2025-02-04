@@ -22,7 +22,7 @@
     
     
       
-        <title>第5章 線のプロット - K-Notes</title>
+        <title>第5章 点・図形のプロット - K-Notes</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              第5章 線のプロット
+              第5章 点・図形のプロット
             
           </span>
         </div>
@@ -585,7 +585,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 テキストの追加・設定
   </span>
   
 
@@ -615,7 +615,7 @@
           
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 点・図形のプロット
   </span>
   
 
@@ -626,7 +626,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 点・図形のプロット
   </span>
   
 
@@ -650,16 +650,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      線分・折れ線
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bezie-spline" class="md-nav__link">
-    <span class="md-ellipsis">
-      曲線（Bezie Spline）
+      シンボル(スタイル)の指定
     </span>
   </a>
   
@@ -668,7 +659,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      装飾の付加（前線・プレート境界等）
+      カラーマップの適用
     </span>
   </a>
   
@@ -677,7 +668,16 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      閉曲線（多角形）
+      値に基づくサイズ変更
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      地図投影上での楕円のプロット
     </span>
   </a>
   
@@ -703,7 +703,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 線のプロット
   </span>
   
 
@@ -724,7 +724,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 二次元プロット
+    第7章 震源メカニズム解
   </span>
   
 
@@ -745,7 +745,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 グラフ内のテキスト
+    第8章 二次元プロット
   </span>
   
 
@@ -766,7 +766,7 @@
         
   
   <span class="md-ellipsis">
-    第9章 地図のプロット
+    第9章 グラフ内のテキスト
   </span>
   
 
@@ -787,7 +787,7 @@
         
   
   <span class="md-ellipsis">
-    第10章 軸・枠回り
+    第10章 地図のプロット
   </span>
   
 
@@ -808,7 +808,7 @@
         
   
   <span class="md-ellipsis">
-    第11章 周辺要素
+    第11章 軸・枠回り
   </span>
   
 
@@ -829,7 +829,7 @@
         
   
   <span class="md-ellipsis">
-    第12章 データの処理
+    第12章 周辺要素
   </span>
   
 
@@ -850,7 +850,7 @@
         
   
   <span class="md-ellipsis">
-    第13章 グラフ紙面上の処理
+    第13章 データの処理
   </span>
   
 
@@ -871,7 +871,7 @@
         
   
   <span class="md-ellipsis">
-    第14章 外部データの利用
+    第14章 グラフ紙面上の処理
   </span>
   
 
@@ -892,7 +892,7 @@
         
   
   <span class="md-ellipsis">
-    第15章 その他
+    第15章 外部データの利用
   </span>
   
 
@@ -1515,16 +1515,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      線分・折れ線
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bezie-spline" class="md-nav__link">
-    <span class="md-ellipsis">
-      曲線（Bezie Spline）
+      シンボル(スタイル)の指定
     </span>
   </a>
   
@@ -1533,7 +1524,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      装飾の付加（前線・プレート境界等）
+      カラーマップの適用
     </span>
   </a>
   
@@ -1542,7 +1533,16 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      閉曲線（多角形）
+      値に基づくサイズ変更
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      地図投影上での楕円のプロット
     </span>
   </a>
   
@@ -1566,101 +1566,118 @@
   
 
 
-<h1 id="5">第5章　線のプロット</h1>
-<h2 id="_1">線分・折れ線</h2>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>plot(
-      <span style="color: #666666">...</span>, 
-      pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;weight,color,style&gt;&#39;</span>, <span style="color: #3D7B7B; font-style: italic">#ex.) &#39;1p,black,.&#39;</span>
-      <span style="color: #666666">...</span>,
-      )
+<h1 id="5">第5章　点・図形のプロット</h1>
+<h2 id="_1">シンボル(スタイル)の指定</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>    style <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>symbol<span style="color: #666666">&gt;&lt;</span>size<span style="color: #666666">&gt;</span>
 </code></pre></div>
-<p>データのほかに単純にpenだけを与えると，点データの座標を順に結ぶ折れ線を描画できる．
-直線や半直線をプロットするメソッドはないようだ．</p>
-<p>penの3つ目の要素でスタイルを設定できる(図--)．</p>
-<figure>  <img alt="fig/linestyle.png" src="../fig/linestyle.png" /> <figcaption>線のスタイル．</figcaption> </figure>
-<!--  ============================================================================= -->
-<h2 id="bezie-spline">曲線（Bezie Spline）</h2>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>plot(
+<p>plotメソッドのシンボルの種類とサイズを指定する．
+シンボルの種類はc(:circle)のように対応する文字(参考: 図-- <a href="https://www.pygmt.org/latest/gallery/symbols/basic_symbols.html#sphx-glr-gallery-symbols-basic-symbols-py">https://www.pygmt.org/latest/gallery/symbols/basic_symbols.html#sphx-glr-gallery-symbols-basic-symbols-py</a>)で指定する．
+ただし，このときのシンボルの記号は，同じ図形であっても前線（第--節）の場合とは異なることに注意．</p>
+<figure>  <img alt="fig/symbol.png" src="../fig/symbol.png" /> <figcaption>シンボルとその指定記号．</figcaption> </figure>
+<p>例）
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>fig<span style="color: #666666">.</span>plot(
     <span style="color: #666666">...</span>,
-    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;pen&gt;+s&#39;</span>,
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;r2p&#39;</span>,
+    <span style="color: #666666">...</span>
+    )
+</code></pre></div></p>
+<p>沈み込み帯など図形付きの曲線を描くときとは，同じ図形でも文字が違うことに注意．</p>
+<h2 id="_2">カラーマップの適用</h2>
+<p>例えば震源の深さを点の色で示したいときなど．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #3D7B7B; font-style: italic"># cmapを指定</span>
+pygmt<span style="color: #666666">.</span>makecpt(
+    cmap <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;cmap&gt;&#39;</span>,
+    series <span style="color: #666666">=</span> [<span style="color: #666666">&lt;</span><span style="color: #008000">min</span><span style="color: #666666">&gt;</span>, <span style="color: #666666">&lt;</span><span style="color: #008000">max</span><span style="color: #666666">&gt;</span>]
     <span style="color: #666666">...</span>,
     )
-</code></pre></div>
-<p>penに+sオプションでベジェ曲線によるスプライン曲線を描ける．
-ただしpen引数は単に「'+s'」だけではいけないようで，必ずpenの設定を何か入れないといけない．
-デフォルトスタイルで良いのなら「',+s'」とコンマを前に入れればよい．</p>
-<p>ただし，styleで装飾（前線）やテキスト付きの直線にしている場合はこのなめらかにするオプションは使えず，純粋な線だけを描く場合にしか適用できないようである．</p>
-<p>例）点をなめらかに結ぶ曲線．出力: 図--
+<span style="color: #3D7B7B; font-style: italic"># 指定したcmapに従い着色してプロット</span>
+fig<span style="color: #666666">.</span>plot(
+        x <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>x<span style="color: #666666">&gt;</span>,
+        y <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>y<span style="color: #666666">&gt;</span>,
+        cmap <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">True</span>,
+        fill <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>値: 各点の値が入った配列<span style="color: #666666">&gt;</span>,
+        <span style="color: #666666">...</span>,
+)
+</code></pre></div></p>
+<p>cmap=Trueとした上でcolorに値を与える．
+するとmakecptのseries引数で指定した値域に従って，plotのcolorに与えた値に相当する色が点に着色される．</p>
+<p>通常plotメソッドではデータをdata引数でx, yを分けずにまとめて与えられるが，
+cmapを使用する際はx,yの値を別にして与えなければならないことに注意（バグ? 仕様?）．</p>
+<h2 id="_3">値に基づくサイズ変更</h2>
+<p>マグニチュードによって震源の大きさを変えてプロットしたいときなど．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>fig<span style="color: #666666">.</span>plot(
+        x <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>x<span style="color: #666666">&gt;</span>,
+        y <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>y<span style="color: #666666">&gt;</span>,
+        size <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>値: 各点の値が入った配列<span style="color: #666666">&gt;</span>,
+        <span style="color: #666666">...</span>,
+)
+</code></pre></div></p>
+<p>plotメソッドのsize引数に各点の値が入った配列を与えることで，値に従って点のサイズを指定できる．
+ただしcolor（\rightarrow 第--節）のときと同様，データはdata引数でなくx,y引数に分けて与えなければならない．</p>
+<!-- =================================== -->
+<h2 id="_4">地図投影上での楕円のプロット</h2>
+<!-- =================================== -->
+<p>地図上に震源などの誤差楕円を示すとき，
+楕円を地図上に正しく投影したい．</p>
+<p>PyGMT（GMT）では楕円を地図上にプロットする機能が存在する．
+styleにE（必ず大文字）を指定し，その後に長軸の方位角，長軸「直径」（km），短軸「直径」（km）を記すことで，
+投影図法に基づいてゆがめた楕円をプロットできる．半径ではないので注意．</p>
+<p>また小文字のeにすると地理的な投影や距離に関係なく，他のcなどのシンボルと同様の処理で楕円がプロットされるので注意．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>fig<span style="color: #666666">.</span>plot(
+    x <span style="color: #666666">=</span> <span style="color: #666666">...</span>,
+    y <span style="color: #666666">=</span> <span style="color: #666666">...</span>,
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;E&lt;azimuth_deg&gt;/&lt;major_km&gt;/&lt;minor_km&gt;&#39;</span>,
+    <span style="color: #666666">...</span>
+)
+</code></pre></div></p>
+<p>例)
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
-<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
-
-x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">-1*</span>np<span style="color: #666666">.</span>pi,np<span style="color: #666666">.</span>pi,<span style="color: #666666">5</span>)
-y <span style="color: #666666">=</span> np<span style="color: #666666">.</span>sin(x)
+rgn <span style="color: #666666">=</span> [<span style="color: #666666">-40</span>,<span style="color: #666666">40</span>,<span style="color: #666666">-30</span>,<span style="color: #666666">70</span>]
+prj <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;M6c&#39;</span>
 
 fig <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>Figure()
-fig<span style="color: #666666">.</span>plot(
-    x <span style="color: #666666">=</span> x,
-    y <span style="color: #666666">=</span> y,
-    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;1p,red,+s&#39;</span>,
-    projection <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;X7c/4c&#39;</span>,
-    region <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;a&#39;</span>,
-    )
-fig<span style="color: #666666">.</span>plot(
-    x <span style="color: #666666">=</span> x,
-    y <span style="color: #666666">=</span> y,
-    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;c5p&#39;</span>,
-    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p&#39;</span>,
-    )
-fig<span style="color: #666666">.</span>basemap(
-    frame <span style="color: #666666">=</span> [<span style="color: #BA2121">&#39;af&#39;</span>],
-    )
-fig<span style="color: #666666">.</span>show()
-</code></pre></div></p>
-<figure>  <img alt="fig/Bezie.png" src="../fig/Bezie.png" /> <figcaption>補間によるなめらかな曲線(赤)．黒円で示した5点から赤の曲線を引いている．</figcaption> </figure>
-<!--  =============================================================================== -->
+fig<span style="color: #666666">.</span>coast(
+    region <span style="color: #666666">=</span> rgn,
+    projection <span style="color: #666666">=</span> prj,
+    frame <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;ag10f&#39;</span>,
+    shorelines <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.1p&#39;</span>,
+    land <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;grey&#39;</span>,
+)
 
-<!--  ============================================================================= -->
-<h2 id="_2">装飾の付加（前線・プレート境界等）</h2>
-<p>気象の前線や，プレート境界（沈み込み帯，横ずれ境界など）などをプロットしたいときに(図--)．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>plot(
-    <span style="color: #666666">...</span>,
-    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;f&lt;図形間隔&gt;/&lt;図形size&gt;[+&lt;l/r&gt;][+&lt;図形の種類&gt;][+o&lt;図形位置のずらし距離&gt;]&#39;</span>,
-    <span style="color: #666666">...</span>,
-    )
+<span style="color: #3D7B7B; font-style: italic"># E: The shape of the ellipse will be affected by the properties of the map projection.</span>
+fig<span style="color: #666666">.</span>plot(
+    x <span style="color: #666666">=</span> [<span style="color: #666666">20</span>,<span style="color: #666666">20</span>,<span style="color: #666666">20</span>],
+    y <span style="color: #666666">=</span> [<span style="color: #666666">0</span>,<span style="color: #666666">30</span>,<span style="color: #666666">60</span>],
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;E0/1110/2220&#39;</span>,
+    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;1p,red&#39;</span>,
+)
+
+<span style="color: #3D7B7B; font-style: italic"># e: This yields a Cartesian ellipse whose shape is unaffected by the map projection.</span>
+fig<span style="color: #666666">.</span>plot(
+    x <span style="color: #666666">=</span> [<span style="color: #666666">-20</span>,<span style="color: #666666">-20</span>,<span style="color: #666666">-20</span>],
+    y <span style="color: #666666">=</span> [<span style="color: #666666">0</span>,<span style="color: #666666">30</span>,<span style="color: #666666">60</span>],
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;e90/1/2&#39;</span>,
+    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;1p,navy&#39;</span>,
+)
+
+fig<span style="color: #666666">.</span>show()
+fig<span style="color: #666666">.</span>savefig(
+    <span style="color: #BA2121">&quot;/mnt/c/Users/ERI/Aki/MyNotes/PyGMT/fig/elliplse.pdf&quot;</span>
+)
 </code></pre></div></p>
+<figure>  <img alt="fig/elliplse.png" src="../fig/elliplse.png" /><figcaption>地図投影によらない楕円（左，青, style e）と地図投影に従った楕円（右，赤, style E）．右側の楕円は球面に従ってプロットされているため，長軸半径が緯度0°に比べて60°では地図上では倍に伸びて見える．styleをEにして描かれる楕円を用いれば，誤差楕円を描画できる．</figcaption> </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-</div>
-<p>[leftmargin=7em]
-- &lt;図形間隔&gt;： 正の数にすれば図形の間隔．負の数にすれば図形の数で指定できる．
-- +<l/r>： left or right．指定しなければcenterになる．
-- +&lt;図形の種類&gt;： box, circle, fault (default), slip, or triangle．bやcを+l/rと使うと半分の四角や半円になるようだ．
-- +i; invisible： 直線を消して図形のみにできる．
-- +p; pen： 図形のpenを曲線と別に指定できる．図形の枠線をなくしたい場合は+pとのみ入力する．</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>  参考）PyGMT公式
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>参照: [https://docs.generic-mapping-tools.org/6.1/psxy.html](https://docs.generic-mapping-tools.org/6.1/psxy.html)
 
-  [https://www.pygmt.org/latest/gallery/lines/linefronts.html#sphx-glr-gallery-lines-linefronts-py](https://www.pygmt.org/latest/gallery/lines/linefronts.html#sphx-glr-gallery-lines-linefronts-py)
+-Se  
+ellipse. Direction (in degrees counter-clockwise from horizontal), major\_axis, and minor\_axis must be found in columns 3, 4, and 5. This yields a Cartesian ellipse whose shape is unaffected by the map projection.
+
+-SE  
+Same as -Se, except azimuth (in degrees east of north) should be given instead of direction. The azimuth will be mapped into an angle based on the chosen map projection (-Se leaves the directions unchanged.) Furthermore, the axes lengths must be given in geographical instead of plot-distance units. An exception occurs for a linear projection in which we assume the ellipse axes are given in the same units as -R. For degenerate ellipses (circles) with just the diameter given, use -SE-. The diameter is excepted to be given in column 3. Alternatively, append the desired diameter to -SE- and this fixed diameter is used instead. For allowable geographical units, see Units [Default is k for km]. The shape of the ellipse will be affected by the properties of the map projection.
 </code></pre></div>
-<p>私鉄の線路のような「キ」の字スタイルについては，図形を示す記号はいらない．他の場合はcなど図形の種類を+で指定する．</p>
-<p>「f」は"line \underbar{f}ronts"の意味だと思われる．</p>
-<p>要するに最低「f&lt;間隔&gt;/<size>+l+t」とすれば寒冷前線や沈み込み帯が描ける．
-+tがtriangleを表す．</p>
-<p>図形の位置が気に入らない場合（曲線の角に図形が入ってしまう場合など）は，+oで図形の位置を曲線に沿ってずらすことができる．</p>
-<figure>  <img alt="fig/linefronts.png" src="../fig/linefronts.png" /> <figcaption>線の装飾の一覧．</figcaption> </figure>
-<!--  ================================================================== -->
-<h2 id="_3">閉曲線（多角形）</h2>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>plot(
-    <span style="color: #666666">...</span>,
-    close <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&#39;</span>,
-    <span style="color: #666666">...</span>,
-    )
-</code></pre></div>
-<p>通常の折れ線を引く際に引数「close=''」を加えることで始点と終点を閉じることができる．
-例えばS-netの観測点を結んでケーブルを描くときに使える．
-公式ドキュメントにはclose=にpenなどを指定できると書かれているができなかった．
-別途pen引数を使用することで辺の色を指定できる．
-多角形の塗りつぶしをする場合もcolor引数で色を指定すれば良い．</p>
-<!-- ######################################### -->
+</div>
+<!--  ############################################################################### -->
 
 
 
@@ -1738,7 +1755,7 @@ fig<span style="color: #666666">.</span>show()
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../sec004/" class="md-footer__link md-footer__link--prev" aria-label="前: 第4章 点・図形のプロット">
+          <a href="../sec004/" class="md-footer__link md-footer__link--prev" aria-label="前: 第4章 テキストの追加・設定">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1748,20 +1765,20 @@ fig<span style="color: #666666">.</span>show()
                 前
               </span>
               <div class="md-ellipsis">
-                第4章 点・図形のプロット
+                第4章 テキストの追加・設定
               </div>
             </div>
           </a>
         
         
           
-          <a href="../sec006/" class="md-footer__link md-footer__link--next" aria-label="次: 第6章 震源メカニズム解">
+          <a href="../sec006/" class="md-footer__link md-footer__link--next" aria-label="次: 第6章 線のプロット">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                第6章 震源メカニズム解
+                第6章 線のプロット
               </div>
             </div>
             <div class="md-footer__button md-icon">

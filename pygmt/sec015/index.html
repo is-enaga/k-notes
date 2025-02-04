@@ -22,7 +22,7 @@
     
     
       
-        <title>第15章 その他 - K-Notes</title>
+        <title>第15章 外部データの利用 - K-Notes</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              第15章 その他
+              第15章 外部データの利用
             
           </span>
         </div>
@@ -585,7 +585,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 テキストの追加・設定
   </span>
   
 
@@ -606,7 +606,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 点・図形のプロット
   </span>
   
 
@@ -627,7 +627,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 線のプロット
   </span>
   
 
@@ -648,7 +648,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 二次元プロット
+    第7章 震源メカニズム解
   </span>
   
 
@@ -669,7 +669,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 グラフ内のテキスト
+    第8章 二次元プロット
   </span>
   
 
@@ -690,7 +690,7 @@
         
   
   <span class="md-ellipsis">
-    第9章 地図のプロット
+    第9章 グラフ内のテキスト
   </span>
   
 
@@ -711,7 +711,7 @@
         
   
   <span class="md-ellipsis">
-    第10章 軸・枠回り
+    第10章 地図のプロット
   </span>
   
 
@@ -732,7 +732,7 @@
         
   
   <span class="md-ellipsis">
-    第11章 周辺要素
+    第11章 軸・枠回り
   </span>
   
 
@@ -753,7 +753,7 @@
         
   
   <span class="md-ellipsis">
-    第12章 データの処理
+    第12章 周辺要素
   </span>
   
 
@@ -774,7 +774,7 @@
         
   
   <span class="md-ellipsis">
-    第13章 グラフ紙面上の処理
+    第13章 データの処理
   </span>
   
 
@@ -795,7 +795,7 @@
         
   
   <span class="md-ellipsis">
-    第14章 外部データの利用
+    第14章 グラフ紙面上の処理
   </span>
   
 
@@ -825,7 +825,7 @@
           
   
   <span class="md-ellipsis">
-    第15章 その他
+    第15章 外部データの利用
   </span>
   
 
@@ -836,7 +836,7 @@
         
   
   <span class="md-ellipsis">
-    第15章 その他
+    第15章 外部データの利用
   </span>
   
 
@@ -858,37 +858,94 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#session" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      sessionファイル（大容量ゴミ）の削除
+      国土地理院標高メッシュデータ
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="国土地理院標高メッシュデータ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      データの下準備
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      データの読み込み
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      最近の重要な変更点
+      シェープファイルのプロット
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="最近の重要な変更点">
+    <nav class="md-nav" aria-label="シェープファイルのプロット">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#color" class="md-nav__link">
+  <a href="#geopandas" class="md-nav__link">
     <span class="md-ellipsis">
-      color引数の変更
+      geopandasのインストール
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#grdcontourinterval" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      grdcontourのinterval引数の変更
+      プロット
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      国交省による道路等の線データの利用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="国交省による道路等の線データの利用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      jsonライブラリの利用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geopandas_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      geopandasの利用
     </span>
   </a>
   
@@ -1519,37 +1576,94 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#session" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      sessionファイル（大容量ゴミ）の削除
+      国土地理院標高メッシュデータ
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="国土地理院標高メッシュデータ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      データの下準備
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      データの読み込み
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      最近の重要な変更点
+      シェープファイルのプロット
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="最近の重要な変更点">
+    <nav class="md-nav" aria-label="シェープファイルのプロット">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#color" class="md-nav__link">
+  <a href="#geopandas" class="md-nav__link">
     <span class="md-ellipsis">
-      color引数の変更
+      geopandasのインストール
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#grdcontourinterval" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      grdcontourのinterval引数の変更
+      プロット
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      国交省による道路等の線データの利用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="国交省による道路等の線データの利用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      jsonライブラリの利用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geopandas_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      geopandasの利用
     </span>
   </a>
   
@@ -1578,22 +1692,162 @@
   
 
 
-<h1 id="15">第15章　その他</h1>
-<h2 id="session">sessionファイル（大容量ゴミ）の削除</h2>
-<p>ターミナル上で以下を実行．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>gmt clear sessions
+<h1 id="15">第15章　外部データの利用</h1>
+<p>ここでは国土地理院や国土交通省など，GMT外部から得たデータの使用方法について記す．</p>
+<h2 id="_1">国土地理院標高メッシュデータ</h2>
+<h3 id="_2">データの下準備</h3>
+<p>地理院からデータをダウンロードするとzipで圧縮されている．中にはXML形式のファイルが入っている．
+これを扱いやすくするために緯度，経度，標高のxyz形式にするため，
+同じく地理院からダウンロードできる基盤地図情報ビューアをインストールする．
+これを起動して開く画面に，標高メッシュのzipファイルをドラッグすると地形が描画される．</p>
+<p>「エクスポート&gt;標高メッシュをシェープファイルへ出力」を選んで開く画面で，(1)直角座標系に出力するチェックを外し，(2)出力ファイル名の拡張子を「.xyz」に変える．拡張子がデフォルトのままだと，後で開いても文字化けして読み取れなかった．ただし(1)はナントカ座標系とやらのxyz座標で出力したいのならチェックが必要(図--)．</p>
+<figure>  <img alt="fig/chiriin2xyz.png" src="../fig/chiriin2xyz.png" /> <figcaption>基盤地図情報ビューアによるxyz形式への変換時の画面．(標高データ: 国土地理院基盤地図情報数値標高モデル)</figcaption> </figure>
+<h3 id="_3">データの読み込み</h3>
+<p>作成したxyzファイルは，numpyを使ってcsvと同じ方法で読み込める．
+すなわちdelimiterを「，」にしてnp.loadtxt()である．
+ただそのままだと最初の列に行番号が入っているので，
+必要なxyzの列だけを取り出すためにusecols=[1,2,3]としてcolumnを指定すると良い．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>dat <span style="color: #666666">=</span> np<span style="color: #666666">.</span>loadtxt(<span style="color: #BA2121">r&quot;out.xyz&quot;</span>,
+                 delimiter<span style="color: #666666">=</span><span style="color: #BA2121">&quot;,&quot;</span>,
+                 usecols<span style="color: #666666">=</span>[<span style="color: #666666">1</span>,<span style="color: #666666">2</span>,<span style="color: #666666">3</span>])
 </code></pre></div></p>
-<p>エラーによる途中停止かPyGMTの不具合か，はたまた意図的な仕様なのか原因は不明だが，しばらく使っていると「~/.gmt/session」ディレクトリに数GBに及ぶ莫大な容量のファイル（特に「.ps-」ファイル）が蓄積される．AdobeのIllustratorで見てみると過去に作成した記憶のあるベクター形式の図が出てくる（なお，フリーソフトInkscapeではエラーで読み込めなかった）．用途がなさそうなので，一時ファイルのようなもので削除されるべきものである気がする．下手をすると過去に作った図全てが残っているのかも．気づくとかなり容量を圧迫しているので困る．</p>
-<p>これを一度に削除するコマンドが上記のもの．定期的に確認して削除した方が良さそうだ．これについては検索しても英語の質問サイト１つしか見つからなかったので，それ以外の対処方法はわからない．</p>
-<h2 id="_1">最近の重要な変更点</h2>
-<h3 id="color">color引数の変更</h3>
-<p>plotのシンボルの塗りつぶしなどに以前はcolor引数が用いられていたが，
-fill引数に置き換わった．</p>
+<!-- =================================== -->
+<h2 id="_4">シェープファイルのプロット</h2>
+<!-- =================================== -->
+<p>(v0.12.0)  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>データの例:<br />
+国土数値情報（国土交通省）の海岸線<br />
+<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-C23.html">https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-C23.html</a></p>
+</div>
+<p>国交省による国土数値情報などはシェープファイルで提供されるが，
+PyGMT単体ではシェープファイルは読み込めない．
+そこでgeopanasを使えばシェープファイルを読み込んでfig.plotでプロットできる．</p>
 <!-- ---------------------------------- -->
-<h3 id="grdcontourinterval">grdcontourのinterval引数の変更</h3>
+<h3 id="geopandas">geopandasのインストール</h3>
 <!-- ---------------------------------- -->
-<p>(v0.12.0)
-levelsに置き換わった．</p>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>mamba install geopandas
+</code></pre></div>
+<p>mambaを使用していない場合は「conda install geopandas」でも良い．</p>
+<!-- ---------------------------------- -->
+<h3 id="_5">プロット</h3>
+<!-- ---------------------------------- -->
+
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">geopandas</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
+
+<span style="color: #3D7B7B; font-style: italic"># ファイル読み込み</span>
+coast <span style="color: #666666">=</span> geopandas<span style="color: #666666">.</span>read_file(<span style="color: #666666">&lt;</span>入力ファイル<span style="color: #666666">.</span>shp<span style="color: #666666">&gt;</span>)
+<span style="color: #3D7B7B; font-style: italic"># coast = geopandas.read_file(&lt;入力ファイル.zip&gt;) も可．</span>
+
+<span style="color: #3D7B7B; font-style: italic"># プロット</span>
+pygmt<span style="color: #666666">.</span>Figure()
+<span style="color: #666666">...</span>
+fig<span style="color: #666666">.</span>plot(
+    data <span style="color: #666666">=</span> coast,
+    pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p&#39;</span>,
+    )
+<span style="color: #666666">...</span>
+</code></pre></div>
+<p>国土数値情報などからダウンロードしたファイルで
+zipファイルの中にshpファイルがある場合，
+展開して中のshpファイルをgeopandasで読み込んでも良いが，
+展開せずに直接zipファイルをgeopandas.read_fileで読み込むこともできる．</p>
+<!--  使用するにはデータの変換が必要である． -->
+
+<!--  ### shp形式からgmt形式への変換 -->
+
+<!--  %............................. -->
+
+<!--  #### コマンドのインストール -->
+
+<!--  %............................. -->
+
+<!--  ogr2ogrを使ってshpファイルをgmt形式に変換する． -->
+
+<!--  ogr2ogrのインストールはUbuntuでは以下のようにする． -->
+
+<!--  ```python -->
+
+<!--  sudo add-apt-repository ppa:ubuntugis/ppa -->
+
+<!--  sudo apt update -->
+
+<!--  sudo apt isntall gdal-bin -->
+
+<!--  ``` -->
+
+<!--  インストール後の確認は以下で行える： -->
+
+<!--  ```python -->
+
+<!--  ogrinfo --version -->
+
+<!--  ``` -->
+
+<!--  出力例: -->
+
+<!--  ```python -->
+
+<!--  GDAL 3.8.5, released 2024/04/02 -->
+
+<!--  ``` -->
+
+<!--  %............................. -->
+
+<!--  #### 変換の実行 -->
+
+<!--  %............................. -->
+
+<!--  ```python -->
+
+<!--  ogr2ogr -f "GMT" 出力ファイル名.gmt 入力ファイル名.shp -->
+
+<!--  ``` -->
+
+<h2 id="_6">国交省による道路等の線データの利用</h2>
+<p>道路や鉄道路線などのデータをダウンロードすると，シェープファイルやgeojsonファイルなどが入っている．これをライブラリを使って取り込んでプロットする．</p>
+<h3 id="json">jsonライブラリの利用</h3>
+<p>(1)import json. (2)open(&lt;.geojson&gt;, 'r', encoding=<utf\_8\_sig>) (3)json.load(openfile) (4)条件で絞込．(5)リストに格納してプロット．</p>
+<p>ダウンロードしたファイルのutf-8フォルダー中にある方の.geojsonデータを使う．直上のフォルダにも.geojsonがあるがencodingを何にすれば良いのかわからず使えなかった．'cp932'にしてみたがエラーが出た．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">json</span>
+train_path_gj <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;鉄道/utf8/N02-21_RailroadSection.geojson&quot;</span>
+jopen <span style="color: #666666">=</span> <span style="color: #008000">open</span>(train_path_gj,
+             <span style="color: #BA2121">&#39;r&#39;</span>,
+             encoding <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;utf_8_sig&#39;</span>
+             )
+dat_j <span style="color: #666666">=</span> json<span style="color: #666666">.</span>load(jopen)
+
+kobe <span style="color: #666666">=</span> []
+<span style="color: #3D7B7B; font-style: italic"># ftr = []</span>
+<span style="color: #008000; font-weight: bold">for</span> data <span style="color: #AA22FF; font-weight: bold">in</span> dat_j[<span style="color: #BA2121">&quot;features&quot;</span>]:
+    <span style="color: #008000; font-weight: bold">if</span> <span style="color: #BA2121">&quot;神戸電鉄&quot;</span> <span style="color: #AA22FF; font-weight: bold">in</span> data[<span style="color: #BA2121">&quot;properties&quot;</span>][<span style="color: #BA2121">&quot;N02_004&quot;</span>]:
+        <span style="color: #3D7B7B; font-style: italic"># ftr.append(data[&quot;properties&quot;][&quot;N02_004&quot;])</span>
+        tmp <span style="color: #666666">=</span> data[<span style="color: #BA2121">&quot;geometry&quot;</span>][<span style="color: #BA2121">&quot;coordinates&quot;</span>]
+        kobe<span style="color: #666666">.</span>append(tmp)
+<span style="border: 1px solid #FF0000">（</span>略<span style="border: 1px solid #FF0000">）</span>
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(kobe)):
+    fig<span style="color: #666666">.</span>plot(
+        data <span style="color: #666666">=</span> kobe[i],
+        style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;f0.2c/0.1c&#39;</span>,
+        pen <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p&#39;</span>
+        )
+</code></pre></div></p>
+<figure>  <img alt="fig/trainjson.png" src="../fig/trainjson.png" /> <figcaption>xyz2grdを用いて変換したデータをプロットした例．適切な設定を行わなければこのように正常にプロットできない．()</figcaption> <figcaption>国交省からダウンロードした鉄道データをjsonライブラリを用いて読み込みプロットした結果．（標高データ: 国土地理院基盤地図情報数値標高モデル; 鉄道路線データ: 国土交通省国土数値情報）</figcaption> </figure>
+<h3 id="geopandas_1">geopandasの利用</h3>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>gpd<span style="color: #666666">.</span>read_file(<span style="color: #666666">&lt;</span>utf<span style="color: #666666">-8</span>のgeojsonデータ<span style="color: #666666">&gt;</span>, encoding<span style="color: #666666">=</span><span style="color: #BA2121">&#39;utf_8_sig&#39;</span>)
+</code></pre></div>
+<p>condaでインストールできるライブラリgeopandasを使う方法．(1)shpファイルを使う場合：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>train_path <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;鉄道/N02-21_RailroadSection.shp&quot;</span>
+df <span style="color: #666666">=</span> gpd<span style="color: #666666">.</span>read_file(train_path_gj, encoding<span style="color: #666666">=</span><span style="color: #BA2121">&#39;cp932&#39;</span>)
+</code></pre></div></p>
+<p>(2)geojsonファイルを使う場合：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">geopandas</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">gpd</span>
+train_path_gj <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;鉄道/N02-21_RailroadSection.geojson&quot;</span>
+df <span style="color: #666666">=</span> gpd<span style="color: #666666">.</span>read_file(train_path_gj, encoding<span style="color: #666666">=</span><span style="color: #BA2121">&#39;utf_8_sig&#39;</span>)
+</code></pre></div></p>
+<!--  ############################################################################# -->
 
 
 
@@ -1671,7 +1925,7 @@ levelsに置き換わった．</p>
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../sec014/" class="md-footer__link md-footer__link--prev" aria-label="前: 第14章 外部データの利用">
+          <a href="../sec014/" class="md-footer__link md-footer__link--prev" aria-label="前: 第14章 グラフ紙面上の処理">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1681,7 +1935,7 @@ levelsに置き換わった．</p>
                 前
               </span>
               <div class="md-ellipsis">
-                第14章 外部データの利用
+                第14章 グラフ紙面上の処理
               </div>
             </div>
           </a>

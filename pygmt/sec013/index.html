@@ -22,7 +22,7 @@
     
     
       
-        <title>第13章 グラフ紙面上の処理 - K-Notes</title>
+        <title>第13章 データの処理 - K-Notes</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              第13章 グラフ紙面上の処理
+              第13章 データの処理
             
           </span>
         </div>
@@ -585,7 +585,7 @@
         
   
   <span class="md-ellipsis">
-    第4章 点・図形のプロット
+    第4章 テキストの追加・設定
   </span>
   
 
@@ -606,7 +606,7 @@
         
   
   <span class="md-ellipsis">
-    第5章 線のプロット
+    第5章 点・図形のプロット
   </span>
   
 
@@ -627,7 +627,7 @@
         
   
   <span class="md-ellipsis">
-    第6章 震源メカニズム解
+    第6章 線のプロット
   </span>
   
 
@@ -648,7 +648,7 @@
         
   
   <span class="md-ellipsis">
-    第7章 二次元プロット
+    第7章 震源メカニズム解
   </span>
   
 
@@ -669,7 +669,7 @@
         
   
   <span class="md-ellipsis">
-    第8章 グラフ内のテキスト
+    第8章 二次元プロット
   </span>
   
 
@@ -690,7 +690,7 @@
         
   
   <span class="md-ellipsis">
-    第9章 地図のプロット
+    第9章 グラフ内のテキスト
   </span>
   
 
@@ -711,7 +711,7 @@
         
   
   <span class="md-ellipsis">
-    第10章 軸・枠回り
+    第10章 地図のプロット
   </span>
   
 
@@ -732,7 +732,7 @@
         
   
   <span class="md-ellipsis">
-    第11章 周辺要素
+    第11章 軸・枠回り
   </span>
   
 
@@ -753,7 +753,7 @@
         
   
   <span class="md-ellipsis">
-    第12章 データの処理
+    第12章 周辺要素
   </span>
   
 
@@ -783,7 +783,7 @@
           
   
   <span class="md-ellipsis">
-    第13章 グラフ紙面上の処理
+    第13章 データの処理
   </span>
   
 
@@ -794,7 +794,7 @@
         
   
   <span class="md-ellipsis">
-    第13章 グラフ紙面上の処理
+    第13章 データの処理
   </span>
   
 
@@ -818,18 +818,33 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      描画位置の原点の移動
+      地理的条件による点データの抽出
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="地理的条件による点データの抽出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      点からの距離によるデータ分類
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      地図の紙面上サイズの取得
+      水・陸でのデータ分類
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -853,7 +868,7 @@
         
   
   <span class="md-ellipsis">
-    第14章 外部データの利用
+    第14章 グラフ紙面上の処理
   </span>
   
 
@@ -874,7 +889,7 @@
         
   
   <span class="md-ellipsis">
-    第15章 その他
+    第15章 外部データの利用
   </span>
   
 
@@ -1497,18 +1512,33 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      描画位置の原点の移動
+      地理的条件による点データの抽出
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="地理的条件による点データの抽出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      点からの距離によるデータ分類
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      地図の紙面上サイズの取得
+      水・陸でのデータ分類
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1530,112 +1560,175 @@
   
 
 
-<h1 id="13">第13章　グラフ紙面上の処理</h1>
+<h1 id="13">第13章　データの処理</h1>
 <!-- ######################################### -->
-<p>ここではグラフ内の座標系ではなく，紙面上での図の処理について扱う．</p>
+
 <!-- =================================== -->
-<h2 id="_1">描画位置の原点の移動</h2>
+<h2 id="_1">地理的条件による点データの抽出</h2>
 <!-- =================================== -->
-<p>プロット時の原点の位置を移動する．
-PyGMTの図は左下の角が原点となるようにされる．
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>fig<span style="color: #666666">.</span>shift_origin(
-    xshift <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>xshift<span style="color: #666666">&gt;</span>,
-    yshift <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>yshift<span style="color: #666666">&gt;</span>,
-)
-</code></pre></div></p>
-<p>それぞれ右，上が正．
-例えば"3c"とすれば3cmプロット時の原点を移動する．</p>
-<!-- =================================== -->
-<h2 id="_2">地図の紙面上サイズの取得</h2>
-<!-- =================================== -->
-<p>例えばprojection="M6c"のようにしたとき，
-地図のサイズは横方向で指定され，縦方向は自動的に決定される．</p>
-<p>このようなときに地図のサイズが取得できると，
-メインの地図の横や上下に断面図などを追加する際に，
-位置やサイズの調整のために便利である．</p>
-<p>GMTのmapprojectメソッドで地図のサイズを取得できるが，
-PyGMTではmapprojectがまだ未実装なようである．</p>
-<p>したがって手順は増えるが下記のようにして地図サイズを取得する．</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>参考: <a href="https://docs.generic-mapping-tools.org/dev/mapproject.html">https://docs.generic-mapping-tools.org/dev/mapproject.html</a></p>
+<p>参照)<br />
+<a href="https://www.pygmt.org/dev/api/generated/pygmt.select.html">https://www.pygmt.org/dev/api/generated/pygmt.select.html</a></p>
 </div>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>(figを先に作成しておく)
-<span style="color: #008000; font-weight: bold">with</span> pygmt<span style="color: #666666">.</span>clib<span style="color: #666666">.</span>Session() <span style="color: #008000; font-weight: bold">as</span> session:
-    <span style="color: #008000; font-weight: bold">with</span> pygmt<span style="color: #666666">.</span>helpers<span style="color: #666666">.</span>GMTTempFile() <span style="color: #008000; font-weight: bold">as</span> tmp:
-        session<span style="color: #666666">.</span>call_module(<span style="color: #BA2121">&quot;mapproject&quot;</span>,<span style="color: #BA2121">f&quot;-W&lt;オプション&gt; -&gt;</span><span style="color: #A45A77; font-weight: bold">{</span>tmp<span style="color: #666666">.</span>name<span style="color: #A45A77; font-weight: bold">}</span><span style="color: #BA2121">&quot;</span>)
-        size <span style="color: #666666">=</span> tmp<span style="color: #666666">.</span>read()
+<p>内陸，海域，湖など，地理的条件によって点データを抽出するselect関数が存在する．</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>参照: GMTの例，PyGMT公式マニュアル</p>
+<p><a href="https://docs.generic-mapping-tools.org/latest/gallery/ex24.html">https://docs.generic-mapping-tools.org/latest/gallery/ex24.html</a>
+<a href="https://www.pygmt.org/latest/api/generated/pygmt.select.html">https://www.pygmt.org/latest/api/generated/pygmt.select.html</a></p>
+</div>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #666666">&lt;</span>out<span style="color: #666666">&gt;</span> <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>select(
+    <span style="color: #666666">&lt;</span>オプション<span style="color: #666666">&gt;</span>
+    )
 </code></pre></div>
-<p>このコードで得られる「size」はcm単位の文字列．
--Wに続くオプションによって，縦横いずれのサイズを出力するかを指定する：</p>
+<p>条件により与えたデータから地理的条件によってデータを抽出できる．
+海岸線基準，点または線からの距離基準，多角形・緯度経度範基準など．
+詳しくは公式マニュアルを参照．基準は次の６つ：</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
 <ul>
-<li>h: 高さのみ出力</li>
-<li>w: 横幅のみ出力</li>
-<li>なし: 高さ，横幅の両方を出力 </li>
+<li>inside a rectangular region (region [and projection])</li>
+<li>within dist km of any point in pointfile</li>
+<li>within dist km of any line in linefile</li>
+<li>inside one of the polygons in the polygonfile</li>
+<li>inside geographical features (based on coastlines)</li>
+<li>has z-values within a given range, or</li>
+<li>inside bins of a grid mask whose nodes are non-zero</li>
 </ul>
-<p>これで得られた画像サイズを
-shift_origin(-&gt;第--節)と組み合わせれば，
-適切な位置とサイズで図を追加できる．</p>
-<p>例）深さ断面図の追加
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
-
-rgn <span style="color: #666666">=</span> [<span style="color: #666666">129</span>,<span style="color: #666666">135</span>,<span style="color: #666666">30</span>,<span style="color: #666666">35</span>]
-prj <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;M6c&#39;</span>
-fig <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>Figure()
-
-<span style="color: #3D7B7B; font-style: italic"># =======================</span>
-<span style="color: #3D7B7B; font-style: italic"># MAIN</span>
-<span style="color: #3D7B7B; font-style: italic"># =======================</span>
-fig<span style="color: #666666">.</span>coast(
-    projection <span style="color: #666666">=</span> prj,
-    region <span style="color: #666666">=</span> rgn,
-    frame <span style="color: #666666">=</span> [<span style="color: #BA2121">&#39;agf&#39;</span>,<span style="color: #BA2121">&#39;NWes&#39;</span>],
-    shorelines <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.1p&#39;</span>,
-    resolution <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;h&#39;</span>,
-    land <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;grey60&#39;</span>,
+<!-- %---------------------------------- -->
+<h3 id="_2">点からの距離によるデータ分類</h3>
+<!-- ---------------------------------- -->
+<p>ある点からの一定距離(degree)内にある点を抽出する．
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>pygmt<span style="color: #666666">.</span>select(
+    data <span style="color: #666666">=</span> <span style="color: #666666">&lt;</span>data<span style="color: #666666">&gt;</span>,
+    dist2pt <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;&lt;lon&gt;/&lt;lat&gt;+d&lt;distance&gt;&lt;unit&gt;&#39;</span>,
+    coltypes <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;g&#39;</span>,
+    [reverse <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;c&#39;</span>] <span style="color: #3D7B7B; font-style: italic"># 円の外側の点を抽出する場合．</span>
 )
+</code></pre></div></p>
+<p>dist2ptに基準点の座標と距離を与える．</p>
+<!--  \sout{ -->
 
-<span style="color: #3D7B7B; font-style: italic"># =======================</span>
-<span style="color: #3D7B7B; font-style: italic"># getting size</span>
-<span style="color: #3D7B7B; font-style: italic"># =======================</span>
-<span style="color: #008000; font-weight: bold">with</span> pygmt<span style="color: #666666">.</span>clib<span style="color: #666666">.</span>Session() <span style="color: #008000; font-weight: bold">as</span> session:
-    <span style="color: #008000; font-weight: bold">with</span> pygmt<span style="color: #666666">.</span>helpers<span style="color: #666666">.</span>GMTTempFile() <span style="color: #008000; font-weight: bold">as</span> tmpfile:
-        session<span style="color: #666666">.</span>call_module(<span style="color: #BA2121">&quot;mapproject&quot;</span>,<span style="color: #BA2121">f&quot;-W -&gt;</span><span style="color: #A45A77; font-weight: bold">{</span>tmpfile<span style="color: #666666">.</span>name<span style="color: #A45A77; font-weight: bold">}</span><span style="color: #BA2121">&quot;</span>)
-        size <span style="color: #666666">=</span> tmpfile<span style="color: #666666">.</span>read()<span style="color: #666666">.</span>split()
-        size <span style="color: #666666">=</span> [<span style="color: #008000">float</span>(s) <span style="color: #008000; font-weight: bold">for</span> s <span style="color: #AA22FF; font-weight: bold">in</span> size]
-        w <span style="color: #666666">=</span> size[<span style="color: #666666">0</span>]
-        h <span style="color: #666666">=</span> size[<span style="color: #666666">1</span>]
+<!--  公式マニュアルには距離の単位はkmと書かれているが，正しくは度であるようだ． -->
 
-<span style="color: #3D7B7B; font-style: italic"># =======================</span>
-<span style="color: #3D7B7B; font-style: italic"># cross section</span>
-<span style="color: #3D7B7B; font-style: italic"># =======================</span>
-<span style="color: #008000; font-weight: bold">with</span> pygmt<span style="color: #666666">.</span>config(
-    FONT_LABEL <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;8p&#39;</span>
-):
-    <span style="color: #3D7B7B; font-style: italic"># lat vs z -----------</span>
-    fig<span style="color: #666666">.</span>shift_origin(
-        xshift <span style="color: #666666">=</span> w<span style="color: #666666">*1.1</span>,
-    )
-    fig<span style="color: #666666">.</span>basemap(
-        frame <span style="color: #666666">=</span> [<span style="color: #BA2121">&#39;xagf+lDepth[km]&#39;</span>,<span style="color: #BA2121">&#39;yagf+u@.&#39;</span>,<span style="color: #BA2121">&#39;NEws&#39;</span>],
-        projection <span style="color: #666666">=</span> <span style="color: #BA2121">f&#39;X</span><span style="color: #A45A77; font-weight: bold">{</span>w<span style="color: #666666">*0.5</span><span style="color: #A45A77; font-weight: bold">}</span><span style="color: #BA2121">c/</span><span style="color: #A45A77; font-weight: bold">{</span>h<span style="color: #A45A77; font-weight: bold">}</span><span style="color: #BA2121">c&#39;</span>,
-        region <span style="color: #666666">=</span> [<span style="color: #666666">0</span>,<span style="color: #666666">60</span>,fig<span style="color: #666666">.</span>region[<span style="color: #666666">2</span>],fig<span style="color: #666666">.</span>region[<span style="color: #666666">3</span>]],
-    )
+<!--  というより，geographicalに処理されず，平面直交座標上の距離で計算されている． -->
 
-    <span style="color: #3D7B7B; font-style: italic"># lon vs z -----------</span>
-    fig<span style="color: #666666">.</span>shift_origin(
-        xshift <span style="color: #666666">=</span> <span style="color: #666666">-1*</span>w<span style="color: #666666">*1.1</span>,
-        yshift <span style="color: #666666">=</span> <span style="color: #666666">-</span>w<span style="color: #666666">*</span>(<span style="color: #666666">0.5+0.1</span>),
-    )
-    fig<span style="color: #666666">.</span>basemap(
-        frame <span style="color: #666666">=</span> [<span style="color: #BA2121">&#39;xagf+u@.&#39;</span>,<span style="color: #BA2121">&#39;yagf+lDepth[km]&#39;</span>,<span style="color: #BA2121">&#39;SWne&#39;</span>],
-        projection <span style="color: #666666">=</span> <span style="color: #BA2121">f&#39;X</span><span style="color: #A45A77; font-weight: bold">{</span>w<span style="color: #A45A77; font-weight: bold">}</span><span style="color: #BA2121">c/</span><span style="color: #A45A77; font-weight: bold">{</span><span style="color: #666666">-</span>w<span style="color: #666666">*0.5</span><span style="color: #A45A77; font-weight: bold">}</span><span style="color: #BA2121">c&#39;</span>,
-        region <span style="color: #666666">=</span> [fig<span style="color: #666666">.</span>region[<span style="color: #666666">0</span>],fig<span style="color: #666666">.</span>region[<span style="color: #666666">1</span>],<span style="color: #666666">0</span>,<span style="color: #666666">60</span>],
-    )
+<!--  どうすれば地理的距離を使用できるのだろうか？ -->
 
+<!--  } -->
+<p>coltypes = 'g'としないと地理的距離を使用できず，
+距離の単位も指定できない（指定しても無視される）ので注意．</p>
+<p>以下の例ではcoltypes='g'を使用していないため，
+地理的距離が適用されていない．
+例）
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+dat <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>rand(<span style="color: #666666">5000</span>,<span style="color: #666666">2</span>)<span style="color: #666666">*5+40</span>
+
+dat2 <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>select(
+    data <span style="color: #666666">=</span> dat,
+    dist2pt <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;40/40+d2&quot;</span>,
+    <span style="color: #3D7B7B; font-style: italic"># reverse=&#39;c&#39;,</span>
+)<span style="color: #666666">.</span>values
+
+fig <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>Figure()
+fig<span style="color: #666666">.</span>coast(
+    land <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;grey80&#39;</span>,
+    region <span style="color: #666666">=</span> [<span style="color: #666666">40</span>,<span style="color: #666666">45</span>,<span style="color: #666666">40</span>,<span style="color: #666666">45</span>],
+    projection <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;M4c&#39;</span>,
+    frame <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;agf&#39;</span>,
+)
+fig<span style="color: #666666">.</span>plot(
+    x <span style="color: #666666">=</span> dat[:,<span style="color: #666666">0</span>],
+    y <span style="color: #666666">=</span> dat[:,<span style="color: #666666">1</span>],
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;c2p&#39;</span>,
+)
+fig<span style="color: #666666">.</span>plot(
+    x <span style="color: #666666">=</span> dat2[:,<span style="color: #666666">0</span>],
+    y <span style="color: #666666">=</span> dat2[:,<span style="color: #666666">1</span>],
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;c1p&#39;</span>,
+    <span style="color: #3D7B7B; font-style: italic"># pen = &#39;red&#39;,</span>
+    fill <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;red&#39;</span>,
+)
 fig<span style="color: #666666">.</span>show()
 </code></pre></div></p>
-<figure>  <img alt="fig/getsize.png" src="../fig/getsize.png" /><figcaption>メイン地図のサイズを取得することでプロットした二方向の深さ方向断面図．ただし図の大きさや位置は揃うものの，グリッドがCartesian座標であるため，緯度はメインの地図からわずかにずれが生じてしまう．</figcaption> </figure>
+<figure>  <img alt="fig/dist2pt.png" src="../fig/dist2pt.png" /><figcaption>南西端の点から距離「2」以内の点に色を付けた図．coltype='g'を与えていないため地理的距離で処理されていない．</figcaption> </figure>
+<!-- ---------------------------------- -->
+<h3 id="_3">水・陸でのデータ分類</h3>
+<!-- ---------------------------------- -->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>海と陸でデータを分別する場合：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>mask <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;wet/dry&#39;</span>
+</code></pre></div></p>
+<p>または
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>mask <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;ocean/land/lake/island/pond&#39;</span>
+</code></pre></div></p>
+<p>それぞれを含むなら「k」(kept)，
+除外するなら「s」（skipped）を指定する．
+文字列またはリストで指定．</p>
+</div>
+<p>例）ランダムな点のうち，内陸を青，海域を赤でプロットする：
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pygmt</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+
+<span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;描画範囲，図法&quot;&quot;&quot;</span>
+rgn <span style="color: #666666">=</span> [<span style="color: #666666">134</span>,<span style="color: #666666">138</span>,<span style="color: #666666">33</span>,<span style="color: #666666">36</span>]
+prj <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;M6c&#39;</span>
+
+<span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;random data作成&quot;&quot;&quot;</span>
+xlen <span style="color: #666666">=</span> rgn[<span style="color: #666666">1</span>]<span style="color: #666666">-</span>rgn[<span style="color: #666666">0</span>]
+ylen <span style="color: #666666">=</span> rgn[<span style="color: #666666">3</span>]<span style="color: #666666">-</span>rgn[<span style="color: #666666">2</span>]
+
+dat <span style="color: #666666">=</span> np<span style="color: #666666">.</span>random<span style="color: #666666">.</span>rand(<span style="color: #666666">5000</span>,<span style="color: #666666">2</span>)
+dat[:,<span style="color: #666666">0</span>] <span style="color: #666666">=</span> dat[:,<span style="color: #666666">0</span>]<span style="color: #666666">*</span> xlen <span style="color: #666666">+</span> rgn[<span style="color: #666666">0</span>]
+dat[:,<span style="color: #666666">1</span>] <span style="color: #666666">=</span> dat[:,<span style="color: #666666">1</span>]<span style="color: #666666">*</span> ylen <span style="color: #666666">+</span> rgn[<span style="color: #666666">2</span>]
+
+<span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;陸海でデータ分離&quot;&quot;&quot;</span>
+land <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>select(
+    data <span style="color: #666666">=</span> dat,
+    mask <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;s/k/k/k/k&#39;</span>,
+    )
+ocean <span style="color: #666666">=</span> pygmt<span style="color: #666666">.</span>select(
+    data <span style="color: #666666">=</span> dat,
+    mask <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;k/s/s/s/s&#39;</span>,
+    )
+
+<span style="color: #BA2121; font-style: italic">&quot;&quot;&quot;プロット&quot;&quot;&quot;</span>
+fig <span style="color: #666666">=</span>pygmt<span style="color: #666666">.</span>Figure()
+<span style="color: #3D7B7B; font-style: italic"># 海岸線</span>
+fig<span style="color: #666666">.</span>coast(
+    shorelines <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;0.5p,black&#39;</span>,
+    water <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;blue@90&#39;</span>,
+    land <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;green@90&#39;</span>,
+    projection <span style="color: #666666">=</span> prj,
+    region <span style="color: #666666">=</span> rgn,
+    )
+
+<span style="color: #3D7B7B; font-style: italic"># 内陸</span>
+fig<span style="color: #666666">.</span>plot(
+    data <span style="color: #666666">=</span> land,
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;c2p&#39;</span>,
+    color <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;#33CCFF@50&#39;</span>,
+    )
+<span style="color: #3D7B7B; font-style: italic"># 海域</span>
+fig<span style="color: #666666">.</span>plot(
+    data <span style="color: #666666">=</span> ocean,
+    style <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;c2p&#39;</span>,
+    color <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;red@50&#39;</span>,
+    )
+
+<span style="color: #3D7B7B; font-style: italic">#枠</span>
+fig<span style="color: #666666">.</span>basemap(
+    frame <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;agf&#39;</span>,
+    )
+fig<span style="color: #666666">.</span>show()
+</code></pre></div></p>
+<figure>  <img alt="fig/select.png" src="../fig/select.png" /> <figcaption>select関数による海陸での点の分別結果．</figcaption> </figure>
+<!--  ################################################################## -->
+
+<!-- ######################################### -->
 
 
 
@@ -1713,7 +1806,7 @@ fig<span style="color: #666666">.</span>show()
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../sec012/" class="md-footer__link md-footer__link--prev" aria-label="前: 第12章 データの処理">
+          <a href="../sec012/" class="md-footer__link md-footer__link--prev" aria-label="前: 第12章 周辺要素">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1723,20 +1816,20 @@ fig<span style="color: #666666">.</span>show()
                 前
               </span>
               <div class="md-ellipsis">
-                第12章 データの処理
+                第12章 周辺要素
               </div>
             </div>
           </a>
         
         
           
-          <a href="../sec014/" class="md-footer__link md-footer__link--next" aria-label="次: 第14章 外部データの利用">
+          <a href="../sec014/" class="md-footer__link md-footer__link--next" aria-label="次: 第14章 グラフ紙面上の処理">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                第14章 外部データの利用
+                第14章 グラフ紙面上の処理
               </div>
             </div>
             <div class="md-footer__button md-icon">
